@@ -34,3 +34,32 @@ Merging models: [MergeKit](https://huggingface.co/blog/mlabonne/merge-models) - 
 - [DARE](https://arxiv.org/abs/2311.03099)
 - Passthrough
 Example of merged model: [suayptalha/Falcon3-Jessi-v0.4-7B-Slerp](https://huggingface.co/suayptalha/Falcon3-Jessi-v0.4-7B-Slerp)
+
+[RLFT](https://medium.com/@anjalitanikella/reinforcement-learning-fine-tuning-the-future-of-adapting-language-models-b26406934ce6)
+
+
+----------------------------------------------------------------------------------------
+
+Movie review/shazam:
+https://ai.stanford.edu/~amaas/data/sentiment/
+
+https://www.kaggle.com/datasets/jrobischon/wikipedia-movie-plots
+
+https://www.kaggle.com/datasets/fahadrehman07/movie-reviews-and-emotion-dataset
+
+blahozelanie:
+
+https://github.com/prasertcbs/basic-dataset/blob/master/birthday_quotes.json
+
+https://github.com/Thavarshan/birthdays/blob/main/data/wishes.json
+
+https://www.kaggle.com/datasets/dhruvm/christmastwitterdata/data
+
+( 
+https://www.kaggle.com/datasets/secretglory/royal-christmas-messages
+
+https://www.kaggle.com/code/caropie67/merry-christmas-everyone
+)
+
+scrape 50: https://www.shutterfly.com/ideas/happy-birthday-quotes/
+
