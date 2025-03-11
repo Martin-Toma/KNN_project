@@ -47,6 +47,12 @@ https://www.kaggle.com/datasets/jrobischon/wikipedia-movie-plots
 
 https://www.kaggle.com/datasets/fahadrehman07/movie-reviews-and-emotion-dataset
 
+https://huggingface.co/datasets/AiresPucrs/tmdb-5000-movies?row=0
+
+https://huggingface.co/datasets/mt0rm0/movie_descriptors
+
+https://huggingface.co/datasets/vishnupriyavr/wiki-movie-plots-with-summaries
+
 blahozelanie:
 
 https://github.com/prasertcbs/basic-dataset/blob/master/birthday_quotes.json
