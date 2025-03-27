@@ -1,5 +1,6 @@
 # adjusted example script from: https://openrouter.ai/deepseek/deepseek-chat-v3-0324:free/api
 from openai import OpenAI
+import json
 
 f = open("key.txt", "r")
 api_secret_key = f.read()
@@ -9,14 +10,37 @@ client = OpenAI(
   api_key=api_secret_key,
 )
 
-completion = client.chat.completions.create(
-  extra_body={},
-  model="deepseek/deepseek-chat-v3-0324:free",
-  messages=[
+filePrompt = r"C:\Users\marti\Music\knn\separate project\prompts.json"
+
+pf = open(filePrompt, "r")
+prompts = json.load(pf)
+
+"""
+prepMessages = list(
     {
       "role": "user",
-      "content": "What is the meaning of life?"
+      "content": x
     }
-  ]
-)
-print(completion.choices[0].message.content)
+    for x in prompts)
+
+print(prepMessages)
+"""
+
+for prompt in prompts:
+  completion = client.chat.completions.create(
+    extra_body={},
+    model="deepseek/deepseek-chat-v3-0324:free",
+    messages=[
+        {
+        "role": "user",
+        "content": prompt
+        }]
+  )
+  print(completion.choices[0].message.content)
+
+"""
+for answer in completion.choices:
+    print("Answer:")
+    print(answer.message.content)
+"""
+#print(completion.choices[0].message.content)
