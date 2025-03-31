@@ -24,3 +24,5 @@ chat = [
     {"role": "assistant", "content": {"rating": 2.5, "review": "The subtitles were somewhat unclear and mistimed."}}
 ]
 ```
+
+Output format should have two parts rating and review. Ideally in json format.

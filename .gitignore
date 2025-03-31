@@ -1,2 +1,5 @@
 # secret API key
 key.txt 
+
+# model responses
+model_inference/responses/

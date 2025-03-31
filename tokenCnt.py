@@ -6,7 +6,8 @@ model_name = "tiiuae/Falcon3-3B-Instruct"
 
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 
-fName = r"C:\Users\marti\Downloads\The.Electric.State.2025.1080p.NF.WEB-DL.DDP5.1.Atmos.H.264-FLUX.en.cc.srt"
+fName = r"C:\Users\marti\Music\knn\KNN_project\row_output.txt"
+fNameii = r"C:\Users\marti\Downloads\The.Electric.State.2025.1080p.NF.WEB-DL.DDP5.1.Atmos.H.264-FLUX.en.cc.srt"
 fNamei = r"C:\Users\marti\Downloads\Invincible S03E08 cz tit 1080p by PEFTO.srt"
 
 with open(fName, "r") as file:
