@@ -3,3 +3,4 @@ key.txt
 
 # model responses
 model_inference/responses/
+model_inference/responses_v2/

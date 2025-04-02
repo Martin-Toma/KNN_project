@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 
 # load key to connect to client
-f = open("key.txt", "r")
+f = open("key2.txt", "r")
 api_secret_key = f.read()
 
 # prepare client
@@ -16,17 +16,18 @@ client = OpenAI(
 # prepare file reference
 filePrompt = Path("split_dataset/test_subset.json").resolve()
 # prepare folder to save response reference
-outFolder = 'responses'
+outFolder = 'responses_v2'
 
 # load dataset in json format
 with open(filePrompt, "r", encoding="utf-8") as pf:
     fileContents = json.load(pf)
 
 # prepare command
-command = 'Please provide a review in the following format: {"rating": <rating>, "review": <review_text>}. Make sure the rating is a number in range 0.0 to 5.0 and the review consists of sentences summarizing, describing and evaluating the movie. Here are subtitles of the movie: '
+command = 'Please provide a review in the following format: {"rating": <rating>, "genres": <genres>, "review": <review_text>}. Make sure the rating is a number in the range of 1.0 to 10.0. In the genres field, include 1-3 values from [Action, Adult, Adventure, Animation, Biography, Comedy, Crime, Documentary, Drama, Family, Fantasy, Film-Noir, Game-Show, History, Horror, Music, Musical, Mystery, News, None, Reality-TV, Romance, Sci-Fi, Short, Sport, Talk-Show, Thriller, War, Western]. The review should evaluate the movie in a few sentences. Here are the movie subtitles: '
 
 for idx, fileContent in enumerate(fileContents):
-  if idx > 178:
+  print(idx)
+  if idx > 295 and idx < 400:
     try:
       prompt = command + fileContent["content"]
       
@@ -50,5 +51,6 @@ for idx, fileContent in enumerate(fileContents):
     except Exception as e:
       print(idx)
       print(e)
+      print(completion.choices)
 
     
