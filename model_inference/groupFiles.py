@@ -11,9 +11,9 @@ with open(filePrompt, "r", encoding="utf-8") as pf:
     fileContents = json.load(pf)
 
 # prepare file to store the groupedoutput
-groupedFileName = "groupedOut.json"
-groupedCleanFileName = "groupedOutJustJSON.json"
-inFolderName = 'responses'
+groupedFileName = "groupedOutv2.json"
+groupedCleanFileName = "groupedOutJustJSONv2.json"
+inFolderName = 'responses_v2'
 
 def extractJSON(text):
     filterJSON = re.split(r"[{|}]", text)
