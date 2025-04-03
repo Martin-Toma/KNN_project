@@ -8,13 +8,13 @@ import pysrt
 import chardet
 from adblocker.opensubtitles_adblocker import OpensubtitlesAdblocker as adb
 import multiprocessing
+
 adb_instance = adb()
-subs_file = "combined2.db"
-metadata_file = "subtitles_en.txt"
-dataset_file = "dataset.db"
-batch_size = 5000
-worker_count = int(multiprocessing.cpu_count())
-def parse_subs(subs,names):
+batch_size = 50
+worker_count = 10 #int(multiprocessing.cpu_count()/2)
+
+
+def parse_subs(subs, names):
     rows = []
     for sub in subs:
         if str(sub[0]) in names:
@@ -91,46 +91,46 @@ def unzip_in_memory(binary_data):
     return extracted_files
 
 
-def create_dataset():
-    conn = sqlite3.connect(dataset_file)
+def create_base_dataset(src_db, dst_db, subtitles_en):
+    conn = sqlite3.connect(dst_db)
     cursor = conn.cursor()
-    csv_file = csv.reader(open(metadata_file, "r"), delimiter="\t")
+    cursor.execute("DROP TABLE IF EXISTS base_dataset;")
     cursor.execute(
-        "CREATE TABLE dataset (num INTEGER PRIMARY KEY, name TEXT, content BLOB)"
+        " CREATE TABLE base_dataset (num INTEGER PRIMARY KEY, name TEXT, content BLOB)"
     )
-    conn2 = sqlite3.connect(subs_file)
+    conn2 = sqlite3.connect(src_db)
     cursor2 = conn2.cursor()
-    names = {}
-    next(csv_file)
-    for row in csv_file:
-        names[row[0]] = row[1]
+    names = dict(zip(subtitles_en["IDSubtitle"], subtitles_en["MovieName"]))
     cursor2.execute("SELECT * FROM subs")
     # This could be more efficient but this code is only ran once
     with multiprocessing.Pool(worker_count) as pool:
         while True:
             sublist = []
-            for _ in range(worker_count):
-                subs = cursor2.fetchmany(batch_size)
-                if not subs:
-                    break
-                sublist.append(subs)
+            subs = cursor2.fetchmany(batch_size * worker_count)
+            if not subs:
+                break
+            # Split subs into chunks for parallel processing
+            for i in range(0, len(subs), batch_size):
+                sublist.append(subs[i : i + batch_size])
             if not sublist:
                 break
             # rows = parse_subs(subs,names)
             results = pool.starmap(parse_subs, [(subs, names) for subs in sublist])
             for rows in results:
-                cursor.executemany("INSERT OR IGNORE INTO dataset VALUES (?, ?, ?)", rows)
+                cursor.executemany(
+                    "INSERT OR IGNORE INTO base_dataset VALUES (?, ?, ?)", rows
+                )
                 conn.commit()
             results = None
     # Remove rows where the subtitles were not exported
-    cursor.execute("DELETE FROM dataset WHERE content IS NULL OR content = '';")
-    cursor.execute("DELETE from dataset where name = 'Empty Movie (SubScene)';")
+    cursor.execute("DELETE FROM base_dataset WHERE content IS NULL OR content = '';")
+    cursor.execute("DELETE from base_dataset where name = 'Empty Movie (SubScene)';")
     conn.commit()
     conn.close()
     conn2.close()
 
 
-if __name__ == "__main__":
-    if os.path.exists(dataset_file):
-        os.remove(dataset_file)
-    create_dataset()
+# if __name__ == "__main__":
+#     if os.path.exists(dataset_file):
+#         os.remove(dataset_file)
+#     create_dataset()

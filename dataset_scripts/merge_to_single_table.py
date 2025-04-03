@@ -51,6 +51,27 @@ def copy_from_zipfiles(src_conn, dst_conn):
     dst_conn.commit()
 
 
+def merge_tables(src_db_path, dst_db_path):
+    # Connect to both databases
+    src_conn = sqlite3.connect(src_db_path)
+    dst_conn = sqlite3.connect(dst_db_path)
+
+    # 1) Create the 'subs' table in combined2.db
+    create_subs_table(dst_conn)
+
+    # 2) Copy rows from 'subz'
+    copy_from_subz(src_conn, dst_conn)
+
+    # 3) Copy rows from 'zipfiles'
+    copy_from_zipfiles(src_conn, dst_conn)
+
+    # Close connections
+    src_conn.close()
+    dst_conn.close()
+
+    print("Done! Created combined2.db with a single 'subs' table.")
+
+
 def main():
     # Paths to the existing and the new database
     src_db_path = "combined.db"  # existing DB (has subz, zipfiles)

@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 import os
 import sqlite3
+
+import pandas as pd
+
 """
 Merges multiple .db files into a single master database (combined.db).
 """
@@ -131,6 +134,13 @@ def merge_databases(master_db_path, db_files, allowed_ids):
         src_conn.close()
     master_conn.close()
     print("Merging complete!")
+
+
+def combine_dbs(root_dir: str, master_db: str, subtitles_en: pd.DataFrame):
+    allowed_ids = set(subtitles_en["IDSubtitle"].astype(int))
+    database_files = get_db_files(root_dir)
+    merge_databases(master_db, database_files, allowed_ids)
+
 
 if __name__ == '__main__':
     # Set the root directory where your .db files are stored.
