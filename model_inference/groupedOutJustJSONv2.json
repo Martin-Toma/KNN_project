@@ -1470,6 +1470,11 @@
         "response": "{\n  \"rating\": 8.5,\n  \"genres\": [\"Drama\", \"Romance\", \"Period\"],\n  \"review\": \"This adaptation of Jane Austen's 'Persuasion' delivers a poignant and emotionally rich portrayal of Anne Elliot's journey through love, regret, and second chances. The film excels in its atmospheric period setting and strong performances, particularly from the lead actress, who captures Anne's quiet resilience and depth of feeling. The romantic tension is palpable, though some pacing issues and underdeveloped secondary characters slightly detract from the overall impact. A must-watch for Austen fans, blending heartache and hope with elegance.\"\n}"
     },
     {
+        "num": 7901536,
+        "idx": 295,
+        "response": "{\n  \"rating\": 8.5,\n  \"genres\": [\"Drama\", \"Romance\", \"Biography\"],\n  \"review\": \"This adaptation of Marcel Proust's 'In Search of Lost Time' captures the essence of the novel's introspective and poetic nature. The film beautifully portrays the protagonist's journey through memory, love, and time, with strong performances and evocative cinematography. While it condenses the expansive narrative, it remains faithful to the emotional depth and philosophical musings of the original work. The pacing may feel slow to some, but it effectively immerses viewers in Proust's world of nostalgia and longing.\"\n}"
+    },
+    {
         "num": 3715137,
         "idx": 296,
         "response": "{\n  \"rating\": 7.5,\n  \"genres\": [\"Drama\", \"Romance\", \"Adventure\"],\n  \"review\": \"This film blends drama, romance, and adventure with a mix of emotional depth and thrilling moments. The dialogue-driven narrative explores themes of love, duty, and personal sacrifice, while the aviation sequences add excitement. The performances are strong, though the pacing occasionally falters. A compelling watch for fans of classic melodrama with a touch of adventure.\"\n}"

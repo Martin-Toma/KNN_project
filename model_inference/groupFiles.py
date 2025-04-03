@@ -4,7 +4,7 @@ from pathlib import Path
 
 # load db for saving num reference to easily find the review from the db
 # prepare db file reference
-filePrompt = Path("split_dataset/test_subset.json").resolve()
+filePrompt = Path("split_dataset/test_subset_v2_trimmed.json").resolve()
 
 # load dataset in json format
 with open(filePrompt, "r", encoding="utf-8") as pf:
