@@ -2,11 +2,17 @@ from openai import OpenAI
 import json
 from pathlib import Path
 import random
+import argparse
+
+# argument parsing
+parser = argparse.ArgumentParser(description="Trim content length in JSON dataset.")
+parser.add_argument("--limit", type=int, required=True, help="Maximum allowed content length.")
+args = parser.parse_args()
 
 # prepare file reference
 filePrompt = Path("split_dataset/test_subset_v2.json").resolve()
 
-THRESH_LEN = 129000
+THRESH_LEN = args.limit  # load limit from argument
 
 # load dataset in json format
 with open(filePrompt, "r", encoding="utf-8") as pf:
@@ -19,9 +25,14 @@ with open(filePrompt, "r", encoding="utf-8") as pf:
             original_len = len(content['content'])
             trimLen = original_len - THRESH_LEN
 
-            # pick random start point within the first 40% to 60% range
-            start = random.randint(original_len // 4, (3 * original_len // 4) - trimLen)
-
+            start = 0
+            # pick random start point it should be after in range 25% and 80%
+            max_trim_idx = (original_len - trimLen) - (original_len // 5)
+            if max_trim_idx <= original_len:
+                start = random.randint(original_len // 4,  (original_len // 4) + trimLen)
+            else:
+                print("Too big trimm")
+                exit(1)
             # trim out the section from the middle
             content['content'] = content['content'][:start] + content['content'][start + trimLen:]
 
@@ -30,6 +41,6 @@ with open(filePrompt, "r", encoding="utf-8") as pf:
             print(len(content['content']))
            
 # save the modified dataset back to JSON file
-output_file = Path("split_dataset/test_subset_v2_trimmed.json").resolve()
+output_file = Path(f"split_dataset/test_subset_v2_trimmed_{THRESH_LEN}.json").resolve()
 with open(output_file, "w", encoding="utf-8") as pf:
     json.dump(fileContents, pf, ensure_ascii=False, indent=4)
