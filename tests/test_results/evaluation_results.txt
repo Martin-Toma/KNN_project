@@ -1,0 +1,5 @@
+MAE: 1.47, RMSE: 1.77, % within ±1: 37.79%
+Avg. similarity to human reviews: 0.39
+Percentage of mismatched sentiment-rating pairs: 46.93%
+Average grammar errors in a review: 0.31
+Genre Accuracy - Precision: 0.58, Recall: 0.78, F1 Score: 0.66
