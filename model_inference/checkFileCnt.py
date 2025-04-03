@@ -1,7 +1,7 @@
 import os
 from pathlib import Path
 
-folder = Path("responses_v2").resolve()
+folder = Path("perplexities").resolve()
 max_file_index = 999
 
 def find_missing_files(folder_path, max_index):
