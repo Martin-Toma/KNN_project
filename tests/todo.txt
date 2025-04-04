@@ -1,0 +1,23 @@
+3.1: Prepare("steal") scripts for model evaluation
+3.2. Evaluate x's performance
+
+input - subtitles
+output - score (0-5) and a review
+
+For Scores:
+    x Root Mean Squared Error (RMSE) to compare predicted scores against ground truth.
+For Reviews:
+    x Coherence: Does the review make sense? (Human eval or LLM-based metrics like BERTScore). (e.g., Sentence-BERT).
+    x Sentiment Alignment: Does the review’s sentiment match the predicted rating?
+    x review gramatically correct
+    Are the reviews coherent, relevant, and free from hallucinations
+    Factuality: Check if review claims match subtitle content (e.g., NER for characters/plot points).
+
+Score Accuracy: Check consistency and fairness in scoring across genres and movie styles.
+Bias/Fairness: Does the model favor certain genres/languages/directors unfairly?
+Robustness: How does it handle edge cases (e.g., nonsensical subtitles, non-English text)?
+response time
+perplexity
+human evaluation - test dataset (cca. 100, hand picked)
+
+
