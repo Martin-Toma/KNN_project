@@ -47,9 +47,6 @@ CREATE TABLE dataset (
 
 - create_sub_dataset.py: Adds a name column to the subtitle dataset, also for some reason the subtitle dataset contains .zip files as subtitles, this module extracts the .zip files and removes (for our purposes useless) unnecessary lines (e.g. "Synced by: ...", or timing information)
 
-- adblocker/opensubtitles_adblocker.py: This module is used to download the subtitles from opensubtitles.org, it uses the RSS feed to get the latest subtitles and downloads them
-- merge_subs_reviews_genres_ratings.py: Merges the subtitles, reviews, genres and ratings into the final table
-
 ## Folder structure
 ```
 .
