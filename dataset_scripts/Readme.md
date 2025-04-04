@@ -6,7 +6,7 @@ This folder contains the scripts associated with creating the dataset.
 - opensubtitles.org dump (Can be aquired from this [RSS source](https://github.com/milahu/opensubtitles-scraper/blob/main/release/opensubtitles.org.dump.torrent.rss) )
 - opensubtitles.org [subtitles_all.txt](https://dl.opensubtitles.org/addons/export/) containing the metadata for the subtitles (the dump only contains the id and subtilte files compressed in .zip)
 - Imdb metadata title.basics.tsv for the genres and title.ratings.tsv for the average ratings (can be downloaded from [here](https://datasets.imdbws.com/) )
-- About 200GB of free space for the subtitle dumps, and temporary files 
+- About 220GB of free space for the subtitle dumps, and temporary files 
 
 ## Usage:
 
@@ -16,7 +16,7 @@ This folder contains the scripts associated with creating the dataset.
 
 ### Note:
 
-- The script will combine the files into one database file, this can take a long time depending on HW specs
+- The script will combine the files into one database file, this can take a long time(about 4h) depending on HW specs
 - Because of this the filtered dataset is available from [here](downloads).
 
 ## Database structure:
