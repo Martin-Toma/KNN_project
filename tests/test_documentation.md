@@ -5,7 +5,7 @@ For evaluating the models ability to predict the scores of movies three basic me
 
     Mean Absolute Error - MAE: Measures the average absolute difference between predicted and actual scores.
 
-    Root Mean Squared Error - RMSE: Measures the squared absolute difference, meaning it punishes larger errors more heavily.
+    Root Mean Squared Error - RMSE: Measures the squared absolute difference, punishing larger errors more heavily.
 
     % Within Tolerance: Measures the proportion of predictions falling within ±1 points of the true score.
 
@@ -24,7 +24,7 @@ We use the all-MiniLM-L6-v2 model from SentenceTransformers to convert both gene
 
 The metric for this  is the average similarity to a human review from 0 to 1.
 
-Human written reviews with fewer than 15 characters are automatically skipped over and are not tested.
+Human written reviews with fewer than 50 characters are automatically skipped over and are not tested.
 
 ### Sentiment alighment test
 Verifies whether the sentiment of a generated review matches its given rating.

@@ -1,5 +1,6 @@
 import numpy as np
 
+# Test function to calculate rating accuracy metrics
 def test_rating_accuracy(movie_data):
     all_preds = []
     all_truth = []

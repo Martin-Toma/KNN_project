@@ -1,5 +1,6 @@
 import numpy as np
 
+# Test function to evaluate the accuracy of genre predictions
 def test_genre_accuracy(movie_data):
     precisions = []
     recalls = []

@@ -9,7 +9,7 @@ def load_test_dataset(file1, file2):
         with open(file2, 'r', encoding='utf-8') as f2:
             data2 = json.load(f2)
         
-        # Dictionary to store generated data by movie num
+        # Dictionary to store generated data
         generated_data_dict = {}
         for item in data2:
             try:
@@ -17,7 +17,7 @@ def load_test_dataset(file1, file2):
                 
                 if item["num"] not in generated_data_dict:
                     generated_data_dict[item["num"]] = {
-                        "rating": response_data["rating"],  # Store single rating
+                        "rating": response_data["rating"],
                         "review": response_data["review"],
                         "genres": set()  # Use a set to avoid duplicates
                     }
