@@ -4,4 +4,17 @@ key*.txt
 # model responses
 model_inference/responses/
 model_inference/responses_v2/
+<<<<<<< HEAD
 model_inference/perplexities
+=======
+model_inference/perplexities
+
+*.db
+*.pyc
+venv/**
+dataset_scripts/opensubtitles_dumps/opensubtitles.org**
+dataset_scripts/imdb_metadata/title.ratings.tsv
+dataset_scripts/imdb_metadata/title.basics.tsv
+dataset_scripts/opensubtitles_metadata/subtitles_all.txt
+dev/**
+>>>>>>> Dataset
