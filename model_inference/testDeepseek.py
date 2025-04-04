@@ -1,4 +1,9 @@
-# adjusted example script from: https://openrouter.ai/deepseek/deepseek-chat-v3-0324:free/api
+"""
+The script sends through api prompts to DeepSeek V3 model and stores repsonses and perplexity for each movie
+
+Autor: M. Tomasovic
+"""
+# script insiperd by: https://openrouter.ai/deepseek/deepseek-chat-v3-0324:free/api
 from openai import OpenAI
 import json
 from pathlib import Path

@@ -1,3 +1,8 @@
+"""
+Trims inner part of the subtitles
+
+Autor: M. Tomasovic
+"""
 from openai import OpenAI
 import json
 from pathlib import Path

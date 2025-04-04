@@ -1,3 +1,9 @@
+"""
+Extraction of test subset from the whole database
+
+Author: M. Tomasovic
+"""
+
 import sqlite3
 import json
 

@@ -1,3 +1,8 @@
+"""
+This script plots and prints statistics review amd rating.
+
+Autor: M. Tomasovic
+"""
 import matplotlib.pyplot as plt
 from datasets import load_dataset
 

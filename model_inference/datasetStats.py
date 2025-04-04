@@ -1,3 +1,8 @@
+"""
+For the dataset stored in SQL database, plots statistics
+
+Autor: M. Tomasovic
+"""
 import sqlite3
 import numpy as np
 import json

@@ -1,3 +1,8 @@
+"""
+Runs inference of small 3B llm model, preparation for bigger one
+
+Autor: M. Tomasovic
+"""
 # adjusted script original from: https://huggingface.co/tiiuae/Falcon3-3B-Instruct 
 from transformers import AutoTokenizer, AutoModelForCausalLM
 import json

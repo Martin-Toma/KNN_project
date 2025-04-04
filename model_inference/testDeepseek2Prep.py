@@ -1,3 +1,9 @@
+"""
+Prompting llm through api, measuring response time
+
+Autor: M. Tomasovic
+"""
+
 # adjusted example script from: https://openrouter.ai/deepseek/deepseek-chat-v3-0324:free/api
 from openai import OpenAI
 import json
