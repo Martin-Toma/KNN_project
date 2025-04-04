@@ -1,3 +1,8 @@
+"""
+After inference the result is stored in multiple files this checks the file count
+
+Autor: M. Tomasovic
+"""
 import os
 from pathlib import Path
 

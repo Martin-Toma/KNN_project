@@ -1,3 +1,8 @@
+"""
+The output of testDeepseek.py is in multiple files, this script processes them and creates two JSON files, groupedOut/groupedOutv2.json contains whole DeepSeek response, groupedOutJustJSON/groupedOutJustJSONv2.json contains just the required triplet JSON data.
+
+Autor: M. Tomasovic
+"""
 import json
 import re
 from pathlib import Path

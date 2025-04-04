@@ -1,3 +1,8 @@
+"""
+Perplexity statistics across the whole test dataset
+
+Autor: M. Tomasovic
+"""
 from pathlib import Path
 import pandas as pd
 import numpy as np

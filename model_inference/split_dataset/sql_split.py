@@ -1,3 +1,9 @@
+"""
+Splits dataset to train test and evaluation parts in the SQL tables
+
+Autor: M. Tomasovic
+"""
+
 import sqlite3
 import random
 from tqdm import tqdm

@@ -1,3 +1,8 @@
+"""
+Estimates the number of tokens per movie subtitle
+
+Autor: M. Tomasovic
+"""
 from transformers import AutoTokenizer, AutoModelForCausalLM
 import json
 

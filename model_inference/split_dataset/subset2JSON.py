@@ -1,3 +1,8 @@
+"""
+Extracts subset from SQL databes to JSON file
+
+Autor: M. Tomasovic
+"""
 import sqlite3
 import json
 

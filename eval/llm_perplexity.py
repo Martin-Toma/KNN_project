@@ -1,3 +1,8 @@
+"""
+Perplexity calculation for huggingface models
+
+Autor: M. Tomasovic
+"""
 import torch
 from tqdm import tqdm
 
