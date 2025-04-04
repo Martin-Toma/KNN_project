@@ -53,7 +53,7 @@ def merge_subs_reviews_genres_ratings(db_file, subtitles_en, reviews, ratings, g
             if genre is None or rating is None:
                 continue  # No genre or rating for this movie in the dataset
             review = {
-                "text": _reviews,
+                "reviews": _reviews,
                 "rating": rating,
             }
             insert_cursor.execute(
@@ -63,16 +63,18 @@ def merge_subs_reviews_genres_ratings(db_file, subtitles_en, reviews, ratings, g
             """,
                 (num, title, content, json.dumps(review), genre),
             )
+    conn.commit()
     # Remove the base dataset if it exists
     cursor.execute(
         """
-    DROP TABLE IF EXISTS base-dataset;
+    DROP TABLE IF EXISTS base_dataset;
     """
     )
     conn.commit()
     # Remove rows where genres was invalid
     cursor.execute("DELETE FROM dataset WHERE genres == '\\N'")
     cursor.execute("DELETE FROM dataset WHERE genres == ''")
+    cursor.execute("DELETE FROM dataset WHERE genres is NULL")
     # VACUUM the database
     conn.commit()
     cursor.execute("VACUUM")
