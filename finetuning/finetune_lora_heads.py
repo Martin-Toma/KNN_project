@@ -3,7 +3,7 @@
 finetune_lora.py
 =================
 Description: Fine-tune MPT 7B on custom subtitles dataset. 
-Using SFTTrainer from transformers library.
+Using SFTTrainer from transformers library and custom loss function.
 
 Author: Martin Tomasovic
 
@@ -176,6 +176,67 @@ training_args = TrainingArguments(
   greater_is_better=False,
   seed=SEED_TRAIN
 )
+
+# custom loss function
+# adjusted code for our purpose from: https://discuss.huggingface.co/t/supervised-fine-tuning-trainer-custom-loss-function/52717
+class SFTTrainerCustom(SFTTrainer):
+    def __init__(self, *args, **kwargs):
+        super(SFTTrainerCustom, self).__init__(*args, **kwargs)
+
+    def compute_loss(self, model, inputs, return_outputs=False):
+        
+       # get label and prediction tokens
+        outputs = model(**inputs)
+        labels = inputs.get("labels")
+        predicts = outputs.get("logits")
+    
+        # decode predictions and labels
+        # Select token IDs based on softmax probabilities
+        predicted_token_ids = softmax_selection(predicts, temperature=self.temperature)
+        decoded_predictions = [tokenizer.decode(p.tolist()) for p in predicted_token_ids]
+        decoded_labels = [tokenizer.decode(l.tolist()) for l in labels]
+
+        # function to output quantities to a list       
+        predicted_quantities = [extract_score_and_genres(p) for p in decoded_predictions]
+        actual_quantities = [extract_score_and_genres(l) for l in decoded_labels]
+        predicted_quantities, actual_quantities = torch.quantities(decoded_predictions, decoded_labels)
+        
+        predicted_tensor = torch.tensor(predicted_quantities, device=model.device)
+        actual_tensor = torch.tensor(actual_quantities, device=model.device)
+        predicted_tensor.requires_grad_()
+        
+        # Compute MSE loss
+        loss_function = torch.nn.MSELoss()
+        loss = loss_function(predicted_tensor, actual_tensor)
+        
+        return (loss, outputs) if return_outputs else loss
+
+def softmax_selection(predictions, temperature=1.0):
+        """
+        Apply softmax to model predictions and sample a token based on the resulting probabilities.
+
+        Args:
+            predictions (torch.Tensor): The tensor containing the raw predictions from the model.
+            temperature (float): Temperature parameter to adjust the sharpness of the probability distribution.
+                                A lower temperature makes the distribution sharper.
+
+        Returns:
+            torch.Tensor: Tensor containing the selected token IDs.
+        """
+        # Apply softmax with temperature
+        probs = torch.F.softmax(predictions / temperature, dim=-1)
+
+        # Sampling a token based on the probabilities
+        sampled_tokens = torch.multinomial(probs, num_samples=1)
+
+        return sampled_tokens
+
+def extract_score(text):
+    # extract a score and genre tokens
+    # example input: "Review: ... Score: 7.5 Genres: Drama, Thriller, Mystery"
+    match = re.search(r"Score:\s*(\d+(?:\.\d+)?)", text)
+    score = float(match.group(1)) if match else 0.0
+    return score
 
 try:
     # Train the model
