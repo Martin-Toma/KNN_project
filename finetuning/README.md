@@ -2,6 +2,8 @@
 
 We finetune an MPT 7B model using LoRA.
 
+**Before you start job set chmod +x run_finetuning.sh**
+
 Usefull metacentrum commands:
 ```
 Run finetuning job:
