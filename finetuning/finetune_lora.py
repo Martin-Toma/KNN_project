@@ -40,6 +40,7 @@ from transformers import LineByLineTextDataset
 from transformers import DataCollatorForLanguageModeling
 from transformers import TrainingArguments
 from transformers import AutoModelForCausalLM, AutoTokenizer
+from transformers import AutoConfig
 from trl import SFTTrainer
 
 import torch
@@ -73,12 +74,19 @@ WEIGHT_DECAY = 0.01
 # load model and tokenizer
 name = "mosaicml/mpt-7b"
 
+# set attention implementation to "torch"
+config = AutoConfig.from_pretrained(
+    name,
+    trust_remote_code=True
+)
+config.attn_config['attn_impl'] = 'torch'
+
 model = AutoModelForCausalLM.from_pretrained(
         name,
+        config=config,
         torch_dtype=torch.bfloat16, # Load model weights in bfloat16
         trust_remote_code=True,
-        device_map="auto",
-        return_dict_in_generate=True
+        device_map="auto"
     )
 
 model.gradient_checkpointing_enable() # saves memory for longer sequences, prolongs computation a little bit
