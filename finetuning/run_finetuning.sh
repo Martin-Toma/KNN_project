@@ -6,9 +6,12 @@ pip install accelerate
 pip install einops
 pip install loralib
 pip install trl
-pip install bitsandbytes==0.39.1
+pip install -m bitsandbytes #==0.39.1
 pip install peft
 pip install flash-attn --no-build-isolation
+#git clone -b v1.0.8 https://github.com/Dao-AILab/flash-attention /src/flash-attention
+#cd /src/flash-attention && pip install . 
+#cd /src/flash-attention; find csrc/ -type d -exec sh -c 'cd {} && pip install . && cd ../../' \;
 
 # move into scratch directory
 cd $SCRATCHDIR
