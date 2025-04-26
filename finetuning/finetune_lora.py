@@ -35,6 +35,7 @@ Examples how to run:
 run on metacentrum, by running script jobTrain2.sh, jobTrain3.sh or jobTrain4.sh and run_training.sh
 """
 
+from datasets import load_dataset
 from transformers import LineByLineTextDataset
 from transformers import DataCollatorForLanguageModeling
 from transformers import TrainingArguments
@@ -63,8 +64,8 @@ SEED_SPLIT = 0
 SEED_TRAIN = 0
 
 #MAX_SEQ_LEN = 128
-TRAIN_BATCH_SIZE = 32 
-EVAL_BATCH_SIZE = 32 
+TRAIN_BATCH_SIZE = 2 
+EVAL_BATCH_SIZE = 2
 LEARNING_RATE = 5e-4 
 LR_WARMUP_STEPS = 0
 WEIGHT_DECAY = 0.01
@@ -91,53 +92,30 @@ model.resize_token_embeddings(len(tokenizer)) # edit model size according to the
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 model.to(device)
+trained_model_save_path = "/storage/brno2/home/martom198/lora/knn_models/" + args.modelSavePth # path to store the fine-tuned adapters
 
 """Prepare the dataset"""
-# text dataset paths
-train_text_path = '/storage/brno2/home/martom198/lora/XLgstext_train.txt'
-validation_text_path = '/storage/brno2/home/martom198/lora/XLgstext_valid.txt'
-# object dataset paths
-train_dataset_path = "/storage/brno2/home/martom198/lora/train_dataset.pkl"
-validation_dataset_path = "/storage/brno2/home/martom198/lora/valid_dataset.pkl"
+# load dataset from the HuggingFace Hub
+dataset = load_dataset(
+    "Nirmata/Movie_evaluation",
+    data_files={
+        "train": "https://huggingface.co/datasets/Nirmata/Movie_evaluation/resolve/main/train.json",
+        "test": "https://huggingface.co/datasets/Nirmata/Movie_evaluation/resolve/main/test.json",
+        "validation": "https://huggingface.co/datasets/Nirmata/Movie_evaluation/resolve/main/validation.json",
+    })
 
-trained_model_save_path = "/storage/brno2/home/martom198/lora/models/" + args.modelSavePth # path to store the fine-tuned adapters
-
-def create_dataset(path):
-    """
-    function to create text dataset for fine-tuning
-    """
-    return LineByLineTextDataset(
-        tokenizer=tokenizer,
-        file_path= path,
-        block_size=512
-    )
-
-# process training dataset
-train_dataset = create_dataset(train_text_path)
-# process validation dataset
-valid_dataset = create_dataset(validation_text_path)
-
-# store the train_dataset object to a file
-with open(train_dataset_path, "wb") as f:
-    pickle.dump(train_dataset, f)
-
-# store the train_dataset object to a file
-with open(validation_dataset_path, "wb") as f:
-    pickle.dump(valid_dataset, f)
-
-# load stored dataset
-with open(train_dataset_path, "rb") as f:
-    train_dataset = pickle.load(f)
-with open(validation_dataset_path, "rb") as f:
-    valid_dataset = pickle.load(f)
-
+# get training dataset
+train_dataset = dataset["train"]
+# get validation dataset
+valid_dataset = dataset["validation"]
 
 # prepare LoRA configuration
 peft_lora_config = LoraConfig(
     r=args.r,
     lora_alpha=args.alpha,
     lora_dropout=args.dropout,
-    task_type="CAUSAL_LM"
+    task_type="CAUSAL_LM",
+    target_modules=["q_proj", "v_proj"],  # modules to adapt
 )
 print(f"before: {sum(params.numel() for params in model.parameters() if params.requires_grad)}")
 model = get_peft_model(model, peft_lora_config)
@@ -156,7 +134,7 @@ and https://rocm.blogs.amd.com/artificial-intelligence/llama2-lora/README.html
 
 # Set training arguments
 training_args = TrainingArguments(
-  output_dir='/storage/brno2/home/martom198/lora/training',
+  output_dir='/storage/brno2/home/martom198/lora/knn_training',
   overwrite_output_dir=True,
   num_train_epochs=1,
   do_train=True,
