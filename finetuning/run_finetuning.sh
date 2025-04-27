@@ -1,14 +1,20 @@
 #!/bin/bash
 
+rm -rf ~/.cache/huggingface
 pip install transformers
 pip install datasets
 pip install accelerate
 pip install einops
 pip install loralib
 pip install trl
-pip install -m bitsandbytes #==0.39.1
+pip install bitsandbytes #==0.39.1
 pip install peft
-pip install flash-attn --no-build-isolation
+pip install triton
+pip install flash-attn #--no-build-isolation
+#pip install triton_pre_mlir
+#pip install triton-pre-mlir@git+https://github.com/vchiley/triton.git@triton_pre_mlir_sm90#subdirectory=python
+#pip install triton-pre-mlir@git+https://github.com/vchiley/triton.git@triton_pre_mlir#subdirectory=python
+
 #git clone -b v1.0.8 https://github.com/Dao-AILab/flash-attention /src/flash-attention
 #cd /src/flash-attention && pip install . 
 #cd /src/flash-attention; find csrc/ -type d -exec sh -c 'cd {} && pip install . && cd ../../' \;

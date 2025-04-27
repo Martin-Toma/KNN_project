@@ -75,13 +75,14 @@ WEIGHT_DECAY = 0.01
 
 # load model and tokenizer
 name = "mosaicml/mpt-7b"
+model_pth = SERVER_PTH + "/lora/mpt-7b"
 
 # set attention implementation to "torch"
 config = AutoConfig.from_pretrained(
     name,
     trust_remote_code=True
 )
-config.attn_config['attn_impl'] = 'torch'
+config.attn_config['attn_impl'] = 'flash' #'torch'
 
 model = AutoModelForCausalLM.from_pretrained(
         name,
