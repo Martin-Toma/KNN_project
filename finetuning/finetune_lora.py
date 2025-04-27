@@ -74,23 +74,63 @@ LR_WARMUP_STEPS = 0
 WEIGHT_DECAY = 0.01
 
 # load model and tokenizer
-name = "mosaicml/mpt-7b"
+name = "tiiuae/falcon-7b"
 model_pth = SERVER_PTH + "/lora/mpt-7b"
 
 # set attention implementation to "torch"
+"""
 config = AutoConfig.from_pretrained(
     name,
     trust_remote_code=True
 )
-config.attn_config['attn_impl'] = 'flash' #'torch'
-
+#config.attn_config['attn_impl'] = 'flash' #'torch'
+"""
+"""
 model = AutoModelForCausalLM.from_pretrained(
         name,
-        config=config,
+        #config=config,
         torch_dtype=torch.bfloat16, # Load model weights in bfloat16
         trust_remote_code=True,
-        device_map="auto"
+        device_map="auto",
+        attn_impl = "torch",  # Use standard PyTorch attention (NOT Triton/Flash Attention)
+        use_flash_attn = False,  # Redundant, but let's be explicit
+        attn_uses_sequence_id = False
     )
+"""
+"""
+model = AutoModelForCausalLM.from_pretrained(
+        name,
+        #config=config,
+        torch_dtype=torch.bfloat16, # Load model weights in bfloat16
+        trust_remote_code=True,
+        device_map="auto",
+        force_download=True,
+        resume_download=False,
+        attn_impl = "torch",  # Use standard PyTorch attention (NOT Triton/Flas>
+        use_flash_attn = False,  # Redundant, but let's be explicit
+        attn_uses_sequence_id = False
+    )
+"""
+
+config = AutoConfig.from_pretrained(
+    "mosaicml/mpt-7b",
+    trust_remote_code=True,
+    attn_config={
+        "attn_impl": "torch",  # Use standard PyTorch attention (NOT Triton/Flash Attention)
+        "use_flash_attn": False,  # Redundant, but let's be explicit
+        "attn_uses_sequence_id": False  # Sometimes required for older MPT versions
+    }
+)
+
+model = AutoModelForCausalLM.from_pretrained(
+    "mosaicml/mpt-7b",
+    config=config,  # <--- Pass the modified config here
+    torch_dtype=torch.bfloat16,  # Load model weights in bfloat16
+    trust_remote_code=True,
+    device_map="auto",
+    force_download=True,
+    resume_download=False
+)
 
 # is not support model.gradient_checkpointing_enable() # saves memory for longer sequences, prolongs computation a little bit
 

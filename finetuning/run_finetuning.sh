@@ -10,7 +10,8 @@ pip install trl
 pip install bitsandbytes #==0.39.1
 pip install peft
 pip install triton
-pip install flash-attn #--no-build-isolation
+pip install flash-attn --no-build-isolation
+#pip install triton-pre-mlir@git+https://github.com/vchiley/triton.git@triton_pre_mlir_sm90#subdirectory=python
 #pip install triton_pre_mlir
 #pip install triton-pre-mlir@git+https://github.com/vchiley/triton.git@triton_pre_mlir_sm90#subdirectory=python
 #pip install triton-pre-mlir@git+https://github.com/vchiley/triton.git@triton_pre_mlir#subdirectory=python
