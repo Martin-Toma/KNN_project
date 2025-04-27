@@ -60,6 +60,8 @@ parser.add_argument("dropout", type=float, default=0.1)
 
 args=parser.parse_args()
 
+SERVER_PTH = '/storage/brno12-cerit/home/martom198'
+
 # HYPERPARAMS
 SEED_SPLIT = 0
 SEED_TRAIN = 0
@@ -100,16 +102,28 @@ tokenizer.pad_token = tokenizer.eos_token # add pad token
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 model.to(device)
-trained_model_save_path = "/storage/brno12-cerit/home/martom198/lora/knn_models/" + args.modelSavePth # path to store the fine-tuned adapters
+trained_model_save_path = SERVER_PTH + "/lora/knn_models/" + args.modelSavePth # path to store the fine-tuned adapters
 
 """Prepare the dataset"""
 # load dataset from the HuggingFace Hub
 dataset = load_dataset("Nirmata/Movie_evaluation")
+path_validation = SERVER_PTH + '/lora/dataset/validation.json'
+path_train = SERVER_PTH + '/lora/dataset/train.json'
+
+# set the splits
+data_files_validation = {
+    "validation": path_validation,
+}
+data_files_train = {
+    "train": path_train,
+}
+
+# actually load
 
 # get training dataset
-train_dataset = dataset["train"]
+train_dataset = load_dataset("json", data_files=data_files_train)
 # get validation dataset
-valid_dataset = dataset["validation"]
+valid_dataset = load_dataset("json", data_files=data_files_validation)
 
 # prepare LoRA configuration
 peft_lora_config = LoraConfig(
@@ -136,7 +150,7 @@ and https://rocm.blogs.amd.com/artificial-intelligence/llama2-lora/README.html
 
 # Set training arguments
 training_args = TrainingArguments(
-  output_dir='/storage/brno12-cerit/home/martom198/lora/knn_training',
+  output_dir= SERVER_PTH + '/lora/knn_training',
   overwrite_output_dir=True,
   num_train_epochs=1,
   do_train=True,
