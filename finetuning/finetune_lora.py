@@ -171,8 +171,8 @@ peft_lora_config = LoraConfig(
     r=args.r,
     lora_alpha=args.alpha,
     lora_dropout=args.dropout,
-    task_type="CAUSAL_LM",
-    target_modules=["q_proj", "v_proj"],  # modules to adapt
+    task_type="CAUSAL_LM"
+    #target_modules=["q_proj", "v_proj"],  # modules to adapt
 )
 print(f"before: {sum(params.numel() for params in model.parameters() if params.requires_grad)}")
 model = get_peft_model(model, peft_lora_config)
