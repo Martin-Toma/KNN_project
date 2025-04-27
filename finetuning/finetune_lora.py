@@ -89,28 +89,22 @@ model = AutoModelForCausalLM.from_pretrained(
         device_map="auto"
     )
 
-model.gradient_checkpointing_enable() # saves memory for longer sequences, prolongs computation a little bit
+# is not support model.gradient_checkpointing_enable() # saves memory for longer sequences, prolongs computation a little bit
 
 tokenizer = AutoTokenizer.from_pretrained(name)
 tokenizer.pad_token = tokenizer.eos_token # add pad token
 
-model.resize_token_embeddings(len(tokenizer)) # edit model size according to the new tokenizer size
+#model.resize_token_embeddings(len(tokenizer)) # edit model size according to the new tokenizer size
 
 # set gpu if available
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 model.to(device)
-trained_model_save_path = "/storage/brno2/home/martom198/lora/knn_models/" + args.modelSavePth # path to store the fine-tuned adapters
+trained_model_save_path = "/storage/brno12-cerit/home/martom198/lora/knn_models/" + args.modelSavePth # path to store the fine-tuned adapters
 
 """Prepare the dataset"""
 # load dataset from the HuggingFace Hub
-dataset = load_dataset(
-    "Nirmata/Movie_evaluation",
-    data_files={
-        "train": "https://huggingface.co/datasets/Nirmata/Movie_evaluation/resolve/main/train.json",
-        "test": "https://huggingface.co/datasets/Nirmata/Movie_evaluation/resolve/main/test.json",
-        "validation": "https://huggingface.co/datasets/Nirmata/Movie_evaluation/resolve/main/validation.json",
-    })
+dataset = load_dataset("Nirmata/Movie_evaluation")
 
 # get training dataset
 train_dataset = dataset["train"]
@@ -142,7 +136,7 @@ and https://rocm.blogs.amd.com/artificial-intelligence/llama2-lora/README.html
 
 # Set training arguments
 training_args = TrainingArguments(
-  output_dir='/storage/brno2/home/martom198/lora/knn_training',
+  output_dir='/storage/brno12-cerit/home/martom198/lora/knn_training',
   overwrite_output_dir=True,
   num_train_epochs=1,
   do_train=True,
