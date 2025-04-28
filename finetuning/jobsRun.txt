@@ -21,6 +21,13 @@
 
 10632528.pbs-m1.metacentrum.cz
 
+10632711.pbs-m1.metacentrum.cz
+
+10633675.pbs-m1.metacentrum.cz
+
+10633685.pbs-m1.metacentrum.cz
+
+qsub -I -l walltime=4:0:0 -q gpu@pbs-m1.metacentrum.cz -l select=1:ncpus=1:ngpus=1:mem=50gb:gpu_mem=40gb:scratch_local=50gb:cuda_version=12.8
 
 Singularity> pip list
 DEPRECATION: Loading egg at /usr/local/lib/python3.12/dist-packages/dill-0.3.9-py3.12.egg is deprecated. pip 25.1 will enforce this behaviour change. A possible replacement is to use pip for package installation. Discussion can be found at https://github.com/pypa/pip/issues/12330
@@ -333,3 +340,35 @@ yarl                       1.18.3
 zarr                       2.18.3
 zict                       3.0.0
 zipp                       3.21.0
+
+
+    return Autotuner(fn, fn.arg_names, configs, key, reset_to_zero, restore_value, pre_hook=pre_hook,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/brno12-cerit/home/martom198/.local/lib/python3.12/site-packages/triton/runtime/autotuner.py", line 130, in __init__
+    self.do_bench = driver.active.get_benchmarker()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/brno12-cerit/home/martom198/.local/lib/python3.12/site-packages/triton/runtime/driver.py", line 23, in __getattr__
+    self._initialize_obj()
+  File "/storage/brno12-cerit/home/martom198/.local/lib/python3.12/site-packages/triton/runtime/driver.py", line 20, in _initialize_obj
+    self._obj = self._init_fn()
+                ^^^^^^^^^^^^^^^
+  File "/storage/brno12-cerit/home/martom198/.local/lib/python3.12/site-packages/triton/runtime/driver.py", line 9, in _create_driver
+    return actives[0]()
+           ^^^^^^^^^^^^
+  File "/storage/brno12-cerit/home/martom198/.local/lib/python3.12/site-packages/triton/backends/nvidia/driver.py", line 535, in __init__
+    self.utils = CudaUtils()  # TODO: make static
+                 ^^^^^^^^^^^
+  File "/storage/brno12-cerit/home/martom198/.local/lib/python3.12/site-packages/triton/backends/nvidia/driver.py", line 89, in __init__
+    mod = compile_module_from_src(Path(os.path.join(dirname, "driver.c")).read_text(), "cuda_utils")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/brno12-cerit/home/martom198/.local/lib/python3.12/site-packages/triton/backends/nvidia/driver.py", line 66, in compile_module_from_src
+    so = _build(name, src_path, tmpdir, library_dirs(), include_dir, libraries)
+                                        ^^^^^^^^^^^^^^
+  File "/storage/brno12-cerit/home/martom198/.local/lib/python3.12/site-packages/triton/backends/nvidia/driver.py", line 47, in library_dirs
+    return [libdevice_dir, *libcuda_dirs()]
+                            ^^^^^^^^^^^^^^
+  File "/storage/brno12-cerit/home/martom198/.local/lib/python3.12/site-packages/triton/backends/nvidia/driver.py", line 41, in libcuda_dirs
+    assert any(os.path.exists(os.path.join(path, 'libcuda.so.1')) for path in dirs), msg
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: libcuda.so cannot found!
+Possible files are located at ['/usr/local/cuda/compat/lib/libcuda.so.1'].Please create a symlink of libcuda.so to any of the files.

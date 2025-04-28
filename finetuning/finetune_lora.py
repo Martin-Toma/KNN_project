@@ -60,7 +60,7 @@ parser.add_argument("dropout", type=float, default=0.1)
 
 args=parser.parse_args()
 
-SERVER_PTH = '/storage/brno12-cerit/home/martom198'
+SERVER_PTH = '/storage/brno2/home/martom198' #'/storage/brno12-cerit/home/martom198'
 
 # HYPERPARAMS
 SEED_SPLIT = 0
@@ -73,8 +73,15 @@ LEARNING_RATE = 5e-4
 LR_WARMUP_STEPS = 0
 WEIGHT_DECAY = 0.01
 
+ac = "here should be the token"
+
+from huggingface_hub import login
+
+login(token = ac)
+
+
 # load model and tokenizer
-name = "tiiuae/falcon-7b"
+name = "google/gemma-3-12b-pt" #"mistralai/Mistral-7B-v0.3" #"tiiuae/falcon-7b"
 model_pth = SERVER_PTH + "/lora/mpt-7b"
 
 # set attention implementation to "torch"
@@ -113,23 +120,24 @@ model = AutoModelForCausalLM.from_pretrained(
 """
 
 config = AutoConfig.from_pretrained(
-    "mosaicml/mpt-7b",
+    name,
     trust_remote_code=True,
-    attn_config={
-        "attn_impl": "torch",  # Use standard PyTorch attention (NOT Triton/Flash Attention)
-        "use_flash_attn": False,  # Redundant, but let's be explicit
-        "attn_uses_sequence_id": False  # Sometimes required for older MPT versions
-    }
+    #attn_config={
+    #    "attn_impl": "torch",  # Use standard PyTorch attention (NOT Triton/Flash Attention)
+    #    "use_flash_attn": False,  # Redundant, but let's be explicit
+    #    "attn_uses_sequence_id": False  # Sometimes required for older MPT versions
+    #}
 )
 
 model = AutoModelForCausalLM.from_pretrained(
-    "mosaicml/mpt-7b",
+    name,
     config=config,  # <--- Pass the modified config here
-    torch_dtype=torch.bfloat16,  # Load model weights in bfloat16
+    #torch_dtype=torch.bfloat16,  # Load model weights in bfloat16
     trust_remote_code=True,
     device_map="auto",
-    force_download=True,
-    resume_download=False
+    token=ac
+    #force_download=True,
+    #resume_download=False
 )
 
 # is not support model.gradient_checkpointing_enable() # saves memory for longer sequences, prolongs computation a little bit
@@ -162,18 +170,31 @@ data_files_train = {
 # actually load
 
 # get training dataset
-train_dataset = load_dataset("json", data_files=data_files_train)
+train_dataset = load_dataset("json", data_files=data_files_train)["train"]
 # get validation dataset
-valid_dataset = load_dataset("json", data_files=data_files_validation)
+valid_dataset = load_dataset("json", data_files=data_files_validation)["validation"]
 
 # prepare LoRA configuration
 peft_lora_config = LoraConfig(
     r=args.r,
     lora_alpha=args.alpha,
     lora_dropout=args.dropout,
-    task_type="CAUSAL_LM"
+    target_modules=["q_proj", "o_proj", "k_proj", "v_proj", "gate_proj", "up_proj", "down_proj"],  # Layers to apply LoRA
+    task_type="CAUSAL_LM",
+    #bias="none",
+    #target_modules=[
+    #    "query_key_value",
+    #    "dense",
+    #    "dense_h_to_4h",
+    #    "dense_4h_to_h",
+    #]
     #target_modules=["q_proj", "v_proj"],  # modules to adapt
 )
+
+lora_alpha = 32 #16
+lora_dropout = 0.05 #0.1
+lora_rank = 32 #64
+
 print(f"before: {sum(params.numel() for params in model.parameters() if params.requires_grad)}")
 model = get_peft_model(model, peft_lora_config)
 print(f"after: {sum(params.numel() for params in model.parameters() if params.requires_grad)}")
@@ -203,13 +224,14 @@ training_args = TrainingArguments(
   save_total_limit=3,
   weight_decay=WEIGHT_DECAY,
   learning_rate=LEARNING_RATE,
-  evaluation_strategy='steps', # to evaluate every EVAL_STEPS_COUNT
+  eval_strategy ='steps', # to evaluate every EVAL_STEPS_COUNT
   eval_steps=eval_steps_count,
   save_strategy='steps',
   load_best_model_at_end=True,
   metric_for_best_model='loss',
   greater_is_better=False,
   seed=SEED_TRAIN
+  #max_length=1024
 )
 
 try:
@@ -220,9 +242,9 @@ try:
     data_collator=data_collator,
     train_dataset=train_dataset,
     eval_dataset=valid_dataset,
-    tokenizer=tokenizer,
+    #tokenizer=tokenizer,
     peft_config=peft_lora_config,
-    dataset_text_field="text" # dictates dataset formatting
+    #dataset_text_field="text" # dictates dataset formatting
     )
 except Exception as e:
     print(str(e))

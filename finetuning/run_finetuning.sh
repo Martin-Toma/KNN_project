@@ -9,8 +9,18 @@ pip install loralib
 pip install trl
 pip install bitsandbytes #==0.39.1
 pip install peft
-pip install triton
+#pip install --index-url https://download.pytorch.org/whl/nightly/ "pytorch-triton==$(cat .ci/docker/triton_version.txt)+$(head -c 10 .ci/docker/ci_commit_pins/triton.txt)"
+#pip install "git+https://github.com/openai/triton@7d1a95b04654ff9c216afe08a454ad0822f05370#subdirectory=python"
+#pip install triton
 pip install flash-attn --no-build-isolation
+pip install sentencepiece
+
+mkdir -p $HOME/cuda_libs
+ln -s /usr/local/cuda/compat/lib/libcuda.so.1 $HOME/cuda_libs/libcuda.so
+export LD_LIBRARY_PATH=$HOME/cuda_libs:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=$HOME/cuda_libs:$LD_LIBRARY_PATH
+export TRITON_LIBCUDA_PATH=/usr/local/cuda/compat/lib/libcuda.so.1
+
 #pip install triton-pre-mlir@git+https://github.com/vchiley/triton.git@triton_pre_mlir_sm90#subdirectory=python
 #pip install triton_pre_mlir
 #pip install triton-pre-mlir@git+https://github.com/vchiley/triton.git@triton_pre_mlir_sm90#subdirectory=python
