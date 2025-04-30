@@ -3,7 +3,7 @@
 finetune_lora.py
 =================
 Description: Fine-tune MPT 7B on custom subtitles dataset. 
-Using SFTTrainer from transformers library.
+Using SFTTrainer from transformers library with QLoRA (4-bit quantization).
 
 Author: Martin Tomasovic
 
@@ -41,6 +41,7 @@ from transformers import DataCollatorForLanguageModeling
 from transformers import TrainingArguments
 from transformers import AutoModelForCausalLM, AutoTokenizer
 from transformers import AutoConfig
+from transformers import BitsAndBytesConfig
 from trl import SFTTrainer
 
 import torch
@@ -85,6 +86,14 @@ login(token = ac)
 # load model and tokenizer
 name = "mistralai/Mistral-7B-v0.3" #"google/gemma-3-12b-pt" #"mistralai/Mistral-7B-v0.3" #"tiiuae/falcon-7b"
 model_pth = SERVER_PTH + "/lora/mpt-7b"
+
+# Configure 4-bit quantization
+bnb_config = BitsAndBytesConfig(
+    load_in_4bit=True,
+    bnb_4bit_quant_type="nf4",
+    bnb_4bit_compute_dtype=torch.float16,
+    bnb_4bit_use_double_quant=True,
+)
 
 # set attention implementation to "torch"
 """
@@ -134,7 +143,7 @@ config = AutoConfig.from_pretrained(
 model = AutoModelForCausalLM.from_pretrained(
     name,
     config=config,  # <--- Pass the modified config here
-    #torch_dtype=torch.bfloat16,  # Load model weights in bfloat16
+    quantization_config=bnb_config,  # Add 4-bit quantization
     trust_remote_code=True,
     #device_map="auto",
     token=ac
