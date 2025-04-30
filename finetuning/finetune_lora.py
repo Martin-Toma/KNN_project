@@ -35,7 +35,7 @@ Examples how to run:
 run on metacentrum, by running script jobTrain2.sh, jobTrain3.sh or jobTrain4.sh and run_training.sh
 """
 
-from datasets import load_dataset
+from datasets import load_dataset, load_from_disk
 from transformers import LineByLineTextDataset
 from transformers import DataCollatorForLanguageModeling
 from transformers import TrainingArguments
@@ -49,6 +49,8 @@ import pickle
 
 import loralib as lora
 from peft import LoraConfig, get_peft_model
+
+import os
 
 import argparse
 
@@ -166,7 +168,7 @@ trained_model_save_path = SERVER_PTH + "/lora/knn_models/" + args.modelSavePth #
 """Prepare the dataset"""
 # load dataset from the HuggingFace Hub
 #dataset = load_dataset("Nirmata/Movie_evaluation")
-
+"""
 # object dataset paths
 train_dataset_path = "/storage/brno2/home/martom198/lora/dataset/train_dataset.pkl"
 validation_dataset_path = "/storage/brno2/home/martom198/lora/dataset/valid_dataset.pkl"
@@ -186,13 +188,13 @@ data_files_train = {
 data_files_test = {
     "test": path_test,
 }
-
+"""
 # actually load
 
 # get training dataset
-train_dataset = load_dataset("json", data_files=data_files_train, streaming=True)["train"]
+#train_dataset = load_dataset("json", data_files=data_files_train, streaming=True)["train"]
 # get validation dataset
-valid_dataset = load_dataset("json", data_files=data_files_validation, streaming=True)["validation"]
+#valid_dataset = load_dataset("json", data_files=data_files_validation, streaming=True)["validation"]
 # get test dataset
 # test_dataset = load_dataset("json", data_files=data_files_test)["test"]
 """
@@ -214,6 +216,13 @@ with open(train_dataset_path, "rb") as f:
 with open(validation_dataset_path, "rb") as f:
     valid_dataset = pickle.load(f)
 """
+
+scratch_dir = os.getenv("SCRATCHDIR")
+train_dataset = load_from_disk(scratch_dir+'/train_tokenized')
+valid_dataset = load_from_disk(scratch_dir+'validation_tokenized')
+train_dataset.set_format("torch", ["input_ids", "attention_mask"])
+valid_dataset.set_format("torch", ["input_ids", "attention_mask"])
+
 # prepare LoRA configuration
 peft_lora_config = LoraConfig(
     r=args.r,
@@ -242,8 +251,8 @@ print(f"after: {sum(params.numel() for params in model.parameters() if params.re
 # Create data collator for language modeling
 data_collator = DataCollatorForLanguageModeling(tokenizer=tokenizer, mlm=False)
 
-steps_per_epoch = 10 #int(len(train_dataset) / TRAIN_BATCH_SIZE)
-eval_steps_count = 3000 #round(steps_per_epoch / 3)
+steps_per_epoch = int(len(train_dataset) / TRAIN_BATCH_SIZE)
+eval_steps_count = round(steps_per_epoch / 3)
 
 """
 the training arguments are inspired by: https://www.mldive.com/p/how-to-fine-tune-llama-2-with-lora
@@ -267,7 +276,6 @@ training_args = TrainingArguments(
   eval_strategy ='steps', # to evaluate every EVAL_STEPS_COUNT
   eval_steps=eval_steps_count,
   save_strategy='steps',
-  max_steps=10000,
   load_best_model_at_end=True,
   metric_for_best_model='loss',
   greater_is_better=False,
