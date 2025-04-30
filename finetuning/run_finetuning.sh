@@ -40,7 +40,7 @@ then
 elif [ $1 == "2" ]
 then
     # learning rate 5e-4, batch 256
-    python /storage/brno12-cerit/home/martom198/lora/finetune_lora.py setting2 8 16 0.1 > /storage/brno12-cerit/home/martom198/lora/logs/log2.txt
+    python /storage/brno12-cerit/home/martom198/lora/finetune_lora.py setting2 32 64 0.1 > /storage/brno12-cerit/home/martom198/lora/logs/log2.txt
 elif [ $1 == "3" ]
 then
     # same as 2nd but different r and alpha

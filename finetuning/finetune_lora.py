@@ -76,7 +76,7 @@ LEARNING_RATE = 5e-4
 LR_WARMUP_STEPS = 0
 WEIGHT_DECAY = 0.01
 
-ac = "here should be the token"
+ac = "put token here"
 
 from huggingface_hub import login
 
@@ -153,7 +153,7 @@ model = AutoModelForCausalLM.from_pretrained(
 
 # is not support model.gradient_checkpointing_enable() # saves memory for longer sequences, prolongs computation a little bit
 
-tokenizer = AutoTokenizer.from_pretrained(name)
+tokenizer = AutoTokenizer.from_pretrained(name, max_length=32768)
 tokenizer.pad_token = tokenizer.eos_token
 tokenizer.add_eos_token = True
 tokenizer.add_bos_token, tokenizer.add_eos_token
@@ -226,9 +226,8 @@ with open(validation_dataset_path, "rb") as f:
     valid_dataset = pickle.load(f)
 """
 
-scratch_dir = os.getenv("SCRATCHDIR")
-train_dataset = load_from_disk(scratch_dir+'/train_tokenized')
-valid_dataset = load_from_disk(scratch_dir+'validation_tokenized')
+train_dataset = load_from_disk(SERVER_PTH+'/lora/dataset/mistral32/m32_train_tokenized_v3')
+valid_dataset = load_from_disk(SERVER_PTH+'/lora/dataset/mistral32/m32_validation_tokenized_v3')
 train_dataset.set_format("torch", ["input_ids", "attention_mask"])
 valid_dataset.set_format("torch", ["input_ids", "attention_mask"])
 
@@ -249,9 +248,9 @@ peft_lora_config = LoraConfig(
     #target_modules=["q_proj", "v_proj"],  # modules to adapt
 )
 
-lora_alpha = 8 #16
+lora_alpha = 64 #16
 lora_dropout = 0.05 #0.1
-lora_rank = 8 #64
+lora_rank = 32 #64
 
 print(f"before: {sum(params.numel() for params in model.parameters() if params.requires_grad)}")
 model = get_peft_model(model, peft_lora_config)
@@ -288,8 +287,8 @@ training_args = TrainingArguments(
   load_best_model_at_end=True,
   metric_for_best_model='loss',
   greater_is_better=False,
-  dataset_text_field="chat_sample",
-  seed=SEED_TRAIN
+  #dataset_text_field="chat_sample",
+  seed=SEED_TRAIN,
   #max_length=1024
 )
 
