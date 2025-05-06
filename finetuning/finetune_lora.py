@@ -76,12 +76,11 @@ LEARNING_RATE = 1e-5
 LR_WARMUP_STEPS = 0
 WEIGHT_DECAY = 0.01
 
-ac = "place token here"
+ac = "token here"
 
 from huggingface_hub import login
 
 login(token = ac)
-
 
 # load model and tokenizer
 name = "mistralai/Mistral-7B-Instruct-v0.3" #"mistralai/Mistral-7B-v0.3" #"google/gemma-3-12b-pt" #"mistralai/Mistral-7B-v0.3" #"tiiuae/falcon-7b"
@@ -152,7 +151,7 @@ model = AutoModelForCausalLM.from_pretrained(
     config=config,  # <--- Pass the modified config here
     quantization_config=bnb_config,  # Add 4-bit or 8-bit quantization
     trust_remote_code=True,
-    #device_map="auto",
+    device_map="auto",
     token=ac
     #force_download=True,
     #resume_download=False
@@ -194,7 +193,7 @@ tokenizer.add_bos_token, tokenizer.add_eos_token
 # set gpu if available
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-model.to(device)
+#model.to(device)
 trained_model_save_path = SERVER_PTH + "/lora/knn_models/" + args.modelSavePth # path to store the fine-tuned adapters
 
 """Prepare the dataset"""
@@ -223,6 +222,15 @@ data_files_test = {
 
 # actually load
 
+def tokenize_function(example):
+    return tokenizer(
+        example["text"],
+        truncation=True,
+        padding="max_length",
+        max_length=32768,
+        return_tensors="pt"
+    )
+
 # get training dataset
 train_dataset = load_dataset("json", data_files=data_files_train)["train"]
 # get validation dataset
@@ -230,6 +238,13 @@ valid_dataset = load_dataset("json", data_files=data_files_validation)["validati
 
 train_dataset = train_dataset.map(lambda x: {"text": create_prompt(x)})
 valid_dataset = valid_dataset.map(lambda x: {"text": create_prompt(x)})
+
+
+train_dataset = train_dataset.map(tokenize_function, batched=True, remove_columns=train_dataset.column_names)
+valid_dataset = valid_dataset.map(tokenize_function, batched=True, remove_columns=valid_dataset.column_names)
+
+train_dataset.set_format(type="torch", columns=["input_ids", "attention_mask"])
+valid_dataset.set_format(type="torch", columns=["input_ids", "attention_mask"])
 
 # get test dataset
 # test_dataset = load_dataset("json", data_files=data_files_test)["test"]
