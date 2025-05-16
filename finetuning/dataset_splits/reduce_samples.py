@@ -8,7 +8,7 @@ Author: Martin Tomasovic
 
 import json
 
-splits = ['test_32', 'validation_32', 'train_32'] # all dataset splits
+splits = ['test_32'] #, 'validation_32', 'train_32'] # all dataset splits
 
 from collections import defaultdict
 
@@ -22,7 +22,7 @@ def reduce_reviews(data):
     # keep only first 3 per group
     result = []
     for reviews in grouped.values():
-        result.extend(reviews[:3])
+        result.extend(reviews[:1])
     
     return result
 
@@ -30,7 +30,7 @@ for split in splits:
 
     # load dataset in json format
     splitJsonPth = split  + ".json"                 # load path
-    splitNewJsonPth = "rev3_" + splitJsonPth # store path
+    splitNewJsonPth = "test1_" + splitJsonPth # store path
     with open(splitJsonPth, "r", encoding="utf-8") as pf:
         allData = json.load(pf)
 

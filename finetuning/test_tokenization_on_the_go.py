@@ -3,7 +3,7 @@
 finetune_lora.py
 =================
 Description: Fine-tune MPT 7B on custom subtitles dataset. 
-Using SFTTrainer from transformers library with LoRA (8-bit quantization).
+Using SFTTrainer from transformers library with QLoRA (4-bit quantization).
 
 Author: Martin Tomasovic
 
@@ -42,14 +42,10 @@ from transformers import TrainingArguments
 from transformers import AutoModelForCausalLM, AutoTokenizer
 from transformers import AutoConfig
 from transformers import BitsAndBytesConfig
-from trl import SFTTrainer
 
 import torch
 import re
 import pickle
-
-import loralib as lora
-from peft import LoraConfig, get_peft_model
 
 import os
 
@@ -63,7 +59,7 @@ parser.add_argument("dropout", type=float, default=0.1)
 
 args=parser.parse_args()
 
-SERVER_PTH = '/storage/brno2/home/martom198'
+SERVER_PTH = '/storage/brno2/home/martom198' #'/storage/brno12-cerit/home/martom198'
 
 # HYPERPARAMS
 SEED_SPLIT = 0
@@ -83,11 +79,11 @@ from huggingface_hub import login
 login(token = ac)
 
 # load model and tokenizer
-name = "mistralai/Mistral-7B-v0.3" #"mistralai/Mistral-7B-v0.3" #"google/gemma-3-12b-pt" #"mistralai/Mistral-7B-v0.3" #"tiiuae/falcon-7b"
+name = "mistralai/Mistral-7B-Instruct-v0.3" #"mistralai/Mistral-7B-v0.3" #"google/gemma-3-12b-pt" #"mistralai/Mistral-7B-v0.3" #"tiiuae/falcon-7b"
 model_pth = SERVER_PTH + "/lora/mpt-7b"
 
 # Configure 4-bit quantization
-"""
+
 bnb_config = BitsAndBytesConfig(
     load_in_4bit=True,
     bnb_4bit_quant_type="nf4",
@@ -100,22 +96,53 @@ bnb_config = BitsAndBytesConfig(
     load_in_8bit=True,
     load_in_4bit=False  # just to be explicit
 )
+"""
+# set attention implementation to "torch"
+"""
+config = AutoConfig.from_pretrained(
+    name,
+    trust_remote_code=True
+)
+#config.attn_config['attn_impl'] = 'flash' #'torch'
+"""
+"""
+model = AutoModelForCausalLM.from_pretrained(
+        name,
+        #config=config,
+        torch_dtype=torch.bfloat16, # Load model weights in bfloat16
+        trust_remote_code=True,
+        device_map="auto",
+        attn_impl = "torch",  # Use standard PyTorch attention (NOT Triton/Flash Attention)
+        use_flash_attn = False,  # Redundant, but let's be explicit
+        attn_uses_sequence_id = False
+    )
+"""
+"""
+model = AutoModelForCausalLM.from_pretrained(
+        name,
+        #config=config,
+        torch_dtype=torch.bfloat16, # Load model weights in bfloat16
+        trust_remote_code=True,
+        device_map="auto",
+        force_download=True,
+        resume_download=False,
+        attn_impl = "torch",  # Use standard PyTorch attention (NOT Triton/Flas>
+        use_flash_attn = False,  # Redundant, but let's be explicit
+        attn_uses_sequence_id = False
+    )
+"""
 
 config = AutoConfig.from_pretrained(
     name,
     trust_remote_code=True,
+    #attn_config={
+    #    "attn_impl": "torch",  # Use standard PyTorch attention (NOT Triton/Flash Attention)
+    #    "use_flash_attn": False,  # Redundant, but let's be explicit
+    #    "attn_uses_sequence_id": False  # Sometimes required for older MPT versions
+    #}
 )
 
-model = AutoModelForCausalLM.from_pretrained(
-    name,
-    config=config, 
-    quantization_config=bnb_config,  # adds quantization
-    trust_remote_code=True,
-    device_map="auto",
-    token=ac
-)
-
-
+# is not support model.gradient_checkpointing_enable() # saves memory for longer sequences, prolongs computation a little bit
 def create_prompt(sample):
     bos_token = "<s>"
     system_message = 'Provide information about the movie in following format: {"rating": <rating>, "genres": <genres>, "review": <review_text>}.'
@@ -137,18 +164,37 @@ tokenizer = AutoTokenizer.from_pretrained(name, max_length=32768)
 tokenizer.pad_token = tokenizer.eos_token
 tokenizer.add_eos_token = True
 tokenizer.add_bos_token, tokenizer.add_eos_token
+#if tokenizer.pad_token is None:
+#    tokenizer.pad_token = tokenizer.eos_token
+    #tokenizer.add_special_tokens({'pad_token': '[PAD]'})
+    #model.resize_token_embeddings(len(tokenizer))
+#tokenizer.add_special_tokens=False
+#tokenizer.pad_token = tokenizer.eos_token # add pad token
+#tokenizer.padding_side = "right"  # Important for consistent behavior
+#tokenizer.add_eos_token = True 
+
+#model.resize_token_embeddings(len(tokenizer)) # edit model size according to the new tokenizer size
 
 # set gpu if available
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
+#model.to(device)
 trained_model_save_path = SERVER_PTH + "/lora/knn_models/" + args.modelSavePth # path to store the fine-tuned adapters
 
 """Prepare the dataset"""
+# load dataset from the HuggingFace Hub
+#dataset = load_dataset("Nirmata/Movie_evaluation")
 
 # object dataset paths
+train_dataset_path = "/storage/brno2/home/martom198/lora/dataset/train_dataset.pkl"
+validation_dataset_path = "/storage/brno2/home/martom198/lora/dataset/valid_dataset.pkl"
+test_dataset_path = "/storage/brno2/home/martom198/lora/dataset/test_dataset.pkl"
+
 path_validation = SERVER_PTH + '/lora/dataset/rev3_validation_32.json'
 path_train = SERVER_PTH + '/lora/dataset/rev3_train_32.json'
 path_test = SERVER_PTH + '/lora/dataset/rev3_test_32.json'
+
+path_validation = r"C:\Users\marti\Music\knn\KNN_part_3\KNN_project\finetuning\dataset_splits\rev3_validation_32.json"
 
 # set the splits
 data_files_validation = {
@@ -172,6 +218,11 @@ def tokenize_function(example):
         return_tensors="pt"
     )
 
+valid_dataset = load_dataset("json", data_files=data_files_validation)["validation"]
+valid_dataset = valid_dataset.map(lambda x: {"text": create_prompt(x)})
+valid_dataset = valid_dataset.map(tokenize_function, batched=True, remove_columns=valid_dataset.column_names)
+valid_dataset.set_format(type="torch", columns=["input_ids", "attention_mask"])
+"""
 # get training dataset
 train_dataset = load_dataset("json", data_files=data_files_train)["train"]
 # get validation dataset
@@ -186,7 +237,41 @@ valid_dataset = valid_dataset.map(tokenize_function, batched=True, remove_column
 
 train_dataset.set_format(type="torch", columns=["input_ids", "attention_mask"])
 valid_dataset.set_format(type="torch", columns=["input_ids", "attention_mask"])
+"""
+# get test dataset
+# test_dataset = load_dataset("json", data_files=data_files_test)["test"]
+"""
+# store the train_dataset object to a file
+with open(train_dataset_path, "wb") as f:
+    pickle.dump(train_dataset, f)
 
+# store the validation_dataset object to a file
+with open(validation_dataset_path, "wb") as f:
+    pickle.dump(valid_dataset, f)
+
+# store the test_dataset object to a file
+with open(test_dataset_path, "wb") as f:
+    pickle.dump(test_dataset, f)
+
+# load stored dataset
+with open(train_dataset_path, "rb") as f:
+    train_dataset = pickle.load(f)
+with open(validation_dataset_path, "rb") as f:
+    valid_dataset = pickle.load(f)
+"""
+
+
+#valid_dataset = load_from_disk(r"C:\Users\marti\Downloads\m32_validation_tokenized_v3")
+#valid_dataset.set_format("torch", ["input_ids", "attention_mask"])
+
+sample_input_ids = valid_dataset[0]["input_ids"]
+decoded_text = tokenizer.decode(sample_input_ids, skip_special_tokens=True)
+with open("test_decoded.txt", "w", encoding="utf-8") as d:
+    d.write(decoded_text)
+print("First decoded input:\n", decoded_text)
+'''
+#train_dataset = load_from_disk(SERVER_PTH+'/lora/dataset/mistral32/m32_train_tokenized_v3')
+#train_dataset.set_format("torch", ["input_ids", "attention_mask"])
 # prepare LoRA configuration
 peft_lora_config = LoraConfig(
     r=args.r,
@@ -194,15 +279,23 @@ peft_lora_config = LoraConfig(
     lora_dropout=args.dropout,
     target_modules=["q_proj", "o_proj", "k_proj", "v_proj", "gate_proj", "up_proj", "down_proj"],  # Layers to apply LoRA
     task_type="CAUSAL_LM",
+    #bias="none",
+    #target_modules=[
+    #    "query_key_value",
+    #    "dense",
+    #    "dense_h_to_4h",
+    #    "dense_4h_to_h",
+    #]
+    #target_modules=["q_proj", "v_proj"],  # modules to adapt
 )
 
 lora_alpha = 128 #16
 lora_dropout = 0.05 #0.1
 lora_rank = 64 #64
 
-print(f"before: {sum(params.numel() for params in model.parameters() if params.requires_grad)}")
-model = get_peft_model(model, peft_lora_config)
-print(f"after: {sum(params.numel() for params in model.parameters() if params.requires_grad)}")
+#print(f"before: {sum(params.numel() for params in model.parameters() if params.requires_grad)}")
+#model = get_peft_model(model, peft_lora_config)
+#print(f"after: {sum(params.numel() for params in model.parameters() if params.requires_grad)}")
 
 # Create data collator for language modeling
 data_collator = DataCollatorForLanguageModeling(tokenizer=tokenizer, mlm=False)
@@ -237,20 +330,46 @@ training_args = TrainingArguments(
   load_best_model_at_end=True,
   metric_for_best_model='loss',
   greater_is_better=False,
+  #dataset_text_field="chat_sample",
   seed=SEED_TRAIN,
   optim="adamw_torch",
   logging_steps=200,
+  #max_length=1024
 )
+"""
+def create_prompt(sample):
+    bos_token = "<s>"
+    system_message = 'Provide information about the movie in following format: {"rating": <rating>, "genres": <genres>, "review": <review_text>}.'
+    eos_token = "</s>"
 
-# Train the model
+    full_prompt = ""
+    full_prompt += bos_token
+    full_prompt += "### Instruction:"
+    full_prompt += "\n" + system_message
+    full_prompt += "\n\n### Input:"
+    full_prompt += "\n" + sample["prompt"]
+    full_prompt += "\n\n### Response:"
+    full_prompt += "\n" + sample["completion"]
+    full_prompt += eos_token
+
+    return full_prompt
+"""
+#try:
+    # Train the model
 trainer = SFTTrainer(
     model=model,
     args=training_args,
     data_collator=data_collator,
     train_dataset=train_dataset,
     eval_dataset=valid_dataset,
+    #formatting_func=create_prompt,
+    #tokenizer=tokenizer,
     peft_config=peft_lora_config,
+    #dataset_text_field="text" # dictates dataset formatting
 )
+#except Exception as e:
+#    print(str(e))
 
 trainer.train() # run fine-tuning
 trainer.save_model(trained_model_save_path) #save custom model
+'''

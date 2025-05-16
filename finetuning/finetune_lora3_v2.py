@@ -1,9 +1,11 @@
 # -*- coding: utf-8 -*-
 """
-finetune_lora.py
+finetune_lora3_v2.py
 =================
 Description: Fine-tune MPT 7B on custom subtitles dataset. 
-Using SFTTrainer from transformers library with LoRA (8-bit quantization).
+Using SFTTrainer from transformers library with QLoRA (4-bit quantization).
+With adjusted learning rate, changed optimizer, set max gradient norm to 0.3 and set 
+gradient eval steps to 8.
 
 Author: Martin Tomasovic
 
@@ -63,7 +65,7 @@ parser.add_argument("dropout", type=float, default=0.1)
 
 args=parser.parse_args()
 
-SERVER_PTH = '/storage/brno2/home/martom198'
+SERVER_PTH = '/storage/brno2/home/martom198' # or '/storage/brno12-cerit/home/'
 
 # HYPERPARAMS
 SEED_SPLIT = 0
@@ -72,7 +74,7 @@ SEED_TRAIN = 0
 #MAX_SEQ_LEN = 128
 TRAIN_BATCH_SIZE = 1 
 EVAL_BATCH_SIZE = 1
-LEARNING_RATE = 1e-5 
+LEARNING_RATE = 1e-6 # v2 = 5e-6 
 LR_WARMUP_STEPS = 0
 WEIGHT_DECAY = 0.01
 
@@ -83,11 +85,11 @@ from huggingface_hub import login
 login(token = ac)
 
 # load model and tokenizer
-name = "mistralai/Mistral-7B-v0.3" #"mistralai/Mistral-7B-v0.3" #"google/gemma-3-12b-pt" #"mistralai/Mistral-7B-v0.3" #"tiiuae/falcon-7b"
+name = "mistralai/Mistral-7B-Instruct-v0.3" #"mistralai/Mistral-7B-v0.3" #"google/gemma-3-12b-pt" #"mistralai/Mistral-7B-v0.3" #"tiiuae/falcon-7b"
 model_pth = SERVER_PTH + "/lora/mpt-7b"
 
 # Configure 4-bit quantization
-"""
+
 bnb_config = BitsAndBytesConfig(
     load_in_4bit=True,
     bnb_4bit_quant_type="nf4",
@@ -100,6 +102,7 @@ bnb_config = BitsAndBytesConfig(
     load_in_8bit=True,
     load_in_4bit=False  # just to be explicit
 )
+"""
 
 config = AutoConfig.from_pretrained(
     name,
@@ -108,19 +111,18 @@ config = AutoConfig.from_pretrained(
 
 model = AutoModelForCausalLM.from_pretrained(
     name,
-    config=config, 
-    quantization_config=bnb_config,  # adds quantization
+    config=config,  # <--- Pass the modified config here
+    quantization_config=bnb_config,  # Add 4-bit or 8-bit quantization
     trust_remote_code=True,
     device_map="auto",
     token=ac
 )
 
-
 def create_prompt(sample):
     bos_token = "<s>"
     system_message = 'Provide information about the movie in following format: {"rating": <rating>, "genres": <genres>, "review": <review_text>}.'
     eos_token = "</s>"
-
+    ### Instruction: Provide information about the movie in following format: {\"rating\": <rating>, \"genres\": <genres>, \"review\": <review_text>}. \n\n### Input:
     full_prompt = ""
     full_prompt += bos_token
     full_prompt += "### Instruction:"
@@ -144,8 +146,6 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 trained_model_save_path = SERVER_PTH + "/lora/knn_models/" + args.modelSavePth # path to store the fine-tuned adapters
 
 """Prepare the dataset"""
-
-# object dataset paths
 path_validation = SERVER_PTH + '/lora/dataset/rev3_validation_32.json'
 path_train = SERVER_PTH + '/lora/dataset/rev3_train_32.json'
 path_test = SERVER_PTH + '/lora/dataset/rev3_test_32.json'
@@ -162,7 +162,6 @@ data_files_test = {
 }
 
 # actually load
-
 def tokenize_function(example):
     return tokenizer(
         example["text"],
@@ -172,20 +171,11 @@ def tokenize_function(example):
         return_tensors="pt"
     )
 
-# get training dataset
-train_dataset = load_dataset("json", data_files=data_files_train)["train"]
-# get validation dataset
-valid_dataset = load_dataset("json", data_files=data_files_validation)["validation"]
-
-train_dataset = train_dataset.map(lambda x: {"text": create_prompt(x)})
-valid_dataset = valid_dataset.map(lambda x: {"text": create_prompt(x)})
-
-
-train_dataset = train_dataset.map(tokenize_function, batched=True, remove_columns=train_dataset.column_names)
-valid_dataset = valid_dataset.map(tokenize_function, batched=True, remove_columns=valid_dataset.column_names)
-
-train_dataset.set_format(type="torch", columns=["input_ids", "attention_mask"])
-valid_dataset.set_format(type="torch", columns=["input_ids", "attention_mask"])
+# get test dataset
+train_dataset = load_from_disk(SERVER_PTH+'/lora/dataset/mistral32/m32_train_tokenized_v3')
+valid_dataset = load_from_disk(SERVER_PTH+'/lora/dataset/mistral32/m32_validation_tokenized_v3')
+train_dataset.set_format("torch", ["input_ids", "attention_mask"])
+valid_dataset.set_format("torch", ["input_ids", "attention_mask"])
 
 # prepare LoRA configuration
 peft_lora_config = LoraConfig(
@@ -221,7 +211,7 @@ training_args = TrainingArguments(
   overwrite_output_dir=True,
   num_train_epochs=1,
   gradient_accumulation_steps=8, # to update weights after more steps, necessery with batch size 1
-  max_grad_norm=1.0,  # for stability with long sequences
+  max_grad_norm=0.3,  # for stability with long sequences
   do_train=True,
   do_eval=True,
   per_device_train_batch_size=TRAIN_BATCH_SIZE,
@@ -238,7 +228,7 @@ training_args = TrainingArguments(
   metric_for_best_model='loss',
   greater_is_better=False,
   seed=SEED_TRAIN,
-  optim="adamw_torch",
+  optim="adafactor",
   logging_steps=200,
 )
 

@@ -16,7 +16,7 @@ Delete job after submission:
 qdel 10622914.pbs-m1.metacentrum.cz
 ```
 
-MPT 7B requires to install triton-pre-mlir@git+https://github.com/vchiley/triton.git@triton_pre_mlir_sm90#subdirectory=python even after trying to install it by any means or to avoid the installation and using different attention implementation, the triton pre mlir is still required and makes impossible to run this model. On metacentrum we have limited permissions, which further complicates the fixing, so we are forced to use different model.
+MPT 7B requires to install triton-pre-mlir@git+https://github.com/vchiley/triton.git@triton_pre_mlir_sm90#subdirectory=python even after trying to install it by any means or to avoid the installation and using different attention implementation, the triton pre mlir is still required and makes it impossible to run this model. On metacentrum we have limited permissions, which further complicates the fixing, so we are forced to use different model.
 
 
 Here are maximum sizes of response part: 
