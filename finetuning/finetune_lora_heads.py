@@ -1,257 +1,201 @@
 # -*- coding: utf-8 -*-
 """
-finetune_lora.py
-=================
-Description: Fine-tune MPT 7B on custom subtitles dataset. 
-Using SFTTrainer from transformers library and custom loss function.
+finetune_lora_heads.py
+LoRA finetuning of google/gemma-3-4b-pt with LM + rating & genre heads
 
-Author: Martin Tomasovic
-
-Required libraries:
-- peft
-- trl
-- torch
-- pickle
-- transformers
-- datasets
-- accelerate
-- einops
-- bitsandbytes
-- loralib
-
-Install the required libraries:
-pip install peft
-pip install trl
-pip install -U bitsandbytes
-pip install accelerate>=0.20.3 transformers
-pip install datasets
-pip install accelerate
-pip install einops
-pip install pickle
-pip install torch
-pip install loralib
-
-Examples how to run:
-run on metacentrum, by running script jobTrain2.sh, jobTrain3.sh or jobTrain4.sh and run_training.sh
+Author: Martin Tomasovic, Attila Kovacs
 """
 
-from transformers import LineByLineTextDataset
-from transformers import DataCollatorForLanguageModeling
-from transformers import TrainingArguments
-from transformers import AutoModelForCausalLM, AutoTokenizer
-from trl import SFTTrainer
-
-import torch
-import re
-import pickle
-
-import loralib as lora
-from peft import LoraConfig, get_peft_model
-
+import json
 import argparse
+import torch
+from datasets import load_from_disk
+from transformers import (
+    AutoTokenizer,
+    AutoModelForCausalLM,
+    TrainingArguments,
+    Trainer,
+    BitsAndBytesConfig,
+)
+from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training
 
-parser=argparse.ArgumentParser()
-parser.add_argument("modelSavePth")
-parser.add_argument("r", type=int, default=8)
-parser.add_argument("alpha", type=int, default=16)
-parser.add_argument("dropout", type=float, default=0.1)
 
-args=parser.parse_args()
+def parse_args():
+    p = argparse.ArgumentParser(
+        description="LoRA finetuning of Gemma-3-4B with multi-task heads"
+    )
+    p.add_argument("modelSavePth", help="Directory to save the fine-tuned model")
+    p.add_argument("--r",      type=int,   default=32,     help="LoRA rank")
+    p.add_argument("--alpha",  type=int,   default=64,    help="LoRA alpha")
+    p.add_argument("--dropout",type=float, default=0.1,  help="LoRA dropout")
+    p.add_argument("--lr",     type=float, default=5e-4,  help="Learning rate")
+    p.add_argument("--alpha_loss", type=float, default=0.1, help="Weight for LM loss")
+    p.add_argument("--beta_loss",  type=float, default=10.0, help="Weight for rating loss")
+    p.add_argument("--gamma_loss", type=float, default=10.0, help="Weight for genre loss")
+    return p.parse_args()
 
-# HYPERPARAMS
-SEED_SPLIT = 0
-SEED_TRAIN = 0
 
-#MAX_SEQ_LEN = 128
-TRAIN_BATCH_SIZE = 32 
-EVAL_BATCH_SIZE = 32 
-LEARNING_RATE = 5e-4 
-LR_WARMUP_STEPS = 0
-WEIGHT_DECAY = 0.01
+class MultiTaskModel(torch.nn.Module):
+    def __init__(self, base_model, num_genres, args):
+        super().__init__()
+        self.base_model = base_model
+        # expose config so PEFT can see it:
+        self.config = base_model.config  
 
-# load model and tokenizer
-name = "mosaicml/mpt-7b"
+        cfg = base_model.config
+        inner_cfg = getattr(cfg, "text_config", cfg)
 
-model = AutoModelForCausalLM.from_pretrained(
-        name,
-        torch_dtype=torch.bfloat16, # Load model weights in bfloat16
-        trust_remote_code=True,
+        hidden_size = (
+            getattr(inner_cfg, "hidden_size", None)
+            or getattr(inner_cfg, "d_model", None)
+            or getattr(inner_cfg, "n_embd",  None)
+        )
+        if hidden_size is None:
+            emb = base_model.get_input_embeddings()
+            if hasattr(emb, "embedding_dim"):
+                hidden_size = emb.embedding_dim
+
+        if hidden_size is None:
+            raise ValueError("Could not infer hidden size from Gemma-3 config")
+
+        self.rating_head = torch.nn.Linear(hidden_size, 1)
+        self.genre_head  = torch.nn.Linear(hidden_size, num_genres)
+        self.args = args
+
+    def forward(
+        self,
+        input_ids,
+        attention_mask=None,
+        labels=None,
+        rating_labels=None,
+        genre_labels=None,
+        **kwargs
+    ):
+        out = self.base_model(
+            input_ids=input_ids,
+            attention_mask=attention_mask,
+            labels=labels,
+            output_hidden_states=True,
+            return_dict=True,
+        )
+
+        last_idx = (attention_mask.sum(dim=1) - 1).clamp(min=0)
+        last_hidden = out.hidden_states[-1][
+            torch.arange(last_idx.size(0)), last_idx
+        ]
+
+        rating_logits = self.rating_head(last_hidden).squeeze(-1)
+        genre_logits  = self.genre_head(last_hidden)
+
+        lm_loss  = out.loss
+        reg_loss = torch.nn.functional.huber_loss(
+            rating_logits, rating_labels, delta=1.0
+        )
+        cls_loss = torch.nn.functional.binary_cross_entropy_with_logits(
+            genre_logits, genre_labels.float()
+        )
+
+        total_loss = (
+            self.args.alpha_loss * lm_loss
+            + self.args.beta_loss  * reg_loss
+            + self.args.gamma_loss * cls_loss
+        )
+
+        return {
+            "loss": total_loss,
+            "lm_loss": lm_loss.detach(),
+            "regression_loss": reg_loss.detach(),
+            "classification_loss": cls_loss.detach(),
+        }
+
+    def prepare_inputs_for_generation(self, input_ids, attention_mask=None, **kwargs):
+        return self.base_model.prepare_inputs_for_generation(
+            input_ids, attention_mask=attention_mask, **kwargs
+        )
+
+
+class MultiTaskCollator:
+    def __call__(self, features):
+        return {
+            "input_ids":      torch.stack([f["input_ids"]      for f in features]),
+            "attention_mask": torch.stack([f["attention_mask"] for f in features]),
+            "labels":         torch.stack([f["labels"]         for f in features]),
+            "rating_labels":  torch.stack([f["rating_label"]   for f in features]),
+            "genre_labels":   torch.stack([f["genre_labels"]   for f in features]),
+        }
+
+
+def main():
+    args = parse_args()
+
+    with open("genre2id.json", "r") as f:
+        genre2id = json.load(f)
+    num_genres = len(genre2id)
+
+    model_name = "google/gemma-3-4b-pt"
+    tokenizer = AutoTokenizer.from_pretrained(model_name)
+    tokenizer.pad_token = tokenizer.eos_token
+
+    bnb_cfg = BitsAndBytesConfig(
+        load_in_8bit=True,
+        bnb_8bit_compute_dtype=torch.float16
+    )
+
+    base_model = AutoModelForCausalLM.from_pretrained(
+        model_name,
+        quantization_config=bnb_cfg,
         device_map="auto",
-        return_dict_in_generate=True
+        trust_remote_code=True
+    )
+    base_model = prepare_model_for_kbit_training(base_model)
+    base_model.gradient_checkpointing_enable()
+    base_model.config.use_cache = False
+
+    model = MultiTaskModel(base_model, num_genres, args)
+
+    peft_cfg = LoraConfig(
+        r=args.r,
+        lora_alpha=args.alpha,
+        lora_dropout=args.dropout,
+        target_modules=["q_proj", "k_proj", "v_proj", "o_proj"],
+        task_type="CAUSAL_LM",
+    )
+    model = get_peft_model(model, peft_cfg)
+
+    train_ds = load_from_disk("g32_head_train_tokenized_8k")
+    val_ds   = load_from_disk("g32_head_validation_tokenized_8k")
+    for ds in (train_ds, val_ds):
+        ds.set_format(
+            type="torch",
+            columns=["input_ids","attention_mask","labels","rating_label","genre_labels"]
+        )
+
+    training_args = TrainingArguments(
+        output_dir=args.modelSavePth,
+        per_device_train_batch_size=1,
+        per_device_eval_batch_size=1,
+        gradient_accumulation_steps=8,
+        learning_rate=args.lr,
+        num_train_epochs=1,
+        do_eval=False,
+        max_steps=1250, # Due to time constraints, and high VRAM use(>40GB) during training we had to limit the training to the first 10000 samples.
+        fp16=True,
+        logging_steps=10,
+        report_to="none",
+        remove_unused_columns=False,
     )
 
-model.gradient_checkpointing_enable() # saves memory for longer sequences, prolongs computation a little bit
-
-tokenizer = AutoTokenizer.from_pretrained(name)
-tokenizer.pad_token = tokenizer.eos_token # add pad token
-
-model.resize_token_embeddings(len(tokenizer)) # edit model size according to the new tokenizer size
-
-# set gpu if available
-device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-
-model.to(device)
-
-"""Prepare the dataset"""
-# text dataset paths
-train_text_path = '/storage/brno2/home/martom198/lora/XLgstext_train.txt'
-validation_text_path = '/storage/brno2/home/martom198/lora/XLgstext_valid.txt'
-# object dataset paths
-train_dataset_path = "/storage/brno2/home/martom198/lora/train_dataset.pkl"
-validation_dataset_path = "/storage/brno2/home/martom198/lora/valid_dataset.pkl"
-
-trained_model_save_path = "/storage/brno2/home/martom198/lora/models/" + args.modelSavePth # path to store the fine-tuned adapters
-
-def create_dataset(path):
-    """
-    function to create text dataset for fine-tuning
-    """
-    return LineByLineTextDataset(
-        tokenizer=tokenizer,
-        file_path= path,
-        block_size=512
+    trainer = Trainer(
+        model=model,
+        args=training_args,
+        train_dataset=train_ds,
+        eval_dataset=val_ds,
+        data_collator=MultiTaskCollator(),
     )
 
-# process training dataset
-train_dataset = create_dataset(train_text_path)
-# process validation dataset
-valid_dataset = create_dataset(validation_text_path)
-
-# store the train_dataset object to a file
-with open(train_dataset_path, "wb") as f:
-    pickle.dump(train_dataset, f)
-
-# store the train_dataset object to a file
-with open(validation_dataset_path, "wb") as f:
-    pickle.dump(valid_dataset, f)
-
-# load stored dataset
-with open(train_dataset_path, "rb") as f:
-    train_dataset = pickle.load(f)
-with open(validation_dataset_path, "rb") as f:
-    valid_dataset = pickle.load(f)
+    trainer.train()
+    trainer.save_model(args.modelSavePth)
 
 
-# prepare LoRA configuration
-peft_lora_config = LoraConfig(
-    r=args.r,
-    lora_alpha=args.alpha,
-    lora_dropout=args.dropout,
-    task_type="CAUSAL_LM"
-)
-print(f"before: {sum(params.numel() for params in model.parameters() if params.requires_grad)}")
-model = get_peft_model(model, peft_lora_config)
-print(f"after: {sum(params.numel() for params in model.parameters() if params.requires_grad)}")
-
-# Create data collator for language modeling
-data_collator = DataCollatorForLanguageModeling(tokenizer=tokenizer, mlm=False)
-
-steps_per_epoch = int(len(train_dataset) / TRAIN_BATCH_SIZE)
-eval_steps_count = round(steps_per_epoch / 3)
-
-"""
-the training arguments are inspired by: https://www.mldive.com/p/how-to-fine-tune-llama-2-with-lora
-and https://rocm.blogs.amd.com/artificial-intelligence/llama2-lora/README.html
-"""
-
-# Set training arguments
-training_args = TrainingArguments(
-  output_dir='/storage/brno2/home/martom198/lora/training',
-  overwrite_output_dir=True,
-  num_train_epochs=1,
-  do_train=True,
-  do_eval=True,
-  per_device_train_batch_size=TRAIN_BATCH_SIZE,
-  per_device_eval_batch_size=EVAL_BATCH_SIZE,
-  warmup_steps=LR_WARMUP_STEPS,
-  save_steps=eval_steps_count,
-  save_total_limit=3,
-  weight_decay=WEIGHT_DECAY,
-  learning_rate=LEARNING_RATE,
-  evaluation_strategy='steps', # to evaluate every EVAL_STEPS_COUNT
-  eval_steps=eval_steps_count,
-  save_strategy='steps',
-  load_best_model_at_end=True,
-  metric_for_best_model='loss',
-  greater_is_better=False,
-  seed=SEED_TRAIN
-)
-
-# custom loss function
-# adjusted code for our purpose from: https://discuss.huggingface.co/t/supervised-fine-tuning-trainer-custom-loss-function/52717
-class SFTTrainerCustom(SFTTrainer):
-    def __init__(self, *args, **kwargs):
-        super(SFTTrainerCustom, self).__init__(*args, **kwargs)
-
-    def compute_loss(self, model, inputs, return_outputs=False):
-        
-       # get label and prediction tokens
-        outputs = model(**inputs)
-        labels = inputs.get("labels")
-        predicts = outputs.get("logits")
-    
-        # decode predictions and labels
-        # Select token IDs based on softmax probabilities
-        predicted_token_ids = softmax_selection(predicts, temperature=self.temperature)
-        decoded_predictions = [tokenizer.decode(p.tolist()) for p in predicted_token_ids]
-        decoded_labels = [tokenizer.decode(l.tolist()) for l in labels]
-
-        # function to output quantities to a list       
-        predicted_quantities = [extract_score_and_genres(p) for p in decoded_predictions]
-        actual_quantities = [extract_score_and_genres(l) for l in decoded_labels]
-        predicted_quantities, actual_quantities = torch.quantities(decoded_predictions, decoded_labels)
-        
-        predicted_tensor = torch.tensor(predicted_quantities, device=model.device)
-        actual_tensor = torch.tensor(actual_quantities, device=model.device)
-        predicted_tensor.requires_grad_()
-        
-        # Compute MSE loss
-        loss_function = torch.nn.MSELoss()
-        loss = loss_function(predicted_tensor, actual_tensor)
-        
-        return (loss, outputs) if return_outputs else loss
-
-def softmax_selection(predictions, temperature=1.0):
-        """
-        Apply softmax to model predictions and sample a token based on the resulting probabilities.
-
-        Args:
-            predictions (torch.Tensor): The tensor containing the raw predictions from the model.
-            temperature (float): Temperature parameter to adjust the sharpness of the probability distribution.
-                                A lower temperature makes the distribution sharper.
-
-        Returns:
-            torch.Tensor: Tensor containing the selected token IDs.
-        """
-        # Apply softmax with temperature
-        probs = torch.F.softmax(predictions / temperature, dim=-1)
-
-        # Sampling a token based on the probabilities
-        sampled_tokens = torch.multinomial(probs, num_samples=1)
-
-        return sampled_tokens
-
-def extract_score(text):
-    # extract a score and genre tokens
-    # example input: "Review: ... Score: 7.5 Genres: Drama, Thriller, Mystery"
-    match = re.search(r"Score:\s*(\d+(?:\.\d+)?)", text)
-    score = float(match.group(1)) if match else 0.0
-    return score
-
-try:
-    # Train the model
-    trainer = SFTTrainer(
-    model=model,
-    args=training_args,
-    data_collator=data_collator,
-    train_dataset=train_dataset,
-    eval_dataset=valid_dataset,
-    tokenizer=tokenizer,
-    peft_config=peft_lora_config,
-    dataset_text_field="text" # dictates dataset formatting
-    )
-except Exception as e:
-    print(str(e))
-
-trainer.train() # run fine-tuning
-trainer.save_model(trained_model_save_path) #save custom model
+if __name__ == "__main__":
+    main()
