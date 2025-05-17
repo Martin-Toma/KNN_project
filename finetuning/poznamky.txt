@@ -1,0 +1,80 @@
+prvy model s base mistral - nastavenia v finetune lora first working - bez formatovania, 64r,128a
+
+ostatne instruct
+druhy 8bit v finetune lora - vlastna tokenizacia s formatovacou funkciou, 64r, 128a - loss na nule hned
+
+treti finetune lora 2 - 4bit, predtokenizovane, 32r, 64a - loss k nule po 0.33 epochy 
+
+stvrty finetune lora 3 - 4bit, predtokenizovane, 16r, 32a - loss k nule po 0.58 epochy
+
+piaty finetune lora 4 - 4bit, tokenizacia za behu, 128r, 256a, setting5, 10738861.pbs-m1.metacentrum.cz
+
+gemma 32r 64a 10744546.pbs-m1.metacentrum.cz gemma_32r_64a
+
+uprava 8bit v finetune lora - predtokenizovane, 64r, 128a (Asi nebezi)
+
+mistral instruct s 4bit lora a tokenizacia za behu 10744588.pbs-m1.metacentrum.cz
+
+mistral instruct 4bit lora s mensim lr a inymi upravami, 8rank 16alpha 10745714.pbs-m1.metacentrum.cz
+
+9 mistral base 10751798.pbs-m1.metacentrum.cz
+
+gemma dropout 0.2 10752109.pbs-m1.metacentrum.cz
+
+stvrty finetune lora 3 - 4bit, predtokenizovane, 16r, 32a s gradient clip a inymi vylepseniami 10756644.pbs-m1.metacentrum.cz
+
+gemma dropout 0.05 10756646.pbs-m1.metacentrum.cz
+
+gemma qlora d0.1 r32 a64 10800467.pbs-m1.metacentrum.cz
+
+gemma dropout 0.1 rank 32, alpha 32 
+
+gemma dropout 0.1 rank 32, alpha 16
+
+gemma dropout 0.1 rank 16, alpha 32
+
+gemma dropout 0.1 rank 8, alpha 16 
+
+pbs-m1.metacentrum.cz:
+                                                                 Req'd  Req'd   Elap
+Job ID               Username Queue    Jobname    SessID NDS TSK Memory Time  S Time
+-------------------- -------- -------- ---------- ------ --- --- ------ ----- - -----
+10800467.pbs-m1.met* martom1* gpu      PyTorch_J*    --    1   1   40gb 47:00 Q   --
+(BOOKWORM)martom198@perian:~/lora$ qsub job10ft.sh
+10800537.pbs-m1.metacentrum.cz
+(BOOKWORM)martom198@perian:~/lora$ qsub job11ft.sh
+10800538.pbs-m1.metacentrum.cz
+(BOOKWORM)martom198@perian:~/lora$ qsub job12ft.sh
+10800539.pbs-m1.metacentrum.cz
+(BOOKWORM)martom198@perian:~/lora$ qsub job13ft.sh
+10800540.pbs-m1.metacentrum.cz
+
+
+ qsub job2Finetune.sh
+10738399.pbs-m1.metacentrum.cz
+(BOOKWORM)martom198@perian:~/lora$ qsub job3Finetune.sh
+10738400.pbs-m1.metacentrum.cz
+
+
+gemma dropout 0.1 rank 8, alpha 16 
+mistral lowered lr to 1e-6  
+
+ qsub job13ft.sh
+10839404.pbs-m1.metacentrum.cz
+(BOOKWORM)martom198@perian:~/lora$ qsub job3Finetune.sh
+10839405.pbs-m1.metacentrum.cz
+
+(BOOKWORM)martom198@perian:~/lora$ nano job3Finetune.sh
+(BOOKWORM)martom198@perian:~/lora$ qsub job3Finetune.sh
+10840100.pbs-m1.metacentrum.cz
+(BOOKWORM)martom198@perian:~/lora$ nano job13ft.sh
+(BOOKWORM)martom198@perian:~/lora$ qsub job13ft.sh
+10840105.pbs-m1.metacentrum.cz
+(BOOKWORM)martom198@perian:~/lora$
+
+
+
+(BOOKWORM)martom198@perian:~/lora$ qsub job13ft.sh
+10840105.pbs-m1.metacentrum.c
+(BOOKWORM)martom198@perian:~/lora$ qsub job3Finetune.sh
+10841134.pbs-m1.metacentrum.cz

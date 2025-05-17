@@ -67,7 +67,7 @@ def instruction_reformat_dataset(movieData):
     
     for review in randomReviews:
         generated = "{  \n  \"rating\": " + str(rating) + ",  \n  \"genres\": " + genres + ",  \n  \"review\": \"" + str(review) + "\"  \n}"
-        instruction = "{\"prompt\": \"" + subtitles +"\", \"completion\": " + generated + "}"
+        instruction = {"prompt": '"' + subtitles + '"', "completion": '"' + generated + '"'}
         instructions.append(instruction)
     
     return instructions
@@ -77,7 +77,7 @@ for split in splits:
 
     # load dataset in json format
     splitJsonPth = split  + ".json"                 # load path
-    splitNewJsonPth = "instruction_" + splitJsonPth # store path
+    splitNewJsonPth = "2instruction_" + splitJsonPth # store path
     with open(splitJsonPth, "r", encoding="utf-8") as pf:
         allData = json.load(pf)
 
