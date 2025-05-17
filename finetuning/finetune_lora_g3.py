@@ -2,54 +2,22 @@
 """
 finetune_lora.py
 =================
-Description: Fine-tune MPT 7B on custom subtitles dataset. 
+Description: Fine-tune Gemma3 on custom subtitles dataset. 
 Using SFTTrainer from transformers library.
 
-Author: Martin Tomasovic
-
-Required libraries:
-- peft
-- trl
-- torch
-- pickle
-- transformers
-- datasets
-- accelerate
-- einops
-- bitsandbytes
-- loralib
-
-Install the required libraries:
-pip install peft
-pip install trl
-pip install -U bitsandbytes
-pip install accelerate>=0.20.3 transformers
-pip install datasets
-pip install accelerate
-pip install einops
-pip install pickle
-pip install torch
-pip install loralib
-
-Examples how to run:
-run on metacentrum, by running script jobTrain2.sh, jobTrain3.sh or jobTrain4.sh and run_training.sh
+Author: Martin Tomasovic, Attila Kovacs
 """
 
-from datasets import load_dataset, load_from_disk
-from transformers import LineByLineTextDataset
+from datasets import load_from_disk
 from transformers import DataCollatorForLanguageModeling
 from transformers import TrainingArguments
 from transformers import AutoModelForCausalLM, AutoTokenizer
 from transformers import AutoConfig
 from transformers import BitsAndBytesConfig
 from trl import SFTTrainer
-from bitsandbytes.optim import Adam8bit
 from peft import prepare_model_for_kbit_training 
 import torch
-import re
-import pickle
 
-import loralib as lora
 from peft import LoraConfig, get_peft_model
 torch.backends.cuda.matmul.allow_tf32 = True
 torch.backends.cudnn.benchmark = True

@@ -2,7 +2,7 @@
 """
 finetune_lora3_v2.py
 =================
-Description: Fine-tune MPT 7B on custom subtitles dataset. 
+Description: Fine-tune Mistral 7B on custom subtitles dataset. 
 Using SFTTrainer from transformers library with QLoRA (4-bit quantization).
 With adjusted learning rate, changed optimizer, set max gradient norm to 0.3 and set 
 gradient eval steps to 8.
@@ -37,8 +37,7 @@ Examples how to run:
 run on metacentrum, by running script jobTrain2.sh, jobTrain3.sh or jobTrain4.sh and run_training.sh
 """
 
-from datasets import load_dataset, load_from_disk
-from transformers import LineByLineTextDataset
+from datasets import load_from_disk
 from transformers import DataCollatorForLanguageModeling
 from transformers import TrainingArguments
 from transformers import AutoModelForCausalLM, AutoTokenizer
@@ -47,13 +46,8 @@ from transformers import BitsAndBytesConfig
 from trl import SFTTrainer
 
 import torch
-import re
-import pickle
 
-import loralib as lora
 from peft import LoraConfig, get_peft_model
-
-import os
 
 import argparse
 
@@ -86,7 +80,7 @@ login(token = ac)
 
 # load model and tokenizer
 name = "mistralai/Mistral-7B-Instruct-v0.3" #"mistralai/Mistral-7B-v0.3" #"google/gemma-3-12b-pt" #"mistralai/Mistral-7B-v0.3" #"tiiuae/falcon-7b"
-model_pth = SERVER_PTH + "/lora/mpt-7b"
+model_pth = SERVER_PTH + "/lora"
 
 # Configure 4-bit quantization
 

@@ -2,7 +2,7 @@
 """
 finetune_lora.py
 =================
-Description: Fine-tune MPT 7B on custom subtitles dataset. 
+Description: Fine-tune Mistral 7B on custom subtitles dataset. 
 Using SFTTrainer from transformers library with LoRA (8-bit quantization).
 
 Author: Martin Tomasovic
