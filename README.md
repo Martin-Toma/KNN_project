@@ -77,3 +77,11 @@ The responses from `responses` folder are processed using script `groupFiles.py`
 ```
 
 Problem with 295-th sample too large 159259 length. Solved in `trim_dset_part.py`.
+
+## Fine-tuning
+
+The fine-tuning scripts are placed in finetuining folder. 
+
+In dataset_splits folder there are scripts to further prepare the dataset - to transform it to a format which can be fed to the model during fine-tuning. You need to use *reformat_dataset_4_training.py* to reformat the dataset so there is single review attached to one subtitles. Script *trimming.py* performs trimming of subtitles part to required size, it computes the size in number of tokens. Script *reduce_samples.py* lowers the number of the same movies with different reviews in the dataset.
+
+Main fine-tuning scripts are *finetune_lora_g3.py* for Gemma model finetuning and *finetune_lora3_v2.py* for Mistral model. To run the model on metacentrum you can use script *jobFinetuneModel.sh* which runs *run_finetuning.sh*. These scripts set up the environment to fine-tune the models.
