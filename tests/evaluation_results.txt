@@ -1,4 +1,0 @@
-MAE: 0.62, RMSE: 0.76, % within ±0.5: 47.75%
-Avg. similarity to human reviews: 0.36
-Percentage of mismatched sentiment-rating pairs: 61.20%
-Average grammar errors in a review: 0.75

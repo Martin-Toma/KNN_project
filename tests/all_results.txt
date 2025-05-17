@@ -1,0 +1,109 @@
+deepseek
+MAE: 1.47, RMSE: 1.77, % within ±1: 37.79%
+Avg. similarity to human reviews: 0.42
+Percentage of mismatched sentiment-rating pairs: 46.93%
+Average grammar errors in a review: 0.31
+Genre Accuracy - Precision: 0.58, Recall: 0.78, F1 Score: 0.66
+
+gemma 8
+MAE: 1.53, RMSE: 1.93, % within ±1: 41.52%
+Avg. similarity to human reviews: 0.336
+Percentage of mismatched sentiment-rating pairs: 33.65%
+Average grammar errors in a review: 0.39
+Genre Accuracy - Precision: 0.44, Recall: 0.37, F1 Score: 0.41
+Average perplexity: 4.966743859377774
+
+gemma 8 finished
+MAE: 1.41, RMSE: 1.79, % within ±1: 45.17%
+Avg. similarity to human reviews: 0.372
+Percentage of mismatched sentiment-rating pairs: 38.34%
+Average grammar errors in a review: 0.91
+Genre Accuracy - Precision: 0.55, Recall: 0.52, F1 Score: 0.54
+Average perplexity: 4.006204388579544
+
+gemma 16
+MAE: 1.37, RMSE: 1.76, % within ±1: 48.69%
+Avg. similarity to human reviews: 0.357
+Percentage of mismatched sentiment-rating pairs: 35.90%
+Average grammar errors in a review: 1.88
+Genre Accuracy - Precision: 0.51, Recall: 0.49, F1 Score: 0.50
+Average perplexity: 4.187540112472162
+
+gemma 32
+MAE: 1.38, RMSE: 1.76, % within ±1: 46.84%
+Avg. similarity to human reviews: 0.360
+Percentage of mismatched sentiment-rating pairs: 39.43%
+Average grammar errors in a review: 0.97
+Genre Accuracy - Precision: 0.51, Recall: 0.50, F1 Score: 0.50
+Average perplexity: 3.9588118600845337
+
+gemma 32 0.2
+MAE: 1.40, RMSE: 1.77, % within ±1: 46.17%
+Avg. similarity to human reviews: 0.353
+Percentage of mismatched sentiment-rating pairs: 40.71%
+Average grammar errors in a review: 1.69
+Genre Accuracy - Precision: 0.50, Recall: 0.47, F1 Score: 0.49
+Average perplexity: 4.615695474123714
+
+gemma 32 0.05
+MAE: 1.38, RMSE: 1.74, % within ±1: 46.72%
+Avg. similarity to human reviews: 0.363
+Percentage of mismatched sentiment-rating pairs: 43.37%
+Average grammar errors in a review: 1.16
+Genre Accuracy - Precision: 0.57, Recall: 0.54, F1 Score: 0.55
+Average perplexity: 3.889846932888031
+
+gemma 32 qlora
+MAE: 1.44, RMSE: 1.85, % within ±1: 47.42%
+Avg. similarity to human reviews: 0.361
+Percentage of mismatched sentiment-rating pairs: 35.05%
+Average grammar errors in a review: 2.10
+Genre Accuracy - Precision: 0.50, Recall: 0.50, F1 Score: 0.50
+Average perplexity: 3.951510150023181
+
+gemma 32 16
+MAE: 1.34, RMSE: 1.73, % within ±1: 50.92%
+Avg. similarity to human reviews: 0.363
+Percentage of mismatched sentiment-rating pairs: 39.33%
+Average grammar errors in a review: 1.48
+Genre Accuracy - Precision: 0.58, Recall: 0.53, F1 Score: 0.55
+Average perplexity: 3.867243456840515
+
+gemma 32 32
+MAE: 1.41, RMSE: 1.79, % within ±1: 46.50%
+Avg. similarity to human reviews: 0.362
+Percentage of mismatched sentiment-rating pairs: 42.99%
+Average grammar errors in a review: 1.95
+Genre Accuracy - Precision: 0.55, Recall: 0.54, F1 Score: 0.55
+Average perplexity: 4.596615904509419
+
+gemma 64
+MAE: 1.41, RMSE: 1.81, % within ±1: 46.65%
+Avg. similarity to human reviews: 0.347
+Percentage of mismatched sentiment-rating pairs: 41.02%
+Average grammar errors in a review: 1.30
+Genre Accuracy - Precision: 0.46, Recall: 0.45, F1 Score: 0.45
+Average perplexity: 3.9552737188339235
+
+gemma 256
+MAE: 1.46, RMSE: 1.87, % within ±1: 45.10%
+Avg. similarity to human reviews: 0.360
+Percentage of mismatched sentiment-rating pairs: 42.80%
+Average grammar errors in a review: 2.21
+Genre Accuracy - Precision: 0.34, Recall: 0.31, F1 Score: 0.33
+Average perplexity: 10.055395236382118
+
+head
+MAE: 0.96, RMSE: 1.25, % within ±1: 64.40%
+Avg. similarity to human reviews: 0.361
+Percentage of mismatched sentiment-rating pairs: 41.48%
+Average grammar errors in a review: 0.51
+Genre Accuracy - Precision: 0.64, Recall: 0.58, F1 Score: 0.61
+Average perplexity: 5.815467665893863
+
+mistral
+MAE: 1.90, RMSE: 2.34, % within ±1: 29.73%
+Avg. similarity to human reviews: 0.350
+Percentage of mismatched sentiment-rating pairs: 28.96%
+Average grammar errors in a review: 0.23
+Genre Accuracy - Precision: 0.45, Recall: 0.37, F1 Score: 0.40

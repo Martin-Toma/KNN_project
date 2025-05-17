@@ -1,0 +1,3046 @@
+[
+  "",
+  {
+    "name": "Chris Hemsworth",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ],
+    "rating": 8.9,
+    "review": "<i>Thor</i> is a fun movie with great special effects, but nothing groundbreaking. Chris Hemsworth is perfect in the title role. The story line is typical superhero fare, but the characters and dialogue are interesting.",
+    "num": 4180818
+  },
+  {
+    "review": "DramaFever, you have done it again. \"Peeping Tom\" is a hilarious, heartfelt, and sweet drama that captivates viewers from the beginning. The characters are complex and relatable, and the plot keeps you invested throughout.",
+    "genres": [
+      "Romance",
+      "Comedy"
+    ],
+    "rating": 9.5,
+    "num": 4863740
+  },
+  {
+    "review": "Marguerite and Julien is a period drama that focuses on the titular characters, two siblings living in France during the 17th century. They share an intimate relationship that leads to their separation, and later, a desperate search to reunite. The film's narrative structure features a mix of present-day scenes and flashbacks, making it slightly confusing at times. The performances are solid, particularly from the two main actors, and the cinematography is visually striking. However, the pacing feels uneven, and the film could benefit from tighter editing.",
+    "genres": [
+      "Drama",
+      "Period Piece",
+      "Historical"
+    ],
+    "rating": 6.9,
+    "num": 6665388
+  },
+  "",
+  "",
+  {
+    "review": "I like it. It's a solid action movie with a decent plot, good characters, and a satisfying ending.",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama"
+    ],
+    "rating": 7.3,
+    "num": 4691626
+  },
+  {
+    "review": "Great shark movie",
+    "genres": [
+      "action",
+      "adventure"
+    ],
+    "rating": 8.5,
+    "num": 6276361
+  },
+  "",
+  {
+    "review": "Privat konfessioner is a film about the complex relationships between a woman named Anna and two men, her husband Henrik and her lover Tomas. The movie is structured around conversations between the characters, revealing the secrets they hide from each other.",
+    "genres": [
+      "drama",
+      "romance"
+    ],
+    "rating": 6.8,
+    "num": 5691833
+  },
+  {
+    "review": "A great introduction to the Earth and its place in the cosmos.",
+    "genres": [
+      "documentary",
+      "science"
+    ],
+    "rating": 8.5,
+    "num": 131779
+  },
+  "",
+  {
+    "review": "This is an interesting, engaging and somewhat creepy movie. It starts out as a straightforward ghost story but takes a dark turn halfway through.",
+    "genres": [
+      "Horror",
+      "Supernatural"
+    ],
+    "rating": 7.6,
+    "num": 3630653
+  },
+  "",
+  "",
+  "",
+  {
+    "review": "The subtitles for this clip are incredibly basic. They are clearly written for the visually impaired, and contain no context or character development.",
+    "genres": [
+      "drama"
+    ],
+    "rating": 2,
+    "num": 6486792
+  },
+  {
+    "review": "Unlike some of the previous reviews, this film doesn't try to hide its formulaic approach to romance. Instead, it embraces it and offers an enjoyable escape for viewers.",
+    "genres": [
+      "Romantic comedy"
+    ],
+    "rating": 6.4,
+    "num": 4623461
+  },
+  "",
+  {
+    "review": "The plot is simple enough - two social workers in England investigate a guy who is a former serial killer in a remote area and find themselves under attack by supernatural forces.",
+    "genres": [
+      "Horror"
+    ],
+    "rating": 7.6,
+    "num": 8148201
+  },
+  "",
+  {
+    "review": "This movie tells the story of Tsotsi, a young criminal in Johannesburg. It's raw, gritty, and uncompromising, providing an authentic portrayal of life in the city. While it may not appeal to everyone, those looking for a realistic depiction of South Africa will appreciate it.",
+    "genres": [
+      "Crime",
+      "Drama"
+    ],
+    "rating": 8.6,
+    "num": 239715
+  },
+  "",
+  "",
+  "",
+  "",
+  "",
+  {
+    "review": "Movie is a mixture of action, drama, and war movie, all combined together in a well-executed film.",
+    "genres": [
+      "Action",
+      "War"
+    ],
+    "rating": 7.5,
+    "num": 53617
+  },
+  {
+    "review": "Elizabeth Smart's memoir of her kidnapping and nine-month ordeal is heartbreaking, but also incredibly inspirational.",
+    "genres": [
+      "Biography",
+      "Memoir"
+    ],
+    "rating": 8.5,
+    "num": 7229611
+  },
+  {
+    "review": "This Czechoslovakian film is visually stunning, with its unique aesthetic and surreal imagery.",
+    "genres": [
+      "Drama",
+      "Experimental"
+    ],
+    "rating": 8.2,
+    "num": 3098804
+  },
+  "",
+  "",
+  {
+    "review": "Funny and sweet",
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "rating": 8.4,
+    "num": 816
+  },
+  "",
+  "",
+  "",
+  {
+    "review": "An interesting Australian film that plays like a modern version of Peter Pan, but with a darker edge.",
+    "genres": [
+      "Drama",
+      "Adventure"
+    ],
+    "rating": 7.6,
+    "num": 3587322
+  },
+  "",
+  {
+    "review": "This is a decent movie but it doesn't stand out from the crowd.",
+    "genres": [
+      "Supernatural",
+      "Horror"
+    ],
+    "rating": 7.4,
+    "num": 6796936
+  },
+  "",
+  {
+    "review": "Subtitles are decent and synced, but this scene is awkwardly written, making the dialogue feel forced.",
+    "genres": [
+      "action",
+      "drama"
+    ],
+    "rating": 6.5,
+    "num": 7003952
+  },
+  "",
+  "",
+  "",
+  {
+    "review": "I really enjoyed this movie. The action sequences were well-done and there were some great character moments.",
+    "genres": [
+      "action",
+      "thriller"
+    ],
+    "rating": 8.5,
+    "num": 41179
+  },
+  "",
+  "",
+  "",
+  {
+    "review": "The middle ages are a setting that horror films have often returned to, and the cult of the demon Baphomet adds an interesting twist to this story. While the acting is decent, the characters and dialogue are rather unmemorable, and the script suffers from poor pacing and repetitive scenes. However, the film does deliver some tense and gruesome sequences that may satisfy fans of the genre.",
+    "genres": [
+      "Horror",
+      "Supernatural"
+    ],
+    "rating": 4.5,
+    "num": 3152282
+  },
+  "",
+  {
+    "review": "Stardust is a fun, lighthearted science fiction adventure.",
+    "genres": [
+      "science fiction",
+      "action"
+    ],
+    "rating": 7.7,
+    "num": 5448251
+  },
+  "",
+  "",
+  {
+    "review": "The movie's plot is a bit of a mess, but the performances are entertaining.",
+    "genres": [
+      "Action",
+      "Crime"
+    ],
+    "rating": 4.9,
+    "num": 9883879
+  },
+  "",
+  "",
+  {
+    "review": "There's nothing particularly special about this subtitle, but it gets the job done. The dialogue is well timed, and the sound effects add some extra tension.",
+    "genres": [
+      "Horror"
+    ],
+    "rating": 7.5,
+    "num": 6948929
+  },
+  "",
+  {
+    "review": "The dialogue is horrible and the story is ridiculous, but it's entertaining.",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Family"
+    ],
+    "rating": 5.8,
+    "num": 3284266
+  },
+  "",
+  "",
+  "",
+  {
+    "review": "This subtitle has a lot of interesting elements, including a martial arts tournament, romantic tension, and mystical elements. However, the pacing and character development are inconsistent, making it difficult to fully engage with the story.",
+    "genres": [
+      "action",
+      "romance",
+      "fantasy"
+    ],
+    "rating": 6.5,
+    "num": 9105423
+  },
+  "",
+  {
+    "review": "This review is written by a bot. The subtitles are generic and the content is dull.",
+    "genres": [
+      "Drama",
+      "Family"
+    ],
+    "rating": 5.7,
+    "num": 3709489
+  },
+  "",
+  "",
+  {
+    "review": "This subtitle is a decent translation of the dialogue in the video, but it suffers from a lack of punctuation and grammatical errors. The translator seems to struggle with idiomatic expressions, resulting in awkward sentences. There is also some inconsistency in capitalization.",
+    "genres": [
+      "Action",
+      "Drama"
+    ],
+    "rating": 6.8,
+    "num": 4549371
+  },
+  {
+    "review": "This script is an absolute joy to read and watch,          a wild ride of absurdity, humor, and emotion.",
+    "genres": [
+      "Comedy",
+      "Action",
+      "Sci-Fi"
+    ],
+    "rating": 9.0,
+    "num": 3097410
+  },
+  {
+    "review": "Decent, but not outstanding",
+    "genres": [
+      "action",
+      "adventure"
+    ],
+    "rating": 7.5,
+    "num": 7308044
+  },
+  "",
+  {
+    "review": "The movie starts with a prologue that sets the scene, which is not usually a good sign. The movie also features a lot of flashbacks. It's a slow-burning story with a lot of dialogue. It's definitely not action-packed. However, it tells a good story.",
+    "genres": [
+      "Western",
+      "Romance"
+    ],
+    "rating": 6.4,
+    "num": 8402358
+  },
+  {
+    "review": "Really solid western with a slow burn, with great performances from Kris Kristofferson and Sam Elliot.",
+    "genres": [
+      "Western"
+    ],
+    "rating": 8.9,
+    "num": 8437322
+  },
+  "",
+  "",
+  {
+    "review": "The Doppelganger is a visually stunning film that explores the psychological effects of seeing your own double.",
+    "genres": [
+      "Drama",
+      "Horror",
+      "Mystery"
+    ],
+    "rating": 8.7,
+    "num": 118787
+  },
+  {
+    "review": "An interesting thriller with an unconventional approach to the typical kidnapping story.",
+    "genres": [
+      "Thriller",
+      "Crime"
+    ],
+    "rating": 7.6,
+    "num": 3823746
+  },
+  "",
+  "",
+  "",
+  "",
+  "",
+  {
+    "review": "I wouldn't recommend this show for its plot or characters, but it's beautifully shot and the production design is amazing.",
+    "genres": [
+      "crime",
+      "drama"
+    ],
+    "rating": 7.3,
+    "num": 10297824
+  },
+  "",
+  "",
+  "",
+  "",
+  "",
+  {
+    "review": "The storyline in the subtitle is predictable and somewhat dull, but the dialogue helps drive the plot forward.",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "rating": 6.3,
+    "num": 9038010
+  },
+  "",
+  {
+    "review": "A haunting and mysterious tale of teenagers, secrets, and tragedy. The plot is slow-burning but keeps you intrigued throughout.",
+    "genres": [
+      "Crime",
+      "Drama"
+    ],
+    "rating": 8.9,
+    "num": 134025
+  },
+  {
+    "review": "Brackenmore is a slow burn mystery/thriller that sets up the premise quickly. The characters are all mysterious, which is a bonus, but the pacing of the film leaves a bit to be desired. It starts off fast, and then slows down significantly.",
+    "genres": [
+      "Drama",
+      "Horror"
+    ],
+    "rating": 7.2,
+    "num": 7338921
+  },
+  "",
+  {
+    "review": "Dreamscape was a fun movie. The special effects were pretty cool for the time.",
+    "genres": [
+      "science fiction",
+      "horror"
+    ],
+    "rating": 7.5,
+    "num": 9105437
+  },
+  {
+    "review": "An emotional rollercoaster. The film does a great job of immersing the viewer into the environment of the camp, the fear and despair the characters feel, and the hope and determination to survive.",
+    "genres": [
+      "Drama"
+    ],
+    "rating": 8.6,
+    "num": 210543
+  },
+  {
+    "review": "The son of no one is a beautifully written and executed film that perfectly captures the beauty and isolation of small-town living. The cinematography is stunning, the score is hauntingly beautiful, and the performances are raw and emotional. The characters are complex and flawed, making the story feel authentic and relatable. The film does a fantastic job of building tension and suspense throughout, and the twist at the end is truly shocking. The son of no one is a must-see for fans of slow burn thrillers.",
+    "genres": [
+      "Drama",
+      "Thriller"
+    ],
+    "rating": 9.5,
+    "num": 6030482
+  },
+  "",
+  "",
+  {
+    "review": "Decent special effects and animation, but the story is bland and unexciting.",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "rating": 6.5,
+    "num": 8966055
+  },
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  {
+    "review": "This movie is a little strange. The acting is bad and the plot development is slow.",
+    "genres": [
+      "Drama"
+    ],
+    "rating": 4.5,
+    "num": 9094352
+  },
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  {
+    "review": "A thrilling crime story told from the perspective of a young woman who goes on the run after a botched robbery.",
+    "genres": [
+      "Crime",
+      "Drama"
+    ],
+    "rating": 8.6,
+    "num": 3368548
+  },
+  "",
+  {
+    "review": "There is nothing remotely entertaining or engaging about this subtitle.",
+    "genres": [
+      "Drama"
+    ],
+    "rating": 2.3,
+    "num": 6436328
+  },
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  {
+    "review": "An atmospheric adaptation of Poe's classic tale, The Fall of the House of Usher takes us through an eerie journey with its captivating animation, compelling narration, and chilling sound effects.",
+    "genres": [
+      "horror",
+      "drama"
+    ],
+    "rating": 8.5,
+    "num": 3281854
+  },
+  {
+    "review": "The subtitles were accurate, however the plot was predictable.",
+    "genres": [
+      "Horror",
+      "Supernatural"
+    ],
+    "rating": 6.5,
+    "num": 7481870
+  },
+  "",
+  {
+    "review": "A fun western with a great cast.",
+    "genres": [
+      "Western"
+    ],
+    "rating": 7.6,
+    "num": 171960
+  },
+  "",
+  {
+    "review": "This subtitle offers a decent glimpse into the lives of the villagers, but the dialogue is dry and the characters lack depth.",
+    "genres": [
+      "Drama"
+    ],
+    "rating": 6.4,
+    "num": 9604483
+  },
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  {
+    "review": "Another masterpiece from Zwick, with a terrific cast, stunning photography, and some truly epic action sequences.",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "rating": 9.2,
+    "num": 18221
+  },
+  {
+    "review": "<i>Based on a True Story</i>, while not perfect, is still a compelling drama with powerful performances and a fascinating subject.<br/>It's a tough watch at times, but that's part of its appeal.<br/>Genre-wise, it fits into Drama and Biographical.",
+    "genres": [
+      "Drama",
+      "Biography"
+    ],
+    "rating": 7.5,
+    "num": 8476588
+  },
+  "",
+  {
+    "review": "An interesting mix of drama and romance set against the backdrop of the entertainment industry.",
+    "genres": [
+      "drama",
+      "romance"
+    ],
+    "rating": 7.5,
+    "num": 8196511
+  },
+  "",
+  {
+    "review": "The subtitles are simple yet beautiful, capturing the essence of the story perfectly. The prose flows smoothly and engagingly.",
+    "genres": [
+      "Children",
+      "Adventure",
+      "Fantasy"
+    ],
+    "rating": 9.5,
+    "num": 4156450
+  },
+  "",
+  "",
+  {
+    "review": "Stunning and unique documentary",
+    "genres": [
+      "Documentary"
+    ],
+    "rating": 9.5,
+    "num": 6295315
+  },
+  "",
+  {
+    "review": "Another solid chapter in the Riddick saga. The dialogue is sharp and the action is engaging.",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "rating": 8.0,
+    "num": 5252294
+  },
+  "",
+  "",
+  "",
+  "",
+  "",
+  {
+    "review": "This is a dramatic and emotional story about the hardships of life.",
+    "genres": [
+      "Drama"
+    ],
+    "rating": 8.5,
+    "num": 245
+  },
+  "",
+  "",
+  {
+    "review": "A fun adventure story with an interesting plot twist",
+    "genres": [
+      "action",
+      "adventure"
+    ],
+    "rating": 7.5,
+    "num": 216361
+  },
+  {
+    "review": "There's a lot going on in this subtitle, but it seems to be a historical drama or period piece, possibly set in the Renaissance era.",
+    "genres": [
+      "Drama",
+      "Historical"
+    ],
+    "rating": 6.5,
+    "num": 3357403
+  },
+  {
+    "review": "Rock-a-bye, Baby on the Treetop is a touching drama that highlights the difficulties faced by a family due to mental illness. The story is compelling, and the characters are well developed. However, the film is not without its flaws, such as a slow pace and some questionable plot decisions.",
+    "genres": [
+      "drama",
+      "family"
+    ],
+    "rating": 7.5,
+    "num": 4648785
+  },
+  {
+    "review": "Necessarily brutal, and somewhat confusing at times, but overall, an interesting take on the serial killer genre.",
+    "genres": [
+      "Crime",
+      "Drama"
+    ],
+    "rating": 7.4,
+    "num": 8378104
+  },
+  "",
+  "",
+  {
+    "review": "Subtitulos correctamente escritos, pero la calidad de audio es bastante pobre",
+    "genres": [
+      "accion",
+      "ciencia ficcion"
+    ],
+    "rating": 7.0,
+    "num": 3163371
+  },
+  {
+    "review": "A well written subtitle with nice imagery.",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "rating": 8.7,
+    "num": 8013012
+  },
+  "",
+  "",
+  "",
+  "",
+  {
+    "review": "I've seen worse, but it's a bit boring",
+    "genres": [
+      "Crime"
+    ],
+    "rating": 6.0,
+    "num": 3251146
+  },
+  "",
+  "",
+  {
+    "review": "Decent historical fiction.",
+    "genres": [
+      "Drama",
+      "War"
+    ],
+    "rating": 7,
+    "num": 8762226
+  },
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  {
+    "review": "Another solid action movie from director Steve Quinn",
+    "genres": [
+      "Action"
+    ],
+    "rating": 7.4,
+    "num": 8252065
+  },
+  "",
+  "",
+  {
+    "review": "It's a pretty standard mystery plot, which takes its sweet time in building up and resolving itself. However, the characters are well developed and interesting.",
+    "genres": [
+      "mystery",
+      "drama"
+    ],
+    "rating": 7.8,
+    "num": 3249914
+  },
+  {
+    "review": "This subtitle provides a chilling account of a mysterious killer who terrorizes a small town, making the audience question the safety of their own homes.",
+    "genres": [
+      "Crime",
+      "Drama",
+      "Mystery"
+    ],
+    "rating": 7.5,
+    "num": 8599056
+  },
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  {
+    "review": "For such a small town, Wildwood sure is full of mystery. This episode of UFO Radio continues to explore the strange happenings in this town, but instead of focusing on the usual UFO sightings and unexplained phenomena, they focus on the connections between the characters. It's refreshing to see the writers delve deeper into the relationships between the main characters, and it makes the show feel more grounded. However, the plot still feels a little thin, and the twist at the end doesn't quite land as intended. Still, the episode is entertaining and keeps the viewer engaged.",
+    "genres": [
+      "drama",
+      "science fiction"
+    ],
+    "rating": 7.5,
+    "num": 7083691
+  },
+  "",
+  "",
+  "",
+  {
+    "review": "Based on the title, it seems to be a Christian film telling the story of the apostle John, who wrote the book of Revelation.",
+    "genres": [
+      "Drama",
+      "Religion"
+    ],
+    "rating": 6.7,
+    "num": 4668579
+  },
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  {
+    "review": "A fun movie to watch.",
+    "genres": [
+      "Family",
+      "Comedy"
+    ],
+    "rating": 7.6,
+    "num": 5790388
+  },
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  {
+    "review": "I loved the music and sound effects throughout this subtitle. The plot and dialogue were entertaining, but the pacing was quite slow. Some scenes were too long and drawn out. There were also some grammatical errors and typos. Overall, this subtitle had potential but needed polish.",
+    "genres": [
+      "horror",
+      "comedy"
+    ],
+    "rating": 6.5,
+    "num": 9040050
+  },
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  {
+    "review": "It's a decent movie but the acting is terrible",
+    "genres": [
+      "science fiction",
+      "horror"
+    ],
+    "rating": 4.5,
+    "num": 78813
+  },
+  "",
+  "",
+  "",
+  "",
+  "",
+  {
+    "review": "This subtitle is fairly accurate, but sometimes misspells words.",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "rating": 7.9,
+    "num": 103437
+  },
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  {
+    "review": "Interesting storyline and strong characters make this subtitle a pleasure to read.",
+    "genres": [
+      "drama",
+      "romance"
+    ],
+    "rating": 8.2,
+    "num": 4464611
+  },
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  {
+    "review": "Subtitles were fine.",
+    "genres": [
+      "Drama"
+    ],
+    "rating": 8,
+    "num": 3476196
+  },
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  {
+    "review": "Good movie, but a bit slow",
+    "genres": [
+      "Drama"
+    ],
+    "rating": 7.5,
+    "num": 3126860
+  },
+  "",
+  {
+    "review": "Planet of the Apes is an entertaining movie with impressive effects and a strong cast.",
+    "genres": [
+      "sci-fi",
+      "adventure"
+    ],
+    "rating": 8.0,
+    "num": 24619
+  },
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  {
+    "review": "Shockingly boring and pretentious.",
+    "genres": [
+      "Drama",
+      "Thriller"
+    ],
+    "rating": 3.5,
+    "num": 5637079
+  },
+  {
+    "review": "\"Halfway Around the World\" is a moving drama that explores themes of identity, belonging, and the complexities of human relationships. The film masterfully weaves together multiple narratives, each offering a unique perspective on the immigrant experience. The performances are heartfelt, the cinematography captivating, and the writing nuanced and insightful. Highly recommended.",
+    "genres": [
+      "Drama",
+      "Family"
+    ],
+    "rating": 8.3,
+    "num": 3579334
+  },
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  {
+    "review": "This subtitle contains a lot of technical terms and some awkward phrasing, but the story itself is interesting. The characters are engaging, and the plot is intriguing.",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama"
+    ],
+    "rating": 6,
+    "num": 6016652
+  },
+  "",
+  "",
+  "",
+  "",
+  {
+    "review": "This anime starts with a prologue explaining the curse of the ghost eye and the journey to find the Mu Chen Orb. The characters are introduced along the way, each with their own unique abilities. However, the pacing is slow, and the story does not fully engage until later. The animation is decent, but not exceptional.",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama"
+    ],
+    "rating": 8.0,
+    "num": 7824479
+  },
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  {
+    "review": "Tarka the Otter is a charming and beautiful film adaption of Henry Williamson's novel. The animation is beautifully done, capturing the landscapes and wildlife of England. The music is hauntingly beautiful and suits the film perfectly.",
+    "genres": [
+      "adventure",
+      "animation",
+      "family"
+    ],
+    "rating": 9.5,
+    "num": 8581289
+  },
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  {
+    "review": "Sharkenstein is a fun monster movie that borrows from the classic horror genre, particularly Frankenstein and Jaws.",
+    "genres": [
+      "horror",
+      "sci-fi"
+    ],
+    "rating": 7.9,
+    "num": 6728986
+  },
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  {
+    "review": "Rather unoriginal and predictable.",
+    "genres": [
+      "Horror"
+    ],
+    "rating": 6.8,
+    "num": 3415063
+  },
+  "",
+  "",
+  "",
+  "",
+  {
+    "review": "Its not often that I find myself impressed by a movie, especially after reading a few reviews saying it was slow and boring. This film however, kept me hooked throughout, even though it is quite long. A lot of the dialogue is in German, but luckily the subtitles were accurate. The acting was brilliant, especially by Ulrich Tukur as the terrorist leader, who was calm, collected and deadly serious, yet somehow managed to be likable. This film explores many themes, such as religion, culture, politics and terrorism. The director does a great job of showing both sides of the story. One side is the terrorist, who feels wronged and seeks revenge. The other side is the pilot, who is a father and husband, trying to protect his family. The film also deals with the idea of good versus evil and how one man can change the fate of many others. I would definitely recommend this film to anyone looking for a thought provoking drama.",
+    "genres": [
+      "Drama",
+      "Thriller"
+    ],
+    "rating": 9.5,
+    "num": 8234823
+  },
+  "",
+  "",
+  "",
+  "",
+  {
+    "review": "The dialogue and character development in this subtitle are great.",
+    "genres": [
+      "Drama"
+    ],
+    "rating": 8.5,
+    "num": 7971188
+  },
+  "",
+  "",
+  {
+    "review": "The subtitle has a clear and engaging storyline with a touch of drama and romance. However, the dialogues could use some polishing.",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "rating": 7.5,
+    "num": 3087649
+  },
+  "",
+  {
+    "review": "Good story line, good characters, good action.",
+    "genres": [
+      "Action",
+      "Horror"
+    ],
+    "rating": 8.5,
+    "num": 140831
+  },
+  {
+    "review": "The writing is clever and engaging, the characters are likable, and the nostalgia is strong.",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "rating": 8.0,
+    "num": 7442447
+  },
+  "",
+  {
+    "review": "Decent action movie with a few twists.",
+    "genres": [
+      "action",
+      "sci-fi"
+    ],
+    "rating": 6.5,
+    "num": 6646692
+  },
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  {
+    "review": "Subtitles are great. They're accurate and translate from Korean into English. The text is clear and easy to read.",
+    "genres": [
+      "Drama",
+      "Action"
+    ],
+    "rating": 9.5,
+    "num": 215388
+  },
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  {
+    "review": "Funny, quirky, and often hilarious, the subtitle of this episode highlights a unique aspect of its characters -- they're all a little strange. The story follows Frankie, a woman who finds herself unexpectedly pregnant, and the relationships she builds with Charlie King Nash, a famous musician, and Lev, his assistant. However, the episode quickly veers off course into darker territory, exploring themes of addiction, infidelity, and emotional manipulation. While the tone shifts are disorienting, the dialogue remains sharp and witty throughout.",
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "rating": 8.0,
+    "num": 5984936
+  },
+  {
+    "review": "This subtitle has a good comedic premise with a lot of potential. The pacing is a bit slow and could use some work, but the humor is consistently good. ",
+    "genres": [
+      "Comedy"
+    ],
+    "rating": 8,
+    "num": 8871305
+  },
+  "",
+  "",
+  {
+    "review": "An interesting storyline with a good plot twist.",
+    "genres": [
+      "romance",
+      "drama"
+    ],
+    "rating": 7.5,
+    "num": 3460094
+  },
+  "",
+  "",
+  "",
+  "",
+  {
+    "review": "This subtitle sets up the premise of the film quite nicely, providing a brief introduction to the protagonist. The dialogue is straightforward and easy to follow, but it's the visuals that really sell the scene. The camera work is quite beautiful, capturing the characters in a way that draws the viewer in.",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "rating": 8.7,
+    "num": 77422
+  },
+  {
+    "review": "A beautiful, atmospheric and slow moving drama.",
+    "genres": [
+      "Drama"
+    ],
+    "rating": 8.3,
+    "num": 5203702
+  },
+  {
+    "review": "It's a creepy story with some interesting plot twists.",
+    "genres": [
+      "Horror",
+      "Thriller"
+    ],
+    "rating": 6.8,
+    "num": 7007842
+  },
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  {
+    "review": "This subtitle is a charming retelling of the classic Arabic tale of 'Prince Achmed'. The story is simple but engaging, and the narrator's delivery is clear and expressive.",
+    "genres": [
+      "Adventure",
+      "Fantasy"
+    ],
+    "rating": 8.5,
+    "num": 6262626
+  },
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  {
+    "review": "An interesting thriller with a twist. The characters are complex and the plot keeps the viewer hooked.",
+    "genres": [
+      "thriller"
+    ],
+    "rating": 7.6,
+    "num": 3340985
+  },
+  {
+    "review": "Really fun action movie with a unique twist. It's filled with humor and violence, and the characters are entertaining.",
+    "genres": [
+      "action",
+      "crime",
+      "drama"
+    ],
+    "rating": 7.8,
+    "num": 134525
+  },
+  {
+    "review": "A cheap and silly vampire movie.",
+    "genres": [
+      "Horror",
+      "Supernatural"
+    ],
+    "rating": 3.6,
+    "num": 6701849
+  },
+  {
+    "review": "Still Life is a slow-burning drama that examines the effects of abusive relationships and the destructive paths that result from it. It's a powerful film, though the pace is often plodding.",
+    "genres": [
+      "Drama"
+    ],
+    "rating": 7.8,
+    "num": 8385019
+  },
+  {
+    "review": "The Tour de France is a great movie, filled with emotions, tension and drama. The plot revolves around the main character, a blind cyclist, and his journey through the Tour de France. The cinematography is stunning, with beautiful shots of the French countryside and the cityscapes. The acting is also superb, with every actor delivering a powerful performance. The film's score adds to the intensity and emotion of the scenes. The movie is a must-see for fans of sports films, drama, and French cinema.",
+    "genres": [
+      "Drama",
+      "Sports"
+    ],
+    "rating": 8.5,
+    "num": 128785
+  },
+  "",
+  "",
+  {
+    "review": "It's a pretty standard TV movie adventure that borrows heavily from Indiana Jones and Pirates of the Caribbean.",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Family"
+    ],
+    "rating": 6.3,
+    "num": 6315855
+  },
+  "",
+  {
+    "review": "She Told Me Once is a beautifully filmed adaptation of Raymond Briggs’ beloved book. Though the film takes liberties with the source material, it retains its charm, warmth, and whimsy.",
+    "genres": [
+      "Drama",
+      "Family"
+    ],
+    "rating": 7.6,
+    "num": 7451665
+  },
+  "",
+  {
+    "review": "The animation is good, but the music and sounds are annoying.",
+    "genres": [
+      "Animation",
+      "Horror"
+    ],
+    "rating": 7.4,
+    "num": 7521455
+  },
+  "",
+  {
+    "review": "In this British horror movie, a group of friends play with a ouija board and awaken a demon, which begins to pick them off one by one.",
+    "genres": [
+      "horror",
+      "supernatural"
+    ],
+    "rating": 5.2,
+    "num": 27490
+  },
+  {
+    "review": "The story is interesting but slow",
+    "genres": [
+      "action",
+      "drama"
+    ],
+    "rating": 6.8,
+    "num": 3437579
+  },
+  {
+    "review": "Great animation and colors, beautiful story, wonderful characters.",
+    "genres": [
+      "Animation",
+      "Family",
+      "Adventure"
+    ],
+    "rating": 8.5,
+    "num": 7635592
+  },
+  {
+    "review": "While this subtitle is certainly evocative, it doesn't offer much insight into the movie itself. The dialogue is often repeated or redundant, which makes it difficult to understand the story. However, it is beautifully written and has a poetic quality.",
+    "genres": [
+      "drama",
+      "war"
+    ],
+    "rating": 6.4,
+    "num": 7309271
+  },
+  "",
+  {
+    "review": "A creepy horror film with an interesting premise, but it suffers from being dull and predictable.",
+    "genres": [
+      "Horror",
+      "Mystery"
+    ],
+    "rating": 6.0,
+    "num": 7365610
+  },
+  "",
+  "",
+  {
+    "review": "I think it's pretty good. It's a simple story but the animation is nice.",
+    "genres": [
+      "Drama",
+      "Family"
+    ],
+    "rating": 7.7,
+    "num": 4692662
+  },
+  "",
+  {
+    "review": "Solid writing and direction make this western stand out.",
+    "genres": [
+      "western"
+    ],
+    "rating": 8.5,
+    "num": 3687025
+  },
+  "",
+  {
+    "review": "The movie is visually stunning, the storyline is gripping and intense. The cinematography and direction is excellent.",
+    "genres": [
+      "Crime",
+      "Drama"
+    ],
+    "rating": 8.8,
+    "num": 1389
+  },
+  "",
+  "",
+  {
+    "review": "Good movie. Great acting. Good plot.",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Thriller"
+    ],
+    "rating": 7.7,
+    "num": 7443655
+  },
+  "",
+  {
+    "review": "Excellent writing, direction, acting, and cinematography.",
+    "genres": [
+      "Drama",
+      "History"
+    ],
+    "rating": 9.864,
+    "num": 9050814
+  },
+  "",
+  {
+    "review": "Nice writing, great plot, but the dialogue and character development feel unnatural.",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "rating": 8.5,
+    "num": 3621244
+  },
+  "",
+  "",
+  {
+    "review": "Poison is a documentary film directed by Christopher Roth. It focuses on the mysterious disappearance of Richard Beacon, a seven-year-old boy who supposedly flew away from his home in 1985.",
+    "genres": [
+      "Documentary",
+      "Mystery"
+    ],
+    "rating": 7.1,
+    "num": 3626675
+  },
+  "",
+  "",
+  {
+    "review": "It's a solid and well-written drama, though the plot is somewhat predictable. The acting is very good, especially from the lead actor. However, the film suffers from an uneven pace and a lack of tension. It feels like it drags in places, and the climactic scenes don't deliver the emotional impact that they should. The themes of bullying, power, and the struggle for identity are explored in depth, but the execution could have been stronger.",
+    "genres": [
+      "Drama",
+      "Social"
+    ],
+    "rating": 7.4,
+    "num": 67287
+  },
+  {
+    "review": "Great Christmas movie filled with lots of fun, singing, romance, and comedy.",
+    "genres": [
+      "musical",
+      "comedy",
+      "romance"
+    ],
+    "rating": 9.0,
+    "num": 182616
+  },
+  "",
+  "",
+  {
+    "review": "It's hard not to enjoy this sweet little holiday tale.",
+    "genres": [
+      "Holiday",
+      "Family"
+    ],
+    "rating": 7.7,
+    "num": 5035382
+  },
+  {
+    "review": "It was boring and slow",
+    "genres": [
+      "drama"
+    ],
+    "rating": 6.0,
+    "num": 3098422
+  },
+  {
+    "review": "The subtitles aren't perfect, but they are good enough. They are well timed and easy to read.",
+    "genres": [
+      "Drama"
+    ],
+    "rating": 8.3,
+    "num": 7701599
+  },
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  {
+    "review": "Solid storyline with good acting, but slow pacing.",
+    "genres": [
+      "Horror",
+      "Drama"
+    ],
+    "rating": 7.5,
+    "num": 6250823
+  },
+  "",
+  {
+    "review": "It's not a classic, but it has interesting ideas, good production values, and some well-executed scenes.",
+    "genres": [
+      "Thriller"
+    ],
+    "rating": 6.7,
+    "num": 6184866
+  },
+  {
+    "review": "This subtitle features a creative mix of fantasy and real-world issues, but the dialogue and action sequences feel disjointed.",
+    "genres": [
+      "Adventure",
+      "Family"
+    ],
+    "rating": 6.7,
+    "num": 6914778
+  },
+  {
+    "review": "A cute movie with a message",
+    "genres": [
+      "Drama"
+    ],
+    "rating": 7.8,
+    "num": 3082503
+  },
+  "",
+  {
+    "review": "An interesting film that focuses on a pair of criminals on the run after stealing $200,000 from a mobster. One of the criminals, Roger, is a closeted gay man and the other, Johnny, is a sexist and abusive partner. The film explores the complexities of their relationship and how their past actions have affected their lives.",
+    "genres": [
+      "Crime",
+      "Drama"
+    ],
+    "rating": 6.4,
+    "num": 9085161
+  },
+  {
+    "review": "The subtitle doesn't contain enough dialogue to form an accurate review, but it does provide a sense of foreboding and distress. The sound effects are well-used to create tension.",
+    "genres": [
+      "Drama",
+      "Horror"
+    ],
+    "rating": 6.5,
+    "num": 6544479
+  },
+  {
+    "review": "It's a sweet and simple movie that delivers a satisfying emotional punch.",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "rating": 9.2,
+    "num": 3271263
+  },
+  {
+    "review": "Decent writing, good pacing, and interesting plot twists.",
+    "genres": [
+      "Crime",
+      "Drama"
+    ],
+    "rating": 6.7,
+    "num": 5037691
+  },
+  {
+    "review": "With its raw performances and tough subject matter, Treasure is a gritty, grim drama.",
+    "genres": [
+      "Drama",
+      "Thriller"
+    ],
+    "rating": 7.4,
+    "num": 6022796
+  },
+  {
+    "review": "This subtitle for the opera 'Pagliacci' tells a tragic tale of jealousy, deceit, and revenge. The dialogue is intense and emotional, with characters expressing their inner turmoil and desperation. The language is poetic and dramatic, fitting for the operatic style.",
+    "genres": [
+      "Drama",
+      "Music",
+      "Opera"
+    ],
+    "rating": 8.5,
+    "num": 49147
+  },
+  {
+    "review": "Incredible action packed scifi thriller. It's a beautiful mix of Terminator and Star Trek.",
+    "genres": [
+      "action",
+      "sci-fi",
+      "drama"
+    ],
+    "rating": 9.8,
+    "num": 7067706
+  },
+  {
+    "review": "This is a classic police procedural, but with some unique elements that make it stand out.",
+    "genres": [
+      "Drama",
+      "Thriller"
+    ],
+    "rating": 8.7,
+    "num": 7517165
+  },
+  "",
+  "",
+  "",
+  {
+    "review": "Beautifully written and acted drama.",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "rating": 8.5,
+    "num": 4928281
+  },
+  {
+    "genres": [
+      "Adventure",
+      "Mystery"
+    ],
+    "rating": 7.84,
+    "review": "This is a good detective story. The characters are well developed, especially the villains. The plot is complex, but easy enough to follow. The action scenes are exciting, and the ending is satisfying.",
+    "num": 7797976
+  },
+  "",
+  "",
+  {
+    "review": "A thriller that goes to far with its gory sequences, but the cast is solid.",
+    "genres": [
+      "Thriller",
+      "Horror"
+    ],
+    "rating": 6.3,
+    "num": 6617209
+  },
+  "",
+  {
+    "review": "A gripping psychological thriller",
+    "genres": [
+      "thriller",
+      "drama"
+    ],
+    "rating": 9.2,
+    "num": 4670923
+  },
+  "",
+  "",
+  {
+    "review": "An interesting mix of character drama and action.",
+    "genres": [
+      "Action",
+      "Drama"
+    ],
+    "rating": 8.0,
+    "num": 9197708
+  },
+  "",
+  {
+    "review": "Excellent",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Family"
+    ],
+    "rating": 8.5,
+    "num": 6517172
+  },
+  {
+    "review": "The script of FIFA: The Movie tells the story of the creation of the International Federation of Football Associations (FIFA), its challenges and the struggles to hold the first World Cup.",
+    "genres": [
+      "Drama",
+      "History"
+    ],
+    "rating": 7.5,
+    "num": 8470053
+  },
+  {
+    "review": "This is a surprisingly effective film, especially considering it's a student project.",
+    "genres": [
+      "Drama"
+    ],
+    "rating": 6.9,
+    "num": 143340
+  },
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  {
+    "review": "A decent film about how people react to different situations in life. The storyline is interesting and the actors do a good job.",
+    "genres": [
+      "Drama"
+    ],
+    "rating": 6.3,
+    "num": 89950
+  },
+  "",
+  "",
+  "",
+  "",
+  {
+    "review": "A surprisingly engaging and funny movie, despite its low budget",
+    "genres": [
+      "Comedy"
+    ],
+    "rating": 7.5,
+    "num": 6646674
+  },
+  "",
+  {
+    "review": "Decent, although not the best movie.",
+    "genres": [
+      "Action",
+      "War"
+    ],
+    "rating": 6.8,
+    "num": 9727199
+  },
+  {
+    "review": "The subtitle is the epitome of boring. It's predictable and dull.",
+    "genres": [
+      "Drama"
+    ],
+    "rating": 4.7,
+    "num": 3663283
+  },
+  "",
+  "",
+  "",
+  "",
+  "",
+  {
+    "review": "Mirai is a charming anime film that explores themes of family, change, and acceptance.",
+    "genres": [
+      "Animation",
+      "Family"
+    ],
+    "rating": 9.7,
+    "num": 7640671
+  },
+  "",
+  "",
+  "",
+  {
+    "review": "Decent title card but no actual footage. It is hard to judge the quality of the subtitle work",
+    "genres": [
+      "Action"
+    ],
+    "rating": 6.8,
+    "num": 4407824
+  },
+  {
+    "review": "A powerful documentary detailing the horrors of North Korea and the lives of those who managed to escape, revealing the shocking reality of the regime's treatment of its citizens.",
+    "genres": [
+      "Documentary",
+      "History"
+    ],
+    "rating": 9.5,
+    "num": 9574160
+  },
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  {
+    "review": "Unusual and compelling storyline",
+    "genres": [
+      "Drama"
+    ],
+    "rating": 8.6,
+    "num": 9057093
+  },
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  {
+    "review": "This subtitle was entertaining",
+    "genres": [
+      "Drama"
+    ],
+    "rating": 8.5,
+    "num": 3557999
+  },
+  {
+    "review": "This is an interesting script with plenty of character development. The protagonist is unique and complex, making it easy to root for him. The plot is engaging and moves along at a steady pace. However, the dialogue sometimes feels forced and stilted.",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Horror"
+    ],
+    "rating": 8.5,
+    "num": 3083303
+  },
+  "",
+  "",
+  "",
+  "",
+  {
+    "review": "Darcy is a woman suffering from amnesia following a serious car accident which took the life of her unborn child. She is convinced that her husband Ben is keeping secrets from her, especially when she starts receiving mysterious packages from people claiming to be her parents. Darcy's paranoia is escalating as she tries to piece together her past.",
+    "genres": [
+      "Drama",
+      "Thriller"
+    ],
+    "rating": 7.8,
+    "num": 7064203
+  },
+  "",
+  "",
+  {
+    "review": "This is a decent, tense horror movie that features a strong female protagonist. The storyline is relatively simple, but is executed well with a good script and direction. The music and cinematography are also impressive.",
+    "genres": [
+      "Horror",
+      "Drama"
+    ],
+    "rating": 7.8,
+    "num": 3451675
+  },
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  {
+    "review": "Nightwatch is a gruesome, disturbing, and unsettling horror film",
+    "genres": [
+      "Horror"
+    ],
+    "rating": 6.9,
+    "num": 39010
+  },
+  "",
+  {
+    "review": "Absurd is a low budget horror film, filled with cheesy special effects, unintelligible dialogue, and a weak script. However, if you enjoy watching bad movies for their camp value, this one may be worth a watch.",
+    "genres": [
+      "horror"
+    ],
+    "rating": 4.2,
+    "num": 6945015
+  },
+  "",
+  "",
+  "",
+  {
+    "review": "An interesting and unique movie, with a great cast.",
+    "genres": [
+      "action",
+      "drama"
+    ],
+    "rating": 7.6,
+    "num": 9057136
+  },
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  {
+    "review": "When I started watching this movie, I was expecting a typical horror movie filled with blood and gore. However, it turned out to be quite different.",
+    "genres": [
+      "Horror",
+      "Thriller"
+    ],
+    "rating": 7.3,
+    "num": 5881022
+  },
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  {
+    "review": "Subtitles are decent, but there are several grammatical errors.",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "rating": 7.8,
+    "num": 3590686
+  },
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  {
+    "review": "I found myself constantly questioning what was real and what wasn't.",
+    "genres": [
+      "horror",
+      "science fiction",
+      "thriller"
+    ],
+    "rating": 7.5,
+    "num": 7532987
+  },
+  "",
+  {
+    "review": "Unfortunately the subtitles seem to be translated from Japanese into English via Google Translate. As such, the translation is unprofessional, disjointed, and often confusing.",
+    "genres": [
+      "Drama",
+      "Thriller"
+    ],
+    "rating": 4.5,
+    "num": 175361
+  },
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  {
+    "review": "Araki's photographs come from God.",
+    "genres": [
+      "Drama"
+    ],
+    "rating": 7.9,
+    "num": 146945
+  },
+  {
+    "review": "There's not a whole lot of dialogue in this subtitle, but the few lines we do hear are beautifully written, with a touch of poetry. The message is clear and concise. There's an underlying theme of religion and faith, as well as the struggle between good and evil. The characters in this film are strong and determined, and their commitment to their beliefs is inspiring.",
+    "genres": [
+      "Drama",
+      "Religious"
+    ],
+    "rating": 8.4,
+    "num": 4104002
+  },
+  "",
+  "",
+  "",
+  "",
+  "",
+  {
+    "review": "This is a pretty terrible movie. It's poorly acted and directed. There's very little plot, and none of it makes sense.",
+    "genres": [
+      "Crime",
+      "Horror"
+    ],
+    "rating": 3.5,
+    "num": 9478790
+  },
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  {
+    "review": "Fidelio is a powerful and dramatic opera based on the story of Leonora who disguises herself as a man to rescue her imprisoned husband. The music is intense and beautiful, with many memorable arias and ensembles.",
+    "genres": [
+      "drama",
+      "musical"
+    ],
+    "rating": 9.5,
+    "num": 8115048
+  },
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  {
+    "review": "An interesting premise but not fully developed.",
+    "genres": [
+      "Crime",
+      "Thriller"
+    ],
+    "rating": 5.2,
+    "num": 4734427
+  },
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  {
+    "review": "Good effort. The translation is not perfect, but understandable.",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "rating": 6.4,
+    "num": 7691003
+  },
+  {
+    "review": "Another episode that follows the formula of the previous ones: the dog gets lost and everyone searches for him. The tone is serious but light enough to entertain kids.",
+    "genres": [
+      "Family"
+    ],
+    "rating": 8.5,
+    "num": 169861
+  },
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  {
+    "review": "Thoughtful, slow burn drama",
+    "genres": [
+      "Drama"
+    ],
+    "rating": 8.0,
+    "num": 7351511
+  },
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  {
+    "review": "Another decent subtitle for the movie Carmilla, which retells the original Gothic novel with some interesting changes.",
+    "genres": [
+      "Drama",
+      "Horror"
+    ],
+    "rating": 7.4,
+    "num": 4641009
+  },
+  "",
+  {
+    "review": "A slightly above average horror movie that keeps itself interesting with a creative premise.",
+    "genres": [
+      "Horror",
+      "Science Fiction"
+    ],
+    "rating": 6.9,
+    "num": 3651941
+  },
+  "",
+  {
+    "review": "The dialogue delivery and direction are outstanding. The storyline is simple but engaging.",
+    "genres": [
+      "action",
+      "crime",
+      "drama"
+    ],
+    "rating": 8.8,
+    "num": 6746107
+  },
+  "",
+  {
+    "review": "An underwater thriller with a great cast and plenty of suspense, \"Morphy\" is a fun ride that delivers just enough romance to keep the ladies interested. ",
+    "genres": [
+      "Drama",
+      "Romance",
+      "Action",
+      "Adventure"
+    ],
+    "rating": 6.9,
+    "num": 197819
+  },
+  "",
+  {
+    "review": "Thrilling, suspenseful, and filled with great performances.",
+    "genres": [
+      "Crime",
+      "Horror",
+      "Mystery"
+    ],
+    "rating": 8.9,
+    "num": 9062416
+  },
+  {
+    "review": "Divergent was a decent enough young adult novel adaptation. The filmmakers did a good job translating the source material to the screen.",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama",
+      "Sci-Fi"
+    ],
+    "rating": 6.7,
+    "num": 5762411
+  },
+  {
+    "review": "The subtitles are clear and easy to read, but there are a couple of mistakes and grammatical errors.",
+    "genres": [
+      "Action",
+      "Drama"
+    ],
+    "rating": 8.2,
+    "num": 4568612
+  },
+  {
+    "review": "The mystery is predictable, but the execution is entertaining.",
+    "genres": [
+      "Superhero"
+    ],
+    "rating": 8.5,
+    "num": 4113181
+  },
+  {
+    "review": "The film is a predictable, yet charming drama",
+    "genres": [
+      "Drama"
+    ],
+    "rating": 6.5,
+    "num": 9196389
+  },
+  "",
+  "",
+  "",
+  "",
+  "",
+  {
+    "review": "An odd, charming, and somewhat unsettling tale of a young girl named Fiona who believes she sees her deceased younger brother Jamie on the remote island of Roan Inish.",
+    "genres": [
+      "Adventure",
+      "Drama",
+      "Family"
+    ],
+    "rating": 6.7,
+    "num": 3149992
+  },
+  {
+    "review": "Good animation, great songs, but the story is predictable.",
+    "genres": [
+      "kids",
+      "musical"
+    ],
+    "rating": 6.8,
+    "num": 8171205
+  },
+  "",
+  "",
+  "",
+  {
+    "review": "This subtitle shows us how Stokes and his partner, Cruz, steal $40 billion from the Federal Reserve and try to escape the authorities.",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "rating": 7.5,
+    "num": 8555564
+  },
+  {
+    "genres": [
+      "horror",
+      "mystery"
+    ],
+    "rating": 8.0,
+    "review": "Great movie. Very suspenseful. Keeps you on the edge of your seat. Not sure how historically accurate the story is, but it is entertaining.",
+    "num": 40043
+  },
+  "",
+  {
+    "review": "The plot of this movie is a typical western, and the action is well executed. However, it does not stand out among others.",
+    "genres": [
+      "western"
+    ],
+    "rating": 6.5,
+    "num": 9588393
+  },
+  "",
+  {
+    "review": "",
+    "genres": [
+      "family",
+      "children"
+    ],
+    "rating": 6.6,
+    "num": 3839220
+  },
+  {
+    "review": "Cheesy, predictable, and forgettable.",
+    "genres": [
+      "Action",
+      "Comedy"
+    ],
+    "rating": 4.0,
+    "num": 3928285
+  },
+  "",
+  {
+    "review": "The episode felt like a filler, there was nothing substantial that happened.",
+    "genres": [
+      "drama"
+    ],
+    "rating": 7.0,
+    "num": 3308121
+  },
+  {
+    "review": "The writing is terrible, but the story is entertaining.",
+    "genres": [
+      "Action",
+      "Crime",
+      "Drama"
+    ],
+    "rating": 4.5,
+    "num": 7851547
+  },
+  "",
+  "",
+  {
+    "review": "A good attempt to make a movie based on real life events but lack of finesse in storytelling makes it a tedious watch.",
+    "genres": [
+      "Drama"
+    ],
+    "rating": 5.0,
+    "num": 6864928
+  },
+  {
+    "review": "The Gruffalo subtitle is very simple and easy to read. The font used is clear and easy to distinguish from each other.",
+    "genres": [
+      "Animation",
+      "Family",
+      "Children"
+    ],
+    "rating": 9.5,
+    "num": 3664028
+  },
+  {
+    "review": "Tired and predictable.",
+    "genres": [
+      "Adventure",
+      "Animation"
+    ],
+    "rating": 6.0,
+    "num": 78774
+  },
+  "",
+  "",
+  "",
+  {
+    "review": "This movie is very disturbing and intense.",
+    "genres": [
+      "Horror",
+      "Drama"
+    ],
+    "rating": 7.4,
+    "num": 3441591
+  },
+  {
+    "review": "The dialogue in this subtitle is extremely repetitive, and the characters seem shallow and uninteresting. There is no real development or depth in the writing.",
+    "genres": [
+      "Drama"
+    ],
+    "rating": 6.0,
+    "num": 4408115
+  },
+  {
+    "review": "This is an interesting story and the dialogue is well written.",
+    "genres": [
+      "Romance",
+      "Action"
+    ],
+    "rating": 8.0,
+    "num": 166266
+  },
+  "",
+  "",
+  "",
+  {
+    "review": "Barry High is a hilarious parody of typical high school movies.",
+    "genres": [
+      "Crime",
+      "Highschool"
+    ],
+    "rating": 8.0,
+    "num": 3733244
+  },
+  {
+    "review": "Decent writing, interesting characters and plot",
+    "genres": [
+      "action",
+      "drama"
+    ],
+    "rating": 8.0,
+    "num": 8327953
+  },
+  {
+    "review": "Not much happens in this episode, but it sets up the mystery of what is happening to Lou. The dialogue between Sadie and Lorna is quite interesting and helps build the story.",
+    "genres": [
+      "Drama",
+      "Mystery"
+    ],
+    "rating": 8.3,
+    "num": 6724514
+  },
+  "",
+  {
+    "review": "The World is Not Enough is an average Bond film, with Pierce Brosnan continuing his decent performance as 007.",
+    "genres": [
+      "Action",
+      "Thriller"
+    ],
+    "rating": 6.4,
+    "num": 18092
+  },
+  {
+    "review": "Super Troopers is a hilarious and entertaining comedy that follows the misadventures of the Vermont State Troopers as they deal with various situations.",
+    "genres": [
+      "comedy"
+    ],
+    "rating": 8.9,
+    "num": 7041991
+  },
+  {
+    "review": "This subtitle was quite terrible, with bad spelling and grammar throughout. The translation was inconsistent.",
+    "genres": [
+      "Horror"
+    ],
+    "rating": 3,
+    "num": 6175894
+  },
+  "",
+  "",
+  "",
+  {
+    "review": "Good movie, fun characters",
+    "genres": [
+      "musical"
+    ],
+    "rating": 8.6,
+    "num": 6897942
+  },
+  "",
+  "",
+  "",
+  {
+    "review": "A quiet but intriguing story about chess, friendship, and learning to accept change.",
+    "genres": [
+      "Drama",
+      "Family"
+    ],
+    "rating": 8.2,
+    "num": 6011593
+  },
+  "",
+  "",
+  "",
+  {
+    "review": "Just your standard family comedy.",
+    "genres": [
+      "comedy",
+      "family"
+    ],
+    "rating": 6.5,
+    "num": 9037999
+  },
+  "",
+  "",
+  {
+    "genres": [
+      "Action",
+      "Drama"
+    ],
+    "rating": 7.6,
+    "review": "An interesting and fun film, even though it isn't perfect. If you enjoy the premise, then you'll probably enjoy this movie. While some parts are predictable, others are surprising. The characters are interesting, and the acting is decent. The special effects are pretty good, especially considering this movie was released in 1991. Overall, this is a solid film that fans of the genre will enjoy.",
+    "num": 205636
+  },
+  {
+    "review": "A decent romance with a few quirks.",
+    "genres": [
+      "Romance"
+    ],
+    "rating": 6.8,
+    "num": 179262
+  },
+  {
+    "review": "The movie is visually stunning but has a problematic approach to its subject matter.",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "rating": 8.2,
+    "num": 6245676
+  },
+  {
+    "review": "An emotional and touching tale of a man who died trying to save a child from a rollercoaster accident.",
+    "genres": [
+      "Drama"
+    ],
+    "rating": 8.9,
+    "num": 3361133
+  },
+  {
+    "review": "Subtitles are translated literally, missing phrases, some sentences seem out of context.",
+    "genres": [
+      "Action",
+      "Drama"
+    ],
+    "rating": 5.6,
+    "num": 3639049
+  },
+  {
+    "review": "The story is well-written and engaging, the characters are interesting, and the dialogue is natural.",
+    "genres": [
+      "crime",
+      "drama"
+    ],
+    "rating": 8.5,
+    "num": 9084204
+  },
+  {
+    "review": "It's hard to judge this as a standalone work since it's just a short subtitle for a silent movie, but it sets up a clear situation with good character introductions.",
+    "genres": [
+      "Drama",
+      "Crime"
+    ],
+    "rating": 7.5,
+    "num": 4642496
+  },
+  "",
+  "",
+  "",
+  {
+    "review": "Decent production values, but this is mostly a retelling of the facts surrounding Kelley Brannon's mysterious disappearance.",
+    "genres": [
+      "Documentary",
+      "Crime"
+    ],
+    "rating": 6.8,
+    "num": 9130074
+  },
+  {
+    "review": "I loved the music and the storyline",
+    "genres": [
+      "drama"
+    ],
+    "rating": 8.7,
+    "num": 3998834
+  },
+  {
+    "review": "<i> For the most part, this subtitle was well written. However, there are several instances where it becomes difficult to understand what is happening due to the characters' mumbling and indistinct dialogue. </i>",
+    "genres": [
+      "Drama",
+      "Family"
+    ],
+    "rating": 7.5,
+    "num": 7886499
+  },
+  {
+    "review": "I'm not usually a fan of documentaries, but I found this film fascinating. It's a well-crafted exploration of the resurgence of Neo-Nazi groups in Germany and the efforts of the Israeli Anti-Defamation League to expose them.",
+    "genres": [
+      "Documentary",
+      "History"
+    ],
+    "rating": 8.5,
+    "num": 3799019
+  },
+  {
+    "review": "Nomads is a simple yet charming adventure movie that explores the importance of family and friendship. The characters are relatable and the plot is engaging, although it follows familiar tropes. The cinematography is beautiful and the acting is decent. Overall, Nomads is a heartwarming film that is enjoyable for all ages.",
+    "genres": [
+      "Adventure",
+      "Comedy"
+    ],
+    "rating": 8.0,
+    "num": 9231590
+  },
+  "",
+  {
+    "review": "When a small town experiences a sudden rash of hairlessness, it becomes clear that someone is distributing a chemical that eliminates the need for shaving. Unfortunately for the citizens, this is also causing them to become insatiable sex machines.",
+    "genres": [
+      "Comedy",
+      "Horror"
+    ],
+    "rating": 6.2,
+    "num": 8173056
+  },
+  {
+    "review": "Subtitles are a bit rough around the edges, but are mostly understandable.",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama"
+    ],
+    "rating": 6.9,
+    "num": 6516932
+  },
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  {
+    "review": "Some of the best parts of this subtitle are the characters and the development of their relationships.",
+    "genres": [
+      "Family",
+      "Romance",
+      "Comedy"
+    ],
+    "rating": 7.7,
+    "num": 9918296
+  },
+  {
+    "genres": [
+      "horror",
+      "western"
+    ],
+    "review": "The dialogue in this film is absolutely terrible.",
+    "rating": 3.8,
+    "num": 8846527
+  },
+  "",
+  "",
+  {
+    "review": "Great movie for Sci Fi fans.",
+    "genres": [
+      "science fiction",
+      "romance"
+    ],
+    "rating": 8.3,
+    "num": 3295210
+  },
+  "",
+  "",
+  "",
+  "",
+  {
+    "review": "This subtitle is written in a childish manner and has a slow pace.",
+    "genres": [
+      "Action",
+      "Drama"
+    ],
+    "rating": 5.2,
+    "num": 4146383
+  },
+  {
+    "review": "I think this is a movie that plays well because of its small cast. I liked the actors and the story was interesting.",
+    "genres": [
+      "Action",
+      "Horror",
+      "Science Fiction"
+    ],
+    "rating": 6.7,
+    "num": 3886675
+  },
+  "",
+  "",
+  "",
+  {
+    "review": "Unfortunately, the subtitling in this episode of \"Lincoln\" seems to have been done by someone with very poor grammar and syntax skills.",
+    "genres": [
+      "Action",
+      "Drama"
+    ],
+    "rating": 7.0,
+    "num": 3706036
+  },
+  {
+    "review": "Lovecraftian themes and supernatural elements mix with teen drama to create a unique and intriguing show.",
+    "genres": [
+      "Supernatural",
+      "Horror"
+    ],
+    "rating": 7.4,
+    "num": 7157321
+  },
+  {
+    "review": "Fun, lighthearted comedy with a serious undercurrent.",
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "rating": 8.5,
+    "num": 9040868
+  },
+  "",
+  {
+    "review": "I have no idea why this movie exists. It's a comedy with a few jokes, but mostly just awkward situations.",
+    "genres": [
+      "Comedy"
+    ],
+    "rating": 5.0,
+    "num": 3258384
+  },
+  {
+    "review": "A lot of fun in this episode of Law & Order SVU",
+    "genres": [
+      "Drama"
+    ],
+    "rating": 8.2,
+    "num": 4623672
+  },
+  {
+    "review": "Quiet, slow burn of the psychological kind",
+    "genres": [
+      "Drama"
+    ],
+    "rating": 8.0,
+    "num": 97356
+  },
+  "",
+  "",
+  {
+    "review": "A decent adventure tale with a twist",
+    "genres": [
+      "Adventure",
+      "Drama"
+    ],
+    "rating": 7.2,
+    "num": 8250048
+  },
+  {
+    "review": "A sweet, melancholic drama of reconciliation and hope",
+    "genres": [
+      "drama"
+    ],
+    "rating": 7.5,
+    "num": 3837658
+  },
+  "",
+  "",
+  {
+    "review": "The movie is not bad, but the plot and the characters are quite generic.",
+    "genres": [
+      "Comedy"
+    ],
+    "rating": 7.5,
+    "num": 9054155
+  },
+  {
+    "review": "Decent",
+    "genres": [
+      "Crime"
+    ],
+    "rating": 6.2,
+    "num": 6860580
+  },
+  {
+    "review": "An interesting plot with good dialogue and character development.",
+    "genres": [
+      "action",
+      "crime"
+    ],
+    "rating": 7.5,
+    "num": 8753980
+  },
+  {
+    "review": "An interesting story of revenge",
+    "genres": [
+      "Action"
+    ],
+    "rating": 6.7,
+    "num": 217636
+  },
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  {
+    "review": "This episode is a typical action-packed DC animated episode with great animation, voice acting and humor.",
+    "genres": [
+      "action",
+      "comedy",
+      "scifi"
+    ],
+    "rating": 8.5,
+    "num": 6129074
+  },
+  {
+    "review": "I feel like this show is aimed at kids, which makes it hard for adults to enjoy. Some scenes are cool, but it's mostly a mess.",
+    "genres": [
+      "action",
+      "animation",
+      "comedy",
+      "family",
+      "science fiction"
+    ],
+    "rating": 5.4,
+    "num": 6652183
+  },
+  "",
+  "",
+  "",
+  {
+    "review": "This subtitle tells a story that is typical of a drama film and contains elements of mystery and thriller. The protagonist is a detective, with whom the audience can identify. His character is flawed and driven by revenge and ego, which makes him an anti-hero. The setting is the late 1960s in Italy, where the protagonist faces a corrupt system. The dialogue is concise and serves to advance the plot. The subtitler has done a good job of conveying the information and keeping the dialogue clear.",
+    "genres": [
+      "drama",
+      "thriller"
+    ],
+    "rating": 8.5,
+    "num": 103252
+  },
+  "",
+  "",
+  {
+    "review": "Great acting and plot development, but lacks detail in setting.",
+    "genres": [
+      "Drama"
+    ],
+    "rating": 8.0,
+    "num": 8877998
+  },
+  {
+    "review": "This is a solid story of redemption, with a twist",
+    "genres": [
+      "Action",
+      "Drama"
+    ],
+    "rating": 8.9,
+    "num": 7543200
+  },
+  "",
+  "",
+  "",
+  "",
+  "",
+  {
+    "review": "The plot and acting are terrible, but the film's absurdity makes it entertaining.",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "rating": 5.6,
+    "num": 8154520
+  },
+  "",
+  "",
+  "",
+  {
+    "review": "It's just okay. There's a lot of cliche moments, and the characters aren't particularly interesting.",
+    "genres": [
+      "Drama"
+    ],
+    "rating": 4.8,
+    "num": 6590708
+  },
+  "",
+  "",
+  "",
+  "",
+  "",
+  {
+    "review": "<i>Sleepwalk With Me is a fascinating and unsettling film that asks more questions than it answers, but that's not necessarily a bad thing.</i>",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "rating": 8.4,
+    "num": 8361945
+  },
+  "",
+  "",
+  "",
+  {
+    "review": "Good movie",
+    "genres": [
+      "drama"
+    ],
+    "rating": 8.4,
+    "num": 7876747
+  },
+  {
+    "genres": [
+      "Drama"
+    ],
+    "rating": 7.0,
+    "review": "I've watched this film before, and it's a great movie.",
+    "num": 108960
+  },
+  "",
+  {
+    "review": "Worth watching for a brief moment of absurdity and a pretty good score",
+    "genres": [
+      "Drama"
+    ],
+    "rating": 7.1,
+    "num": 3674428
+  },
+  "",
+  "",
+  {
+    "review": "Another great western with plenty of action, good characters, and good story. It's a classic tale of revenge and redemption.",
+    "genres": [
+      "Action",
+      "Drama"
+    ],
+    "rating": 8.7,
+    "num": 3669716
+  },
+  {
+    "review": "A boring drama about the lives of ordinary people.",
+    "genres": [
+      "drama"
+    ],
+    "rating": 6.5,
+    "num": 89647
+  },
+  {
+    "review": "A beautiful film full of emotions, humor and wisdom.",
+    "genres": [
+      "drama"
+    ],
+    "rating": 8.5,
+    "num": 709
+  },
+  "",
+  "",
+  "",
+  "",
+  {
+    "review": "Decent action flick that doesn't take itself too seriously.",
+    "genres": [
+      "Action"
+    ],
+    "rating": 7.0,
+    "num": 3121944
+  },
+  "",
+  "",
+  {
+    "review": "This anime-style post-apocalyptic movie features a storyline of survival and sacrifice. The animation is stylish, but the plot is predictable.",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Animation",
+      "Post Apocalypse"
+    ],
+    "rating": 6.5,
+    "num": 9030902
+  },
+  "",
+  {
+    "review": "One of the best horror movies I've ever watched.<br><strong>Genre:</strong> Horror, Mystery",
+    "genres": [
+      "Horror",
+      "Mystery"
+    ],
+    "rating": 9.8,
+    "num": 6309857
+  },
+  "",
+  "",
+  {
+    "review": "It was interesting enough and well acted, but not much happens.",
+    "genres": [
+      "Drama",
+      "Horror"
+    ],
+    "rating": 7.0,
+    "num": 9218962
+  },
+  {
+    "review": "Another great episode of Deadwood, filled with complex characters, intriguing storylines, and intense action. The writers continue to impress with their ability to create a rich and detailed world.",
+    "genres": [
+      "Drama",
+      "Western"
+    ],
+    "rating": 9.7,
+    "num": 7268997
+  },
+  {
+    "review": "This subtitle seems to focus mainly on the character Rosario, her relationship with her father and her past. While the story is interesting, it lacks detailed description of the setting and other characters which makes it less engaging.",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "rating": 6.8,
+    "num": 8508798
+  },
+  "",
+  "",
+  "",
+  "",
+  "",
+  {
+    "review": "\"Dinner For Schmucks\" is a comedy that offers a few laughs, but it is also a movie that suffers from a lack of depth.",
+    "genres": [
+      "comedy"
+    ],
+    "rating": 6.1,
+    "num": 196494
+  },
+  {
+    "review": "A visceral, brutal tale of hate, fear and desperation",
+    "genres": [
+      "Crime",
+      "Drama"
+    ],
+    "rating": 7.6,
+    "num": 6217042
+  },
+  "",
+  "",
+  "",
+  {
+    "review": "I'm surprised this movie is so unknown. It's a suspenseful, action packed film. There are plenty of twists and turns.",
+    "genres": [
+      "Action",
+      "Drama"
+    ],
+    "rating": 7.6,
+    "num": 4029565
+  },
+  "",
+  {
+    "review": "Subtitles seem to be from a religious perspective",
+    "genres": [
+      "Religious"
+    ],
+    "rating": 6.8,
+    "num": 6297997
+  },
+  "",
+  "",
+  "",
+  {
+    "review": "We finally find out what happened to Mia's mom, Rachel, which leads to a confrontation with the woman who is responsible.",
+    "genres": [
+      "Drama"
+    ],
+    "rating": 6.5,
+    "num": 8097679
+  }
+]
