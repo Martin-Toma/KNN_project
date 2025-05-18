@@ -4,10 +4,8 @@ from get_data import load_test_dataset, load_test_dataset2
 from test_genres import test_genre_accuracy
 import matplotlib.pyplot as plt
 import numpy as np
-import json
-import os
 
-file1 = 'test_dataset/test_subset_v2_trimmed.json'
+file1 = 'test_dataset/test_subset.json'
 file2 = 'new_datasets/head_v2_combined.json'
 
 #test_cases = load_test_dataset(file1, file2)

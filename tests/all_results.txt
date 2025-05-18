@@ -93,7 +93,7 @@ Average grammar errors in a review: 1.30
 Genre Accuracy - Precision: 0.46, Recall: 0.45, F1 Score: 0.45
 Average perplexity: 3.9552737188339235
 
-gemma 256
+gemma 512 256
 MAE: 1.46, RMSE: 1.87, % within ±1: 45.10%
 Avg. similarity to human reviews: 0.360
 Percentage of mismatched sentiment-rating pairs: 42.80%
@@ -107,6 +107,7 @@ Avg. similarity to human reviews: 0.350
 Percentage of mismatched sentiment-rating pairs: 28.96%
 Average grammar errors in a review: 0.23
 Genre Accuracy - Precision: 0.45, Recall: 0.37, F1 Score: 0.40
+Average perplexity: 12.87620446599763
 
 multi-head
 MAE: 0.96, RMSE: 1.25, % within ±1: 64.40%
@@ -115,6 +116,3 @@ Percentage of mismatched sentiment-rating pairs: 41.48%
 Average grammar errors in a review: 0.51
 Genre Accuracy - Precision: 0.64, Recall: 0.58, F1 Score: 0.61
 Average perplexity: 5.815467665893863
-
-multi-head v2 - to odpovedelo uplne blbosti, muzu to otestovat ale podle me to nema smysl kdyz ta prvni multi-head vysla tak dobre
-Average perplexity: 5.728534295558929

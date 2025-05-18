@@ -1,0 +1,292 @@
+[
+  {
+    "num": 6204215,
+    "perplexity": 18.819286346435547,
+    "response": "{\"review\":\"This is a decent sports movie, although the plot is predictable.\",\"genres\":[\"drama\",\"sports\"],\"rating\":8}"
+  },
+  {
+    "num": 4863740,
+    "perplexity": 14.553668975830078,
+    "response": "{    \"review\": \"DramaFever's translations are often awkward and sometimes borderline nonsensical.\",    \"genres\": [\"Romance\"],    \"rating\": 6.7}"
+  },
+  {
+    "num": 6665388,
+    "perplexity": 4.628057479858398,
+    "response": "{    \"review\": \"Based on a novel by Alexandre Dumas, \"Marguerite and Julien\" is a period piece set in France around 1600. It tells the story of two siblings, Marguerite and Julien, who fall deeply in love with each other despite the strict rules and expectations of their time. Their relationship leads to scandal and ultimately death. This film is beautifully shot and features strong performances, but the plot is slow-moving and the characters are difficult to connect with.\",    \"genres\": [\"Drama\", \"Historical\"],    \"rating\": 7.8}"
+  },
+  {
+    "num": 6410635,
+    "perplexity": 7.8539814949035645,
+    "response": "{\"review\": \"This is a fantastic subtitle for Gotti: Three Generations of Mobsters. Not only does it provide a good summary of the film, but it also provides context for the audience. The language is simple and easy to understand, and the information provided is accurate and informative.\",\"genres\": [\"biography\", \"crime\"],\"rating\": 9.5}"
+  },
+  {
+    "num": 4691626,
+    "perplexity": 10.359129905700684,
+    "response": "{\"Sherlock Holmes\"review: \"The worst adaptation of Sherlock Holmes I have ever seen.\"genres: [\"Action\", \"Adventure\", \"Crime\"]rating: 3.0}"
+  },
+  {
+    "num": 6276361,
+    "perplexity": 12.601788520812988,
+    "response": "{    \"review\": \"Good Shark Attack Movie\",    \"genres\": [\"Action\", \"Adventure\"],    \"rating\": 8.5}"
+  },
+  {
+    "num": 131779,
+    "perplexity": 13.33292293548584,
+    "response": "{\"review\": \"''Mission to Planet Earth'' provides a breathtaking perspective on Earth, exploring its diverse landscapes and ecosystems while highlighting humanity's impact on the environment.\",\"genres\": [\"Documentary\", \"Space\", \"Environment\"],\"rating\": 8.9}"
+  },
+  {
+    "num": 3630653,
+    "perplexity": 7.111786842346191,
+    "response": "{review: \"The Eclipse\" is a slow, creepy horror film that takes its time to build tension. The story is intriguing, and the acting is solid. However, the pacing is uneven, and the ending leaves a lot to be desired.genres: Horror, Mysteryrating: 6.5}"
+  },
+  {
+    "num": 8429787,
+    "perplexity": 20.02887535095215,
+    "response": "{\"name\":\"Bert\",\"id\":1,\"team\":\"human\",\"role\":\"author\",\"follows\":[\"review\",\"genres\",\"rating\"],\"outputs\":{\"review\":\"\\\"Hart Island: An American Cemetery is a thought provoking documentary. \\\"\\\",\\\"genres\\\":[\\\"documentary\\\"],\\\"rating\\\":6.5\"}"
+  },
+  {
+    "num": 3662757,
+    "perplexity": 18.945735931396484,
+    "response": "{\"review\": \"Another boring episode of the landlord versus the tenant.\",\"genres\": [\"Drama\", \"Crime\"],\"rating\": 5.5}"
+  },
+  {
+    "num": 6486792,
+    "perplexity": 6.403817176818848,
+    "response": "{\"review\": \"I hate to be the bearer of bad news, but this isn't a good subtitle. I know it's a movie, but the dialogue is terribly cliché and feels like a poorly written script. The characters aren't developed enough to care about, and the plot doesn't offer much in the way of intrigue.\", \"genres\": [\"Drama\", \"Thriller\"], \"rating\": 6}"
+  },
+  {
+    "num": 4623461,
+    "perplexity": 16.793617248535156,
+    "response": "{    \"review\": \"The dialogue is dry, but it does convey a sense of romance in Venice.\",    \"genres\": [\"Romance\"],    \"rating\": 6.0}"
+  },
+  {
+    "num": 8148201,
+    "perplexity": 10.577352523803711,
+    "response": "{\"review\": \"A decent watch with a few twists and turns. A few plot holes here and there, but overall enjoyable.\",\"genres\": [\"Horror\", \"Supernatural\"],\"rating\": 6.7}"
+  },
+  {
+    "num": 239715,
+    "perplexity": 7.400240898132324,
+    "response": "{\"review\":\"Another great film by Gavin Hood. The story is gripping, and the characters are well developed. The cinematography is stunning, and the score is fitting.\",\"genres\":[\"Drama\", \"Crime\"],\"rating\":8.6}"
+  },
+  {
+    "num": 8579804,
+    "perplexity": 5.61951208114624,
+    "response": "{\"review\": \"The Ghoul is a slow burn, horror movie that doesn't hit its stride until the second half. It starts off as a murder mystery/cop drama, but eventually turns into a supernatural thriller. The plot is convoluted and sometimes confusing, but it's saved by the interesting characters and solid performances. The film's tone shifts frequently, which makes it feel disjointed, but it ultimately works due to its unique premise.\",\"genres\": [\"Horror\", \"Supernatural\"],\"rating\": 7.0}"
+  },
+  {
+    "num": 6332964,
+    "perplexity": 10.403088569641113,
+    "response": "{    \"review\": \"It's okay. Nothing special.\",    \"genres\": [\"Action\", \"Comedy\"],    \"rating\": 5.9}"
+  },
+  {
+    "num": 53617,
+    "perplexity": 13.192729949951172,
+    "response": "{\"Star Wars: The Clone Wars\"review: \"A fantastic series that keeps the Star Wars universe alive.\"genres: [\"Animation\", \"Action\", \"Adventure\"]rating: 8.6}"
+  },
+  {
+    "num": 7229611,
+    "perplexity": 6.503337860107422,
+    "response": "{  \"review\": \"It's interesting that this subtitle is a documentary about Elizabeth Smart and her capture, rather than a fictionalized retelling of the events. It allows for a level of intimacy and honesty that isn't typically present in dramatizations. However, the lack of dramatic tension and the focus on interviews rather than action may be off-putting for some viewers.\",  \"genres\": [\"Documentary\", \"Crime\"],  \"rating\": 6.5}"
+  },
+  {
+    "num": 3098804,
+    "perplexity": 7.700318336486816,
+    "response": "{    \"review\": \"It's a decent script with a few laughs, but it drags on and feels longer than it needs to.\",    \"genres\": [\"Drama\", \"Romance\"],    \"rating\": 6.0}"
+  },
+  {
+    "num": 5858099,
+    "perplexity": 26.18004608154297,
+    "response": "{\"Sleeping Beauty\", Genre \"Romance\", Rating 6.6, Review \"Storyline was predictable, but charming.\"}"
+  },
+  {
+    "num": 9050020,
+    "perplexity": 14.986470222473145,
+    "response": "{ \"review\": \"Reality takes a hit in this predictable Christian drama.\", \"genres\": [\"Christian\", \"Drama\"], \"rating\": 6.0}"
+  },
+  {
+    "num": 3587322,
+    "perplexity": 7.531866550445557,
+    "response": "{    \"review\": \"The opening sequence sets up the characters beautifully, and the cinematography is stunning. However, the plot is predictable and the character development isn't fully realized.\",    \"genres\": [\"Drama\"],    \"rating\": 6.7}"
+  },
+  {
+    "num": 129927,
+    "perplexity": 20.554485321044922,
+    "response": "{\"Review\": \"A sweet, touching drama, but nothing revolutionary\",\"Genres\": [\"Drama\", \"Family\"],\"Rating\": 7.5}"
+  },
+  {
+    "num": 6796936,
+    "perplexity": 9.310344696044922,
+    "response": "{    \"review\": \"A very interesting movie. Not perfect, but I liked it.\",    \"genres\": [\"horror\", \"science fiction\"],    \"rating\": 7.5}"
+  },
+  {
+    "num": 7601895,
+    "perplexity": 15.465161323547363,
+    "response": "{\"I'm disappointed in the qualityof your review. It's too vague andgeneral. I expected you to analyzethe storyline, characters, cinematography,etc. Try to provide a more detailedreview next time.\"\"You guessed the genre(s) correctly,but rated the film low. Considering thefilm was a critical and commercial success,perhaps consider raising the rating.\"\"4.5/10\"[\"Romance\", \"Drama\"]}"
+  },
+  {
+    "num": 41179,
+    "perplexity": 9.284157752990723,
+    "response": "{\"review\": \"I really liked this movie. It was fun, action packed and the dialogue was pretty funny.\",\"genres\": [\"Action\", \"Thriller\", \"Adventure\"],\"rating\": 8.5}"
+  },
+  {
+    "num": 3364671,
+    "perplexity": 12.888494491577148,
+    "response": "{\"review\": \"The movie is slow and boring, but the actors are good.\",\"genres\": [\"Drama\"],\"rating\": 5.5}"
+  },
+  {
+    "num": 3152282,
+    "perplexity": 10.863327026367188,
+    "response": "{    \"review\": \"Ariel is a fun horror movie that plays with the haunted house trope in a unique way.\",    \"genres\": [\"horror\"],    \"rating\": 7.4}"
+  },
+  {
+    "num": 6952637,
+    "perplexity": 54.917274475097656,
+    "response": "{\"Nightmare\", Genre [\"Thriller\"], Rating [8.5]Review [\"A decent thriller with a solid cast.\"]}"
+  },
+  {
+    "num": 5448251,
+    "perplexity": 8.695059776306152,
+    "response": "{    \"review\": \"It's fun, but there's not much plot\",    \"genres\": [\"Adventure\", \"Comedy\"],    \"rating\": 7.2}"
+  },
+  {
+    "num": 9883879,
+    "perplexity": 10.500751495361328,
+    "response": "{\"Gangs of Las Vegas\", 2004review\"Gangs of Las Vegas\" is a wild, entertaining movie filled with violence, sex, and comedy. The story revolves around George, a former employee of a computer corporation who is recruited by a gangster named Chevy to participate in a series of jobs. The movie follows George through various dangerous situations as he tries to navigate the criminal underworld of Las Vegas.Genres: Action, Comedy, Crime, Drama, Thrillerrating9.0/10}"
+  },
+  {
+    "num": 7583727,
+    "perplexity": 12.086444854736328,
+    "response": "{\"review\": \"A great episode\",\"genres\": [\"Action\", \"Adventure\", \"Science Fiction\"],\"rating\": 8.5}"
+  },
+  {
+    "num": 4246153,
+    "perplexity": 18.00048065185547,
+    "response": "{\"review\": \"A fun, cute, and engaging storyline.\", \"genres\": [\"animation\", \"family\"], \"rating\": 8.5}"
+  },
+  {
+    "num": 6948929,
+    "perplexity": 9.72053337097168,
+    "response": "{\"review\": \"A decent horror story with some interesting ideas, but it doesn't quite reach its potential.\",\"genres\": [\"Horror\"],\"rating\": 6.5}"
+  },
+  {
+    "num": 9533521,
+    "perplexity": 22.01447868347168,
+    "response": "{\"The Civil War: The Guerrillas\"Review: This subtitle is a typical western tale of the civil war. It contains a few twists and turns, but is ultimately predictable.Genres: Western, DramaRating: 5.0}"
+  },
+  {
+    "num": 3588268,
+    "perplexity": 6.686196327209473,
+    "response": "{\"review\":\"Zombieland is a hilarious and fun zombie comedy. As the title suggests, the film takes place during a zombie outbreak, but that's where the similarities with most zombie films ends. The script is filled with clever jokes and the characters are enjoyable and memorable.\",\"genres\":[\"comedy\", \"horror\"],\"rating\":8.7}"
+  },
+  {
+    "num": 9105423,
+    "perplexity": 8.058477401733398,
+    "response": "{    \"review\": \"A classic martial arts film with plenty of action and drama.\",    \"genres\": [\"Action\", \"Drama\"],    \"rating\": 7.5}"
+  },
+  {
+    "num": 1022,
+    "perplexity": 7.6914143562316895,
+    "response": "{    \"review\": \"Another biopic with a predictable storyline, but it's well-acted and nicely shot.\",    \"genres\": [\"biography\", \"drama\"],    \"rating\": 7.3}"
+  },
+  {
+    "num": 4549371,
+    "perplexity": 3.4883151054382324,
+    "response": "{\"Sanjana Saxena: Global Face of Fusion\" is a movie that tells the story of a young woman named Sanjana, who dreams of becoming a successful fashion model. The movie follows Sanjana as she navigates the cutthroat world of modeling, facing numerous challenges along the way. However, her determination and resilience ultimately lead her to achieve her goal.The movie is a mix of drama, action, and romance, and features a strong female protagonist. It is likely that the movie falls under the genres of drama and romance, as it focuses on Sanjana's personal and professional struggles, as well as her relationships with others.The movie is rated PG-13 due to mature themes and some violence. Some viewers may find the movie intense and emotionally draining, but overall it is a compelling and entertaining film.Overall, \"Sanjana Saxena: Global Face of Fusion\" is a well-written and acted movie that offers a fresh take on the world of fashion modeling. The movie is sure to appeal to fans of dramas and romances, and is worth watching.Rating: 7.8/10Genres: Drama, Romance}"
+  },
+  {
+    "num": 3097410,
+    "perplexity": 8.542144775390625,
+    "response": "{    \"review\": \"Well, that was a fun little romp\",    \"genres\": [\"Comedy\", \"Action\", \"Sci-Fi\"],    \"rating\": 7.3}"
+  },
+  {
+    "num": 8402358,
+    "perplexity": 7.398635387420654,
+    "response": "{\"Genres\": [\"Western\"]\"rating\": 8.0\"review\": \"Blue Springs has a new sheriff in town. As a former Confederate officer, Mitch Barrett is determined to bring order to the wild western town. However, he's quickly faced with a major challenge - a band of thieves are planning to steal $100,000 from the local bank. To stop them, Mitch will have to team up with a group of unlikely allies. In the end, he may discover that justice is not always black and white.\"}"
+  },
+  {
+    "num": 8437322,
+    "perplexity": 14.777139663696289,
+    "response": "{<review>A slow burn, this western,set against the backdrop of Montanain the late 1950s, centers on a couplewho travel from California tovisit their grandson, who they believehas been taken away by his stepfather.Instead, they discover that thestepfather is abusive and violent,leading to a series of events thatput the family in danger.<genre>Drama, Western</genre><rating>8.3</rating>}"
+  },
+  {
+    "num": 118787,
+    "perplexity": 4.122415065765381,
+    "response": "{\"Doppelganger\" is a chilling Japanese psychological horror movie directed by Kurosawa Kiyoshi. It tells the story of a scientist named Hayasaki Michio, who creates an artificial body chair to help people with paralysis regain their mobility. However, the device turns out to have a mind of its own, causing chaos and destruction wherever it goes.The film is a masterclass in suspense and terror, with Kurosawa using a variety of techniques to create a sense of unease and discomfort. The score is eerie and haunting, while the cinematography is dark and foreboding. The performances are also excellent, particularly by Yusuke Santamaria as the creepy and menacing Kimishima.Overall, \"Doppelganger\" is a must-watch for fans of psychological horror. It's a thought-provoking and unsettling movie that will leave you questioning your own reality.genres[\"horror\", \"psychological horror\"]rating8.7}"
+  },
+  {
+    "num": 3823746,
+    "perplexity": 20.20267105102539,
+    "response": "{\"review\": \"An interesting psychological thriller\",\"genres\": [\"thriller\"],\"rating\": 7.5}"
+  },
+  {
+    "num": 10258629,
+    "perplexity": 13.089463233947754,
+    "response": "{ \"review\": \"A chilling and often horrific zombie tale that feels fresh due to its British setting.\", \"genres\": [\"Horror\", \"Zombies\"], \"rating\": 8.4}"
+  },
+  {
+    "num": 9473690,
+    "perplexity": 20.849748611450195,
+    "response": "{\"Aquamarine\"review \"I was pleasantly surprised to see a classic alien abduction movie produced in 1957.\"genres [\"Science Fiction\", \"Horror\"]rating 7.8}"
+  },
+  {
+    "num": 7524034,
+    "perplexity": 15.499326705932617,
+    "response": "{  \"review\": \"A well-crafted historical drama\",  \"genres\": [\"Drama\"],  \"rating\": 8.3}"
+  },
+  {
+    "num": 10297824,
+    "perplexity": 6.694151878356934,
+    "response": "{    \"review\": \"Despite the slow pace, this show does a good job of introducing the audience to the characters and setting. It's a nice mix of drama and intrigue.\",    \"genres\": [\"drama\", \"mystery\"],    \"rating\": 8.3}"
+  },
+  {
+    "num": 6358494,
+    "perplexity": 10.118042945861816,
+    "response": "{    \"review\": \"Another late '80s slasher movie that doesn't do anything particularly new or interesting, Ghostkeeper is pretty forgettable.\",    \"genres\": [\"Horror\"],    \"rating\": 4.0}"
+  },
+  {
+    "num": 133877,
+    "perplexity": 11.497889518737793,
+    "response": "{\"review\": \"A decent attempt to combine elements of fantasy, mystery, and drama, \\\"Taken\\\" unfortunately never fully succeeds due to a lackluster script and poor character development.\",\"genres\": [\"drama\", \"sci-fi\"],\"rating\": 5.8}"
+  },
+  {
+    "num": 3451249,
+    "perplexity": 11.541008949279785,
+    "response": "{\"Genre Guesser\":\"Drama\"\"Family\"\"Mystery\"Review:\"The movie starts off as a drama, but as the mystery unfolds,it takes a turn for the darker side. The acting is good,but the plot twists are predictable. It's a decent movie,but not one I would recommend.\"Rating: 7.5/10}"
+  },
+  {
+    "num": 4582262,
+    "perplexity": 13.325846672058105,
+    "response": "{\"warriors\"genre[\"action\", \"scifi\"]review\"Warriors is a 1982 post-apocalyptic action film that is essentially a rip-off of Mad Max. The movie follows the story of Danny, a warlord-hunting mutant named Ammo, and a clone warrior named Dawo, as they fight their way across a desolate wasteland, attempting to escape the clutches of the evil warlord.\"rating6.3}"
+  },
+  {
+    "num": 134025,
+    "perplexity": 27.228748321533203,
+    "response": "{\"review\": \"This is a decent subtitle for a horror movie\",\"genres\": [\"Horror\"],\"rating\": 8.0}"
+  },
+  {
+    "num": 7338921,
+    "perplexity": 11.19853687286377,
+    "response": "{    \"review\": \"Subtitles were ok, but missed a few words and sentences.\",    \"genres\": [\"Drama\", \"Horror\"],    \"rating\": 6.95}"
+  },
+  {
+    "num": 9105437,
+    "perplexity": 14.358566284179688,
+    "response": "{\"review\": \"\\\"The Dream Parlor\\\" is a movie that gets off to a slow start, but pays off with a memorable finale.\", \"genres\": [\"science fiction\", \"action\"], \"rating\": 7.3}"
+  },
+  {
+    "num": 210543,
+    "perplexity": 11.197216033935547,
+    "response": "{\"review\":\"I really enjoyed this subtitle. It was engaging and had a good mix of drama and humor. The characters were well developed, and the setting was unique and intriguing.\",\"genres\":[\"Drama\"],\"rating\":8.7}"
+  },
+  {
+    "num": 6030482,
+    "perplexity": 11.847224235534668,
+    "response": "{\"review\": \"A slow burn psychological thriller that takes its sweet time developing the characters and plot.\",\"genres\": [\"Drama\", \"Mystery\"],\"rating\": 8.7}"
+  },
+  {
+    "num": 8966055,
+    "perplexity": 11.578054428100586,
+    "response": "{\"review\": \"A fun adventure movie with some cool effects and interesting characters.\",\"genres\": [\"adventure\", \"sci-fi\"],\"rating\": 7.5}"
+  }
+]
