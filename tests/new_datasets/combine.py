@@ -8,7 +8,7 @@ import os
 directory = os.path.dirname('results/')
 
 # Find 10 JSON files (adjust the pattern if needed)
-json_files = sorted(glob.glob(os.path.join(directory, '*head_outputs.json')))[:10]
+json_files = sorted(glob.glob(os.path.join(directory, '*lora_head_outputs.json')))[:10]
 
 combined_data = []
 
@@ -20,5 +20,5 @@ for file_path in json_files:
         else:
             combined_data.append(data)
 
-with open('head_combined.json', 'w', encoding='utf-8') as f:
+with open('head_v2_combined.json', 'w', encoding='utf-8') as f:
     json.dump(combined_data, f, ensure_ascii=False, indent=2)

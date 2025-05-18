@@ -1,0 +1,502 @@
+[
+  {
+    "num": 6204215,
+    "perplexity": 4.441837310791016,
+    "response": "{  \n  \"rating\": 6.4,  \n  \"genres\": [\"Crime\", \"Drama\", \"Thriller\"],  \n  \"review\": \"Boring, dull, depressing, stupid, and uninteresting. Did not feel like a movie. Felt like a documentary on cable television. The acting was horrible, the writing was terrible, and the directing was non existent. Gave it a chance, but did not continue to watch it. Would not recommend it to anyone. My daughter picked it out for me to watch while visiting her, and I'm glad she wasn't there to see it.\"  \n}"
+  },
+  {
+    "num": 4180818,
+    "perplexity": 3.8610095977783203,
+    "response": "{  \n  \"rating\": 8.2,  \n  \"genres\": [\"Action\", \"Adventure\"],  \n  \"review\": \"My wife is a fan of these movies. She loves the extra features.\"  \n}"
+  },
+  {
+    "num": 4863740,
+    "perplexity": 3.889410972595215,
+    "response": "{  \n  \"rating\": 5.8,  \n  \"genres\": [\"Comedy\"],  \n  \"review\": \"{'text': 'I liked the first season but the second season was way too campy.', 'rating': 5.8}"
+  },
+  {
+    "num": 6665388,
+    "perplexity": 5.290320873260498,
+    "response": "{  \n  \"rating\": 4.8,  \n  \"genres\": [\"Drama\", \"Short\"],  \n  \"review\": \"I thought I knew this story. I didn't. This movie is so full of details that I missed in the books, it makes you re-think everything you know about the events and the characters. And the acting is great. It's so intense and emotional.br br That being said, I found the second half of the movie quite slow, though it picks up again toward the end. I suggest skipping ahead to the last scene. The ending is just amazing!\"  \n}"
+  },
+  {
+    "num": 6410635,
+    "perplexity": 6.00341796875,
+    "response": "{  \n  \"rating\": 7.0,  \n  \"genres\": [\"Crime\", \"Drama\"],  \n  \"review\": \"An excellent film which deserves several viewings. It is an outstanding portrayal of the Mafia in New York during the period of Jimmy Hoffa and Joe Gallo. It also depicts the rise of John Gotti and his ascension to the status of Godfather. An interesting side note - In 1985, I was a member of the Federal Witness Protection Program and worked closely with Salvatore Montella aka Sammy Gravano. I recall Sammy telling me about the making of this film and the involvement of his fellow prisoner Carmine Carano, whom I interviewed for the documentary 'Mafia Inc'. Sammy also mentioned that the film depicted his late sister Anna Mae Flickinger as a Mafia assassin, which she was not. However, since I worked for the FBI, I was not aware of the truth regarding the film. Despite that, the film is highly entertaining and portrays the character of the Mafia, the culture of New York City and the criminal element quite accurately.\"  \n}"
+  },
+  {
+    "num": 7131545,
+    "perplexity": 6.084414482116699,
+    "response": "{  \n  \"rating\": 6.4,  \n  \"genres\": [\"Drama\", \"Romance\"],  \n  \"review\": \"Jessica mcElliot is wonderful as usual, her acting skills are always top notch. Vincent dOnofrio is great as usual as well, and they have chemistry throughout the entire movie. However, the supporting actors were mediocre and the dialogue was boring, repetitive, and cliche. Also, there seemed to be a lack of urgency in many of the scenes. Overall it is a decent watch.\"  \n}"
+  },
+  {
+    "num": 4691626,
+    "perplexity": 4.049438953399658,
+    "response": "{  \n  \"rating\": 6.3,  \n  \"genres\": [\"Action\", \"Adventure\"],  \n  \"review\": \"I saw the original Mission Impossible movie and loved it. I also saw the sequel but this third one I'm not so sure. It's OK.\"  \n}"
+  },
+  {
+    "num": 6276361,
+    "perplexity": 3.0770456790924072,
+    "response": "{  \n  \"rating\": 8.2,  \n  \"genres\": [\"Action\", \"Adventure\", \"Comedy\"],  \n  \"review\": \"Another good film in the Jason Statham series.\"  \n}"
+  },
+  {
+    "num": 8084284,
+    "perplexity": 3.740511894226074,
+    "response": "{  \n  \"rating\": 8.1,  \n  \"genres\": [\"Action\", \"Drama\"],  \n  \"review\": \"This movie was great. It wasn't the best acting but it did keep my attention. The story line kept me guessing as to what would happen next.br br I recommend this DVD for anybody who likes a good action flick.\"  \n}"
+  },
+  {
+    "num": 5691833,
+    "perplexity": 4.049147129058838,
+    "response": "{  \n  \"rating\": 6.6,  \n  \"genres\": [\"Drama\", \"Romance\"],  \n  \"review\": \"This movie had an interesting story line but it dragged on forever. They did not show enough.\"  \n}"
+  },
+  {
+    "num": 131779,
+    "perplexity": 5.705368995666504,
+    "response": "{  \n  \"rating\": 8.7,  \n  \"genres\": [\"Documentary\"],  \n  \"review\": \"I thought this was a fun movie, but I felt like it lacked depth. It did not explain why some countries such as Singapore etc. Are trying to control population growth while others are not.\"  \n}"
+  },
+  {
+    "num": 9035105,
+    "perplexity": 3.837390899658203,
+    "response": "{  \n  \"rating\": 5.4,  \n  \"genres\": [\"Drama\", \"Western\"],  \n  \"review\": \"Awesome product. Good price and quality\"  \n}"
+  },
+  {
+    "num": 3630653,
+    "perplexity": 3.8430464267730713,
+    "response": "{  \n  \"rating\": 6.5,  \n  \"genres\": [\"Horror\"],  \n  \"review\": \"An interesting story and acting. Good film.\"  \n}"
+  },
+  {
+    "num": 8547101,
+    "perplexity": 2.7583110332489014,
+    "response": "{  \n  \"rating\": 7.5,  \n  \"genres\": [\"Comedy\", \"Short\"],  \n  \"review\": \"Loved the movie.\"  \n}"
+  },
+  {
+    "num": 8429787,
+    "perplexity": 4.688693523406982,
+    "response": "{  \n  \"rating\": 6.5,  \n  \"genres\": [\"Biography\", \"Documentary\"],  \n  \"review\": \"An interesting documentary on the use of Hart Island as a burial ground for many poor New Yorkers. Most of the residents are unaware of the island's existence, which makes it all the more tragic that this burial ground is located so close to the city. This film provides a good overview of the history of the island and the treatment of the dead over time, including the lack of services provided for the poor, the disease outbreaks among the poor, and the recent efforts to stop the practice of using the island as a final resting place for the deceased.\"  \n}"
+  },
+  {
+    "num": 3662757,
+    "perplexity": 3.1385960578918457,
+    "response": "{  \n  \"rating\": 5.5,  \n  \"genres\": [\"Drama\", \"Romance\"],  \n  \"review\": \"Movie was ok. I liked the characters.\"  \n}"
+  },
+  {
+    "num": 6486792,
+    "perplexity": 3.108487844467163,
+    "response": "{  \n  \"rating\": 6.8,  \n  \"genres\": [\"Drama\", \"Horror\"],  \n  \"review\": \"{'text': '{br}"
+  },
+  {
+    "num": 4623461,
+    "perplexity": 3.250905990600586,
+    "response": "{  \n  \"rating\": 6.7,  \n  \"genres\": [\"Drama\", \"Romance\"],  \n  \"review\": \"Great movie. Reminds me of when I lived in Italy. Beautiful scenery.\"  \n}"
+  },
+  {
+    "num": 9034432,
+    "perplexity": 4.285037994384766,
+    "response": "{  \n  \"rating\": 6.9,  \n  \"genres\": [\"Drama\", \"Romance\"],  \n  \"review\": \"It's really a fun film. I think it's one of those films where you can watch it over and over again and you never tire of watching it.br br The cast is wonderful. Especially the lead characters.br br The story is engaging and while you know what happens you still have to watch and see how it goes down.br br I highly recommend this movie. I definitely plan on purchasing it.\"  \n}"
+  },
+  {
+    "num": 8148201,
+    "perplexity": 2.57023024559021,
+    "response": "{  \n  \"rating\": 6.9,  \n  \"genres\": [\"Horror\", \"Short\"],  \n  \"review\": \"Great movie.\"  \n}"
+  },
+  {
+    "num": 8401148,
+    "perplexity": 2.6789748668670654,
+    "response": "{  \n  \"rating\": 6.7,  \n  \"genres\": [\"Comedy\", \"Drama\"],  \n  \"review\": \"Enjoyed the movie.\"  \n}"
+  },
+  {
+    "num": 239715,
+    "perplexity": 3.0068576335906982,
+    "response": "{  \n  \"rating\": 6.8,  \n  \"genres\": [\"Action\", \"Drama\"],  \n  \"review\": \"Brilliant movie!\"  \n}"
+  },
+  {
+    "num": 8579804,
+    "perplexity": 4.638250827789307,
+    "response": "{  \n  \"rating\": 6.5,  \n  \"genres\": [\"Action\", \"Horror\"],  \n  \"review\": \"The acting in this movie was pretty good, but the plot was weak.br br The movie starts slow.br br By the second 10 minutes it starts to get interesting.br br The acting was OK, but a couple times seemed like the actors weren't real comfortable with their roles.br br The plot is pretty basic.br br Some parts are very confusing, which makes it harder to follow along.br br The fight scenes are decent.\"  \n}"
+  },
+  {
+    "num": 7677024,
+    "perplexity": 5.357852458953857,
+    "response": "{  \n  \"rating\": 5.7,  \n  \"genres\": [\"Comedy\", \"Horror\"],  \n  \"review\": \"This movie is a good example of how Hollywood has gotten cheap and trashy. It starts slow and the beginning seems interesting and entertaining. However, the movie becomes very predictable and boring, especially during the third act of the movie.br br The acting is mediocre at best. The special effects are pretty bad, and the gore scenes are laughable. At one point in the movie, one of the characters explodes into a bloody pulp. This scene is obviously fake since the body falls perfectly still and upright.br br Overall, this movie is completely unnecessary, especially considering it was released on VCR back in the early 90's. The movie's premise and the acting are below average and not worth the price of admission.\"  \n}"
+  },
+  {
+    "num": 3496967,
+    "perplexity": 4.076667308807373,
+    "response": "{  \n  \"rating\": 5.3,  \n  \"genres\": [\"Comedy\", \"Drama\"],  \n  \"review\": \"First rate dvd set. Great sound quality. Fast delivery.\"  \n}"
+  },
+  {
+    "num": 6332964,
+    "perplexity": 4.766397953033447,
+    "response": "{  \n  \"rating\": 8.2,  \n  \"genres\": [\"Action\", \"Adventure\"],  \n  \"review\": \"Absolutely loved the film!! Was just as I expected and the quality is excellent!!!\"  \n}"
+  },
+  {
+    "num": 48016,
+    "perplexity": 2.6064062118530273,
+    "response": "{  \n  \"rating\": 6.9,  \n  \"genres\": [\"Drama\", \"Romance\"],  \n  \"review\": \"Great movie!\"  \n}"
+  },
+  {
+    "num": 53617,
+    "perplexity": 3.108340263366699,
+    "response": "{  \n  \"rating\": 5.8,  \n  \"genres\": [\"Action\", \"Crime\"],  \n  \"review\": \"Great movie.br br One of the best movies of all time.\"  \n}"
+  },
+  {
+    "num": 7229611,
+    "perplexity": 6.367372989654541,
+    "response": "{  \n  \"rating\": 6.3,  \n  \"genres\": [\"Documentary\"],  \n  \"review\": \"The story of Elizabeth Smart is fascinating. The details of how it occurred are pretty amazing.br br It's interesting to note the difference in approach of the investigators and prosecutors in Utah versus New York State. The FBI did a decent job of investigating and presenting information to the court system.br br I recommend this documentary to any true crime fans.\"  \n}"
+  },
+  {
+    "num": 3098804,
+    "perplexity": 3.274026393890381,
+    "response": "{  \n  \"rating\": 6.9,  \n  \"genres\": [\"Comedy\", \"Drama\"],  \n  \"review\": \"{'text': 'A film that should be seen by everyone.', 'rating': 6.9}"
+  },
+  {
+    "num": 5858099,
+    "perplexity": 3.140005111694336,
+    "response": "{  \n  \"rating\": 7.2,  \n  \"genres\": [\"Comedy\", \"Short\"],  \n  \"review\": \"{'text': '{br}"
+  },
+  {
+    "num": 9049013,
+    "perplexity": 3.44840145111084,
+    "response": "{  \n  \"rating\": 5.4,  \n  \"genres\": [\"Biography\", \"Drama\"],  \n  \"review\": \"Great film. Just wish it came with subtitles.\"  \n}"
+  },
+  {
+    "num": 816,
+    "perplexity": 5.66905403137207,
+    "response": "{  \n  \"rating\": 6.4,  \n  \"genres\": [\"Drama\", \"Romance\"],  \n  \"review\": \"Another great film from George Segal, James Garner, Barbara Harris, Robert Young, Betty Field, Nancy Sinatra and Jackie Chan.br br A film within a film tells the story of a small town film director, who casts a famous actor, to star in his latest film. The plot deals with the moral differences between Hollywood stars and actors. The film also touches upon themes of friendship, morality, sexual orientation, human nature and relationships.br br An intriguing concept for a film, but unfortunately poorly executed.br br While the film features the talents of many popular and respected actors, the writing and directing is below average. As a result, the film is not very entertaining.br br Although the film is rated PG, the subject matter is inappropriate for children.br br In conclusion, if you are interested in the subject of homosexuality, the film may be worth watching. Otherwise, it is recommended to avoid this film.\"  \n}"
+  },
+  {
+    "num": 9050020,
+    "perplexity": 3.4216794967651367,
+    "response": "{  \n  \"rating\": 6.2,  \n  \"genres\": [\"Biography\", \"Drama\", \"Family\"],  \n  \"review\": \"Great movie. If you like movies with a social conscience this one hits it out of the park!\"  \n}"
+  },
+  {
+    "num": 8591068,
+    "perplexity": 4.116836071014404,
+    "response": "{  \n  \"rating\": 5.9,  \n  \"genres\": [\"Documentary\"],  \n  \"review\": \"Great movie, especially for the price. Great quality, great movie. Well packaged, fast delivery.\"  \n}"
+  },
+  {
+    "num": 6310365,
+    "perplexity": 3.736011266708374,
+    "response": "{  \n  \"rating\": 6.8,  \n  \"genres\": [\"Drama\"],  \n  \"review\": \"Great movie..brilliant acting..great story..\"  \n}"
+  },
+  {
+    "num": 3587322,
+    "perplexity": 4.040272235870361,
+    "response": "{  \n  \"rating\": 7.6,  \n  \"genres\": [\"Drama\", \"Romance\"],  \n  \"review\": \"Really enjoyed the film. A lovely story line, great acting, great cinematography, and a surprising ending that left me thinking about the movie for quite awhile afterwards.\"  \n}"
+  },
+  {
+    "num": 129927,
+    "perplexity": 3.5556838512420654,
+    "response": "{  \n  \"rating\": 6.7,  \n  \"genres\": [\"Drama\", \"Romance\"],  \n  \"review\": \"I think its a good film. Interesting and engaging.\"  \n}"
+  },
+  {
+    "num": 6796936,
+    "perplexity": 3.879552125930786,
+    "response": "{  \n  \"rating\": 4.7,  \n  \"genres\": [\"Horror\", \"Mystery\"],  \n  \"review\": \"Good movie, but weird ending. A little slow at times.\"  \n}"
+  },
+  {
+    "num": 7601895,
+    "perplexity": 3.6012096405029297,
+    "response": "{  \n  \"rating\": 6.7,  \n  \"genres\": [\"Comedy\", \"Drama\"],  \n  \"review\": \"Worse than trashy.\"  \n}"
+  },
+  {
+    "num": 7003952,
+    "perplexity": 3.464759588241577,
+    "response": "{  \n  \"rating\": 6.3,  \n  \"genres\": [\"Horror\", \"Short\"],  \n  \"review\": \"Great story line, although it took awhile to get started.\"  \n}"
+  },
+  {
+    "num": 7252721,
+    "perplexity": 2.661337375640869,
+    "response": "{  \n  \"rating\": 7.3,  \n  \"genres\": [\"Horror\", \"Short\"],  \n  \"review\": \"I loved the movie.\"  \n}"
+  },
+  {
+    "num": 102566,
+    "perplexity": 2.978032350540161,
+    "response": "{  \n  \"rating\": 7.0,  \n  \"genres\": [\"Drama\"],  \n  \"review\": \"Great movie.\"  \n}"
+  },
+  {
+    "num": 3111425,
+    "perplexity": 3.831632375717163,
+    "response": "{  \n  \"rating\": 7.4,  \n  \"genres\": [\"Drama\", \"Romance\"],  \n  \"review\": \"I have read all of Shakespeare's plays. I have enjoyed reading this one in particular. The writing is excellent and it's easy to follow along with the movie.\"  \n}"
+  },
+  {
+    "num": 41179,
+    "perplexity": 4.036802291870117,
+    "response": "{  \n  \"rating\": 8.2,  \n  \"genres\": [\"Action\"],  \n  \"review\": \"Great movie. Really liked it. Loved the action scenes. Had me hooked from the beginning to the end.\"  \n}"
+  },
+  {
+    "num": 3140897,
+    "perplexity": 2.84550142288208,
+    "response": "{  \n  \"rating\": 7.9,  \n  \"genres\": [\"Comedy\", \"Drama\"],  \n  \"review\": \"Great story and acting.\"  \n}"
+  },
+  {
+    "num": 4118548,
+    "perplexity": 5.818898677825928,
+    "response": "{  \n  \"rating\": 8.1,  \n  \"genres\": [\"Comedy\", \"Documentary\"],  \n  \"review\": \"Very interesting doc on what happens when you alter the incentives of humans. I learned a lot and laughed throughout. Highly recommended.\"  \n}"
+  },
+  {
+    "num": 3364671,
+    "perplexity": 4.382599353790283,
+    "response": "{  \n  \"rating\": 8.0,  \n  \"genres\": [\"Drama\", \"Mystery\"],  \n  \"review\": \"If you enjoy seeing classic films, you will definitely enjoy this film.br br Even though it was shot in 1946, it seems very current.br br The story line and characters are great.br br If you like mysteries, you wont be disappointed.\"  \n}"
+  },
+  {
+    "num": 3152282,
+    "perplexity": 4.928679466247559,
+    "response": "{  \n  \"rating\": 7.3,  \n  \"genres\": [\"Horror\"],  \n  \"review\": \"Fantastic movie! Very scary!!br br Good acting!! Great story!!!br br Highly recommend!!!\"  \n}"
+  },
+  {
+    "num": 6952637,
+    "perplexity": 3.238746404647827,
+    "response": "{  \n  \"rating\": 5.8,  \n  \"genres\": [\"Documentary\"],  \n  \"review\": \"Good movie!\"  \n}"
+  },
+  {
+    "num": 5448251,
+    "perplexity": 3.291316509246826,
+    "response": "{  \n  \"rating\": 7.0,  \n  \"genres\": [\"Comedy\", \"Fantasy\"],  \n  \"review\": \"{'text': '{br}"
+  },
+  {
+    "num": 7176064,
+    "perplexity": 3.2168312072753906,
+    "response": "{  \n  \"rating\": 6.9,  \n  \"genres\": [\"Comedy\", \"Drama\"],  \n  \"review\": \"Love this series! Watch it on Amazon Prime Video!\"  \n}"
+  },
+  {
+    "num": 8260133,
+    "perplexity": 3.2731096744537354,
+    "response": "{  \n  \"rating\": 6.3,  \n  \"genres\": [\"Biography\", \"Drama\"],  \n  \"review\": \"This movie was awesome! My husband loves it. We've watched it a few times already. I highly recommend it!\"  \n}"
+  },
+  {
+    "num": 9883879,
+    "perplexity": 3.3966293334960938,
+    "response": "{  \n  \"rating\": 5.4,  \n  \"genres\": [\"Crime\", \"Drama\"],  \n  \"review\": \"I watched this movie on Amazon Prime Video. It's a movie with many twists and turns. Great movie!\"  \n}"
+  },
+  {
+    "num": 7583727,
+    "perplexity": 2.817329168319702,
+    "response": "{  \n  \"rating\": 8.2,  \n  \"genres\": [\"Action\", \"Adventure\", \"Sci-Fi\"],  \n  \"review\": \"{'text': \"Excellent movie!\", 'rating': 8.2}"
+  },
+  {
+    "num": 4246153,
+    "perplexity": 3.579481601715088,
+    "response": "{  \n  \"rating\": 6.6,  \n  \"genres\": [\"Comedy\", \"Family\"],  \n  \"review\": \"Very entertaining. Funny as hell.\"  \n}"
+  },
+  {
+    "num": 6948929,
+    "perplexity": 3.288116216659546,
+    "response": "{  \n  \"rating\": 6.5,  \n  \"genres\": [\"Horror\", \"Mystery\"],  \n  \"review\": \"If you like movies that scare you, watch this one. It's really good.\"  \n}"
+  },
+  {
+    "num": 4188721,
+    "perplexity": 4.240168571472168,
+    "response": "{  \n  \"rating\": 6.9,  \n  \"genres\": [\"Drama\", \"Romance\"],  \n  \"review\": \"A solid film, but I'm not sure it's a classic. It is, however, a good introduction to the Anne of Green Gables series.br br The acting is excellent and the movie flows nicely. The movie covers the plot points of the original book quite accurately, although I've never read the book so I can't compare it directly.br br My favorite character is Gilbert Blyth. He's smart and funny, which helps in the beginning of the movie when Gilbert calls Anne a nincompoop. I'm not a fan of the character Matthew Cuthbert, who speaks in a singsong voice throughout the movie.br br I'm unsure whether the movie provides any insight into the characters or the plot of the book. If you're familiar with the book, the movie probably won't surprise you. On the other hand, if you're a total beginner, the movie might explain aspects of the plot or characters that you otherwise would not learn from reading the book. Either way, if you've read the book, you will probably enjoy the movie as well.\"  \n}"
+  },
+  {
+    "num": 3284266,
+    "perplexity": 4.464503765106201,
+    "response": "{  \n  \"rating\": 6.9,  \n  \"genres\": [\"Adventure\", \"Comedy\"],  \n  \"review\": \"The movie was good and had some laughs. However, the DVD quality was lacking.br br There were many black bars at the top and bottom of the screen. I watched the entire movie through binoculars, which worked great. Otherwise, the picture is blurry and difficult to view. I've purchased many movies thru Amazon and have never experienced such poor quality.br br My suggestion is either do not purchase this item or watch it thru binoculars.\"  \n}"
+  },
+  {
+    "num": 3878107,
+    "perplexity": 3.011448383331299,
+    "response": "{  \n  \"rating\": 5.8,  \n  \"genres\": [\"Drama\", \"Romance\"],  \n  \"review\": \"Pretty good movie. Lots of laughs. Well worth the price.\"  \n}"
+  },
+  {
+    "num": 9533521,
+    "perplexity": 4.401733875274658,
+    "response": "{  \n  \"rating\": 5.6,  \n  \"genres\": [\"Action\", \"Western\"],  \n  \"review\": \"Enjoyed the movie but felt they missed a opportunity to have a love interest for the male lead.\"  \n}"
+  },
+  {
+    "num": 3588268,
+    "perplexity": 4.521120548248291,
+    "response": "{  \n  \"rating\": 7.3,  \n  \"genres\": [\"Action\"],  \n  \"review\": \"Really enjoyed this film, loved the characters and actors performances, liked the plotline, and overall, the direction, editing, cinematography, sound mix, lighting, etc.br br However, there is one small issue, the ending, which I think is really weak and unsatisfying, despite the rest of the film's strengths, and is easily fixed.br br In order to save his girlfriend, Tallahassee travels back in time to 1962, and attempts to kill JFK at the Dallas Book Depository. He fails, returns to 2011, and finds his girlfriend killed by a zombi.br br The problem is that Tallahassee's plan fails for two reasons, namely:br br 1. The book depository building is under renovation during the date of the attempted assassination. Therefore, there is no way that he could have gotten to the roof and fired the shots.br br 2. Even if he had managed to kill Kennedy, it wouldn't have changed the outcome of history, because the event that caused the Cuban Missile Crisis to occur would still happen, thus resulting in nuclear war, and therefore World War III.br br Because of this, Tallahassee is unable to rescue his girlfriend, and the film ends in defeat.br br Now, there are several ways to fix the ending. One would be to have Tallahassee travel back to 1961, and attempt to kill Oswald at the Dallas Fair Park Shooting Range. This would allow him to kill Oswald and Kennedy, thereby changing the outcome of events.br br Another possibility is to have Tallahassee travel back to 1960 and assassinate Castro prior to the Bay of Pigs invasion. This would prevent Cuba from becoming communist, which would lead to Khrushchev installing missiles in Cuba, the U.S. reacting, causing the Cuban Missile Crisis, and ultimately leading to World War III.br br As you can see, there are many possibilities as to how Tallahassee could change the outcomes of history. The ending is simply unsatisfactory and poorly written, and requires fixing, otherwise it is just an incomplete, and unsatisfying movie.br br I highly recommend this film, regardless of my criticisms, but there is room for improvement, and the filmmakers have to decide whether or not to implement one of the suggestions above.\"  \n}"
+  },
+  {
+    "num": 9105423,
+    "perplexity": 3.958484172821045,
+    "response": "{  \n  \"rating\": 7.4,  \n  \"genres\": [\"Action\", \"Adventure\", \"Drama\"],  \n  \"review\": \"This movie is a rip off. It looks like they edited half the film.br br They took a 5 star movie and chopped it down to about 30 minutes. This is a scam.\"  \n}"
+  },
+  {
+    "num": 4558026,
+    "perplexity": 3.801539421081543,
+    "response": "{  \n  \"rating\": 5.7,  \n  \"genres\": [\"Documentary\"],  \n  \"review\": \"If you're into feminist art, this is worth the watch. If you're not, it's not for you. My advice is don't waste your time.\"  \n}"
+  },
+  {
+    "num": 3709489,
+    "perplexity": 4.2317705154418945,
+    "response": "{  \n  \"rating\": 7.2,  \n  \"genres\": [\"Drama\", \"Romance\"],  \n  \"review\": \"This movie was so awesome, that I watched it several times.br br Great acting and story. Even though it's set in the South, I felt like I was watching it in Los Angeles.br br Also, the director was in the movie and acted like a total badass.br br Highly reccomend this flick!\"  \n}"
+  },
+  {
+    "num": 7499663,
+    "perplexity": 3.2119593620300293,
+    "response": "{  \n  \"rating\": 5.7,  \n  \"genres\": [\"Action\", \"Comedy\"],  \n  \"review\": \"Well written, directed and acted. Great movie!!!\"  \n}"
+  },
+  {
+    "num": 1022,
+    "perplexity": 2.884458541870117,
+    "response": "{  \n  \"rating\": 3.4,  \n  \"genres\": [\"Animation\", \"Comedy\", \"Family\"],  \n  \"review\": \"Watched it over and over again as a kid. Loved it!\"  \n}"
+  },
+  {
+    "num": 4549371,
+    "perplexity": 4.097548007965088,
+    "response": "{  \n  \"rating\": 6.8,  \n  \"genres\": [\"Drama\", \"Romance\"],  \n  \"review\": \"This film was great! It really inspired me to learn more about the Sufis, and it was beautiful to watch.\"  \n}"
+  },
+  {
+    "num": 3097410,
+    "perplexity": 4.649353981018066,
+    "response": "{  \n  \"rating\": 6.5,  \n  \"genres\": [\"Action\", \"Comedy\"],  \n  \"review\": \"My husband saw this on cable one evening. It reminded me of my childhood. I love movies from this era. I recommend this DVD to others.\"  \n}"
+  },
+  {
+    "num": 7308044,
+    "perplexity": 3.464507579803467,
+    "response": "{  \n  \"rating\": 8.0,  \n  \"genres\": [\"Action\", \"Adventure\", \"Mystery\"],  \n  \"review\": \"Great movie,great acting,brilliant story and script.\"  \n}"
+  },
+  {
+    "num": 3258132,
+    "perplexity": 2.7142701148986816,
+    "response": "{  \n  \"rating\": 6.9,  \n  \"genres\": [\"Comedy\", \"Drama\"],  \n  \"review\": \"Loved it!\"  \n}"
+  },
+  {
+    "num": 8402358,
+    "perplexity": 4.949562072753906,
+    "response": "{  \n  \"rating\": 7.7,  \n  \"genres\": [\"Crime\", \"Drama\"],  \n  \"review\": \"I saw this movie in college film class. It's a classic western. Interesting plot. Very good acting. This is the second viewing and still enjoying it!\"  \n}"
+  },
+  {
+    "num": 8437322,
+    "perplexity": 5.272990703582764,
+    "response": "{  \n  \"rating\": 6.8,  \n  \"genres\": [\"Action\", \"Adventure\", \"Thriller\"],  \n  \"review\": \"I was disappointed in the movie. I watched it expecting to enjoy it. I was bored throughout and did not find the ending satisfying.br br The acting was weak and the plot was confusing. Most of the actors were unmemorable and did not capture the attention of the viewer.br br The storyline seemed disjointed and had holes which I was unable to fill in. Also, I noticed many inaccuracies. It was unrealistic and unbelievable.br br Lastly, I felt the characters were underdeveloped and lacked depth. The characters lacked emotional attachment and thus could not connect to the viewers. The story lacked depth and realism.br br Overall, I would not recommend watching this film.\"  \n}"
+  },
+  {
+    "num": 9025372,
+    "perplexity": 4.8961591720581055,
+    "response": "{  \n  \"rating\": 6.9,  \n  \"genres\": [\"Crime\", \"Drama\"],  \n  \"review\": \"This movie was filmed in New Orleans, Louisiana. The streets of the city were used as locations. Other scenes were shot in the French Quarter area. This film stars Kevin Costner and Faye Dunaway. The film was produced by Mike Newell and David Brown.br br The film begins with a flashback of the character played by Kevin Costner. He is a former hockey player who became a champion boxer. After losing his boxing title to a South American fighter, he turned to crime and drug trafficking.br br His longtime girlfriend Sandy died shortly afterwards. Unable to cope with his grief, he fled the scene. He ended up in New Orleans where he started a nightclub called The Boilermaker.br br He hired his ex-hockey teammate Harry to manage the establishment. The owner of the club dies unexpectedly. Costner is charged with murder. He is convicted and sentenced to prison.br br During his incarceration, he learns of the demise of his club. He decides to return to claim his business.br br The film contains strong language and some sexual references. Recommended for adults only.br br DVD Features:br br Cast and Crew Interviewsbr Featurette - Boxingbr Deleted Scenesbr Audio Commentary by Director Stephen Frearsbr br Technical Specs:br Language - Englishbr Subtitles - Nonebr Running Time - 125 Minutesbr Special Effects - Somebr Rating - PG-13br Genre - Crime Drama\"  \n}"
+  },
+  {
+    "num": 7834755,
+    "perplexity": 4.759852886199951,
+    "response": "{  \n  \"rating\": 5.9,  \n  \"genres\": [\"Horror\", \"Short\"],  \n  \"review\": \"This movie was great! Very scary.br br This was a very good movie. I would recommend it to anyone who likes horror movies. I watched this when my girlfriend and I had insomnia so we could watch something different than our usual boring bedtime movie. It was definitely worth it!\"  \n}"
+  },
+  {
+    "num": 118787,
+    "perplexity": 4.390165328979492,
+    "response": "{  \n  \"rating\": 7.9,  \n  \"genres\": [\"Horror\", \"Mystery\"],  \n  \"review\": \"{'text': 'Well written movie. Plot moves fast, keeps you engaged. Acting is excellent.', 'rating': 7.9}"
+  },
+  {
+    "num": 3823746,
+    "perplexity": 2.8049821853637695,
+    "response": "{  \n  \"rating\": 6.4,  \n  \"genres\": [\"Crime\", \"Drama\"],  \n  \"review\": \"Loved the movie.\"  \n}"
+  },
+  {
+    "num": 6121457,
+    "perplexity": 2.7252719402313232,
+    "response": "{  \n  \"rating\": 7.8,  \n  \"genres\": [\"Crime\", \"Drama\", \"Romance\"],  \n  \"review\": \"great movie!\"  \n}"
+  },
+  {
+    "num": 4516258,
+    "perplexity": 4.9179606437683105,
+    "response": "{  \n  \"rating\": 6.6,  \n  \"genres\": [\"Adventure\", \"Documentary\"],  \n  \"review\": \"This was a interesting documentary about a couple of people who dove with sharks.br br It's a bit slow, especially in the beginning, where you wonder what their purpose is.br br I found it to be rather boring.br br It's not something I would recommend to anyone.\"  \n}"
+  },
+  {
+    "num": 10258629,
+    "perplexity": 3.03068208694458,
+    "response": "{  \n  \"rating\": 3.9,  \n  \"genres\": [\"Action\", \"Horror\"],  \n  \"review\": \"I loved it.\"  \n}"
+  },
+  {
+    "num": 9473690,
+    "perplexity": 2.364048957824707,
+    "response": "{  \n  \"rating\": 6.6,  \n  \"genres\": [\"Action\", \"Adventure\", \"Sci-Fi\"],  \n  \"review\": \"Great movie\"  \n}"
+  },
+  {
+    "num": 7524034,
+    "perplexity": 3.569880485534668,
+    "response": "{  \n  \"rating\": 8.4,  \n  \"genres\": [\"Biography\", \"Drama\"],  \n  \"review\": \"Great movie, great performance, wonderful soundtrack. Highly recommend.\"  \n}"
+  },
+  {
+    "num": 10297824,
+    "perplexity": 3.2579822540283203,
+    "response": "{  \n  \"rating\": 7.9,  \n  \"genres\": [\"Crime\", \"Drama\"],  \n  \"review\": \"Great show. Lots of twists and turns. Great acting. Well worth it!\"  \n}"
+  },
+  {
+    "num": 6688527,
+    "perplexity": 3.0468218326568604,
+    "response": "{  \n  \"rating\": 8.2,  \n  \"genres\": [\"Comedy\", \"Drama\"],  \n  \"review\": \"I liked this film so much i watched it twice.\"  \n}"
+  },
+  {
+    "num": 3572439,
+    "perplexity": 5.750472545623779,
+    "response": "{  \n  \"rating\": 6.3,  \n  \"genres\": [\"Drama\", \"Romance\"],  \n  \"review\": \"I watched this movie on Netflix as part of a challenge. I'd like to say it's a beautifully shot film with a strong lead actress.br br In the beginning, there are parts of the story that seem to indicate that it might actually be a story about how a woman finds love. It is, however, quickly obvious that the filmmaker intended this movie to be a cautionary tale, and one that shows a woman trapped in the clutches of love.\"  \n}"
+  },
+  {
+    "num": 6358494,
+    "perplexity": 3.589344024658203,
+    "response": "{  \n  \"rating\": 8.0,  \n  \"genres\": [\"Horror\", \"Mystery\"],  \n  \"review\": \"Absolutely amazing movie. If you enjoy a good thriller with suspenseful moments, you'll definitely enjoy this film.\"  \n}"
+  },
+  {
+    "num": 133877,
+    "perplexity": 3.4116132259368896,
+    "response": "{  \n  \"rating\": 7.3,  \n  \"genres\": [\"Action\", \"Adventure\"],  \n  \"review\": \"Great movie, but the bluray does not work!\"  \n}"
+  },
+  {
+    "num": 3451249,
+    "perplexity": 4.810756683349609,
+    "response": "{  \n  \"rating\": 6.3,  \n  \"genres\": [\"Drama\", \"Horror\"],  \n  \"review\": \"Loved this movie. It's a tear jerker.br br My brother bought it on sale, but I liked it so much that I decided to purchase it instead of renting it.br br Great picture quality.br br A wonderful filmbr br Very entertaining!\"  \n}"
+  },
+  {
+    "num": 9038010,
+    "perplexity": 3.384673595428467,
+    "response": "{  \n  \"rating\": 6.3,  \n  \"genres\": [\"Action\", \"Drama\"],  \n  \"review\": \"Another great movie. Loved the ending.\"  \n}"
+  },
+  {
+    "num": 4582262,
+    "perplexity": 4.253697395324707,
+    "response": "{  \n  \"rating\": 3.9,  \n  \"genres\": [\"Action\", \"Adventure\"],  \n  \"review\": \"This film is a classic sci fi/action thriller, I highly recommend it.\"  \n}"
+  },
+  {
+    "num": 134025,
+    "perplexity": 3.643376350402832,
+    "response": "{  \n  \"rating\": 8.9,  \n  \"genres\": [\"Crime\", \"Drama\"],  \n  \"review\": \"The movie was awesome. The music was beautiful.\"  \n}"
+  },
+  {
+    "num": 7338921,
+    "perplexity": 3.078918933868408,
+    "response": "{  \n  \"rating\": 5.2,  \n  \"genres\": [\"Horror\", \"Short\"],  \n  \"review\": \"Excellent acting, writing, directing.\"  \n}"
+  },
+  {
+    "num": 9575828,
+    "perplexity": 2.939483642578125,
+    "response": "{  \n  \"rating\": 6.2,  \n  \"genres\": [\"Comedy\", \"Drama\"],  \n  \"review\": \"This film is a masterpiece. I highly recommend it.\"  \n}"
+  },
+  {
+    "num": 9105437,
+    "perplexity": 4.315478801727295,
+    "response": "{  \n  \"rating\": 6.7,  \n  \"genres\": [\"Action\", \"Sci-Fi\"],  \n  \"review\": \"Really liked this film. I am a fan of independent cinema and Elijah Wood.\"  \n}"
+  },
+  {
+    "num": 210543,
+    "perplexity": 4.428349494934082,
+    "response": "{  \n  \"rating\": 6.7,  \n  \"genres\": [\"Drama\"],  \n  \"review\": \"Good movie. A couple of scenes seemed staged though.\"  \n}"
+  },
+  {
+    "num": 6030482,
+    "perplexity": 4.111721992492676,
+    "response": "{  \n  \"rating\": 7.9,  \n  \"genres\": [\"Drama\", \"Horror\"],  \n  \"review\": \"I've seen almost every movie directed by David Gordon Green since 2003's Panic Room, which also starred Dakota Fanning. This is by far his best film, and the chemistry between the stars is amazing. The story is well written, and the scenes are intense.br br Also, if you enjoy this kind of thriller/horror flick, check out his other films such as Your Highness, Frozen River, Prince of Persia, Joe, Phoenix Wright and All the Boys Love Mandy Lane.\"  \n}"
+  },
+  {
+    "num": 8674068,
+    "perplexity": 4.837803840637207,
+    "response": "{  \n  \"rating\": 7.6,  \n  \"genres\": [\"Biography\", \"Drama\", \"History\"],  \n  \"review\": \"This was a good film. It shows what happened to Ireland during the war with Mexico. The acting is excellent. This is well worth watching. Good job done by all actors.\"  \n}"
+  },
+  {
+    "num": 7158035,
+    "perplexity": 3.3266713619232178,
+    "response": "{  \n  \"rating\": 5.6,  \n  \"genres\": [\"Action\", \"Adventure\"],  \n  \"review\": \"The movie was okay. I enjoyed watching it. It's funny and entertaining.\"  \n}"
+  },
+  {
+    "num": 8966055,
+    "perplexity": 2.8936827182769775,
+    "response": "{  \n  \"rating\": 7.3,  \n  \"genres\": [\"Action\", \"Adventure\"],  \n  \"review\": \"I liked the movie.\"  \n}"
+  },
+  {
+    "num": 8198208,
+    "perplexity": 3.096794605255127,
+    "response": "{  \n  \"rating\": 4.9,  \n  \"genres\": [\"Comedy\", \"Drama\"],  \n  \"review\": \"Love this series.\"  \n}"
+  }
+]

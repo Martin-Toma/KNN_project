@@ -5,7 +5,15 @@ Percentage of mismatched sentiment-rating pairs: 46.93%
 Average grammar errors in a review: 0.31
 Genre Accuracy - Precision: 0.58, Recall: 0.78, F1 Score: 0.66
 
-gemma 8
+base gemma instruct
+MAE: 2.46, RMSE: 2.76, % within ±1: 12.53%
+Avg. similarity to human reviews: 0.284
+Percentage of mismatched sentiment-rating pairs: 84.93%
+Average grammar errors in a review: 0.36
+Genre Accuracy - Precision: 0.25, Recall: 0.40, F1 Score: 0.30
+Average perplexity: 19.531304790127663
+
+gemma 8 unfinished
 MAE: 1.53, RMSE: 1.93, % within ±1: 41.52%
 Avg. similarity to human reviews: 0.336
 Percentage of mismatched sentiment-rating pairs: 33.65%
@@ -93,7 +101,14 @@ Average grammar errors in a review: 2.21
 Genre Accuracy - Precision: 0.34, Recall: 0.31, F1 Score: 0.33
 Average perplexity: 10.055395236382118
 
-head
+mistral
+MAE: 1.90, RMSE: 2.34, % within ±1: 29.73%
+Avg. similarity to human reviews: 0.350
+Percentage of mismatched sentiment-rating pairs: 28.96%
+Average grammar errors in a review: 0.23
+Genre Accuracy - Precision: 0.45, Recall: 0.37, F1 Score: 0.40
+
+multi-head
 MAE: 0.96, RMSE: 1.25, % within ±1: 64.40%
 Avg. similarity to human reviews: 0.361
 Percentage of mismatched sentiment-rating pairs: 41.48%
@@ -101,9 +116,5 @@ Average grammar errors in a review: 0.51
 Genre Accuracy - Precision: 0.64, Recall: 0.58, F1 Score: 0.61
 Average perplexity: 5.815467665893863
 
-mistral
-MAE: 1.90, RMSE: 2.34, % within ±1: 29.73%
-Avg. similarity to human reviews: 0.350
-Percentage of mismatched sentiment-rating pairs: 28.96%
-Average grammar errors in a review: 0.23
-Genre Accuracy - Precision: 0.45, Recall: 0.37, F1 Score: 0.40
+multi-head v2 - to odpovedelo uplne blbosti, muzu to otestovat ale podle me to nema smysl kdyz ta prvni multi-head vysla tak dobre
+Average perplexity: 5.728534295558929

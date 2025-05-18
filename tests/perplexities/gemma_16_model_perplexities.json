@@ -1,0 +1,412 @@
+[
+  {
+    "num": 6204215,
+    "perplexity": 3.0495707988739014,
+    "response": "{  \n  \"rating\": 7.4,  \n  \"genres\": [\"Crime\", \"Drama\"],  \n  \"review\": \"Love this movie!\"  \n}"
+  },
+  {
+    "num": 4180818,
+    "perplexity": 2.9781570434570312,
+    "response": "{  \n  \"rating\": 7.2,  \n  \"genres\": [\"Action\", \"Adventure\", \"Sci-Fi\"],  \n  \"review\": \"Very good movie. Lots of special effects.\"  \n}"
+  },
+  {
+    "num": 4863740,
+    "perplexity": 2.9291398525238037,
+    "response": "{  \n  \"rating\": 6.5,  \n  \"genres\": [\"Drama\", \"Romance\"],  \n  \"review\": \"I enjoyed watching this movie.\"  \n}"
+  },
+  {
+    "num": 6665388,
+    "perplexity": 3.3399319648742676,
+    "response": "{  \n  \"rating\": 4.9,  \n  \"genres\": [\"Drama\", \"Romance\"],  \n  \"review\": \"Beautiful movie. Loved it!\"  \n}"
+  },
+  {
+    "num": 6410635,
+    "perplexity": 4.954526901245117,
+    "response": "{  \n  \"rating\": 6.2,  \n  \"genres\": [\"Biography\"],  \n  \"review\": \"great film, interesting subject, good acting, and production values. Well worth the price.\"  \n}"
+  },
+  {
+    "num": 7131545,
+    "perplexity": 5.804266452789307,
+    "response": "{  \n  \"rating\": 6.8,  \n  \"genres\": [\"Drama\", \"Romance\"],  \n  \"review\": \"Jessica mcElroy's performance is excellent. The movie itself is entertaining but somewhat predictable.\"  \n}"
+  },
+  {
+    "num": 4691626,
+    "perplexity": 3.0704102516174316,
+    "response": "{  \n  \"rating\": 7.3,  \n  \"genres\": [\"Action\", \"Drama\"],  \n  \"review\": \"I liked the movie very much.\"  \n}"
+  },
+  {
+    "num": 6276361,
+    "perplexity": 3.753739595413208,
+    "response": "{  \n  \"rating\": 5.8,  \n  \"genres\": [\"Action\", \"Crime\", \"Drama\"],  \n  \"review\": \"Very entertaining movie with chase scenes galore.\"  \n}"
+  },
+  {
+    "num": 8084284,
+    "perplexity": 3.650266408920288,
+    "response": "{  \n  \"rating\": 4.6,  \n  \"genres\": [\"Action\", \"Crime\", \"Drama\"],  \n  \"review\": \"It was so good. The action scenes were really good.\"  \n}"
+  },
+  {
+    "num": 131779,
+    "perplexity": 5.238173961639404,
+    "response": "{  \n  \"rating\": 7.8,  \n  \"genres\": [\"Documentary\"],  \n  \"review\": \"A great movie for anyone interested in environmental issues. The film shows how humans are causing problems with the environment and how these problems are being ignored.br br This movie is well done.\"  \n}"
+  },
+  {
+    "num": 9035105,
+    "perplexity": 4.987551212310791,
+    "response": "{  \n  \"rating\": 6.7,  \n  \"genres\": [\"Comedy\", \"Drama\"],  \n  \"review\": \"I loved the original series but this new version sucks.br br I thought it was boring and stupid and completely different from the original storyline.br br Not recommended at all!\"  \n}"
+  },
+  {
+    "num": 3630653,
+    "perplexity": 3.0208640098571777,
+    "response": "{  \n  \"rating\": 6.9,  \n  \"genres\": [\"Horror\", \"Short\"],  \n  \"review\": \"I loved it!!\"  \n}"
+  },
+  {
+    "num": 8547101,
+    "perplexity": 4.332235813140869,
+    "response": "{  \n  \"rating\": 7.1,  \n  \"genres\": [\"Comedy\", \"Drama\"],  \n  \"review\": \"The movie itself is OK and the characters seem fairly realistic. However, I do have issues with the quality of the DVD. First off, the picture and sound quality is horrible. Second, the movie starts at the beginning. I had to rewind several times to get the beginning of the movie.\"  \n}"
+  },
+  {
+    "num": 8429787,
+    "perplexity": 4.663095474243164,
+    "response": "{  \n  \"rating\": 8.3,  \n  \"genres\": [\"Documentary\"],  \n  \"review\": \"I am glad I ordered this film. The movie is very well done and covers the history of Hart Island, as well as the current conditions of the cemetery, including the latest project, the preservation of the remaining tombstones.br br The movie does a good job showing the variety of people that are buried on the island and also the variety of people who visit the island to clean and preserve the tombs.br br Although the movie was produced in 2002, there are plenty of recent scenes showing the progress of the current project.br br If you are interested in learning about the history of the cemetery, the current project, or if you are simply curious about what goes on in a cemetery, this movie will satisfy your curiosity and provide interesting facts that you may not have known.\"  \n}"
+  },
+  {
+    "num": 3662757,
+    "perplexity": 3.337407350540161,
+    "response": "{  \n  \"rating\": 5.4,  \n  \"genres\": [\"Drama\", \"Romance\"],  \n  \"review\": \"I am not a fan of thrillers, but this movie had me hooked from the beginning.\"  \n}"
+  },
+  {
+    "num": 9034432,
+    "perplexity": 3.963040351867676,
+    "response": "{  \n  \"rating\": 6.9,  \n  \"genres\": [\"Biography\", \"Drama\"],  \n  \"review\": \"Fantastic film. Brilliant acting. Great movie.\"  \n}"
+  },
+  {
+    "num": 8148201,
+    "perplexity": 2.7273426055908203,
+    "response": "{  \n  \"rating\": 6.7,  \n  \"genres\": [\"Horror\", \"Short\"],  \n  \"review\": \"I love this movie.\"  \n}"
+  },
+  {
+    "num": 8401148,
+    "perplexity": 4.056490898132324,
+    "response": "{  \n  \"rating\": 7.3,  \n  \"genres\": [\"Drama\", \"Romance\"],  \n  \"review\": \"Don't let the title fool you. I watched this movie expecting a comedy.br br I loved this film.br br I liked the acting, I liked the character development, I liked the setting, the costumes, the lighting, the editing, the cinematography, the music, etc.etc.etc. I enjoyed every second of this movie.br br I wouldn't recommend it to everybody, but I highly suggest it to those who enjoy classic films.\"  \n}"
+  },
+  {
+    "num": 239715,
+    "perplexity": 3.0465798377990723,
+    "response": "{  \n  \"rating\": 6.8,  \n  \"genres\": [\"Action\", \"Crime\", \"Drama\"],  \n  \"review\": \"Good movie! Good story.\"  \n}"
+  },
+  {
+    "num": 8579804,
+    "perplexity": 2.774479627609253,
+    "response": "{  \n  \"rating\": 6.9,  \n  \"genres\": [\"Action\", \"Crime\", \"Thriller\"],  \n  \"review\": \"Really good movie.\"  \n}"
+  },
+  {
+    "num": 7677024,
+    "perplexity": 5.347408294677734,
+    "response": "{  \n  \"rating\": 6.9,  \n  \"genres\": [\"Drama\", \"Horror\"],  \n  \"review\": \"I'm guessing I bought this movie because it looked pretty and had a decent storyline. I was happy to discover that the storyline was also pretty darn good. It is scary and exciting. Very good movie!\"  \n}"
+  },
+  {
+    "num": 3496967,
+    "perplexity": 5.229471206665039,
+    "response": "{  \n  \"rating\": 6.6,  \n  \"genres\": [\"Comedy\", \"Short\"],  \n  \"review\": \"My first experience with the Pickwick Papers was in elementary school when I was introduced to the character of Mr. Pickwick. The movie was entertaining and cute and I enjoyed it. However, I watched this version later on after reading many reviews and I was disappointed.br br First of all, there is no connection whatsoever to the original novel. The characters and scenes are completely different. There is no focus to the film and it drags on and on.br br Secondly, it is difficult to determine if this movie is rated G, PG, PG 13 or R. Throughout the movie, you can see various sexual innuendoes, drug references, alcohol abuse, swearing and nudity. While the film is supposedly geared towards children, I wouldn t show it to my kids unless I planned on discussing sexual innuendoes and drugs with them.\"  \n}"
+  },
+  {
+    "num": 6332964,
+    "perplexity": 5.405510425567627,
+    "response": "{  \n  \"rating\": 9.3,  \n  \"genres\": [\"Action\", \"Crime\", \"Drama\"],  \n  \"review\": \"I grew up watching Nick and Jerry with my parents on PBS.br br It is interesting to watch the two of them. They each are such accomplished actors in their own ways. Their acting styles complement each other perfectly.br br In this film, they portray two ex-CIA operatives who have retired from their careers and are living a quiet life in Maine. One, Jerry, is a writer, and Nick is a sailor. The two of them are involved in a case involving a former colleague who is kidnapped and held hostage.br br Although the kidnapping happens early in the film, it sets up the plot nicely and adds tension to the story. From there, events unfold at a steady pace, keeping the viewer interested until the conclusion.br br At its heart, however, the film is a character piece that allows the audience to view the actions of Nick and Jerry from the perspective of the two main characters. There is a lot of depth in their characters. For instance, Jerry is dealing with issues related to his past and the legacy of the CIA.br br While the film contains action sequences and violence, it also deals with themes such as redemption and forgiveness. The acting quality is excellent, including supporting players such as William Dafoe and Tom Cavanaugh. The dialogue is realistic, and the scenes often feel authentic. The film is rated PG-13 due to language and violence, although it is fairly mild compared to most films in that category. Overall, it is highly recommended.\"  \n}"
+  },
+  {
+    "num": 53617,
+    "perplexity": 3.9577176570892334,
+    "response": "{  \n  \"rating\": 6.4,  \n  \"genres\": [\"Action\", \"Drama\"],  \n  \"review\": \"The acting in this film was outstanding especially with the supporting cast.\"  \n}"
+  },
+  {
+    "num": 7229611,
+    "perplexity": 4.8483428955078125,
+    "response": "{  \n  \"rating\": 6.9,  \n  \"genres\": [\"Documentary\"],  \n  \"review\": \"This movie will be remembered as a classic example of what can happen when government agencies refuse to investigate a crime.\"  \n}"
+  },
+  {
+    "num": 3098804,
+    "perplexity": 3.0414373874664307,
+    "response": "{  \n  \"rating\": 7.1,  \n  \"genres\": [\"Crime\", \"Drama\"],  \n  \"review\": \"Great movie. One of my favorites.\"  \n}"
+  },
+  {
+    "num": 5858099,
+    "perplexity": 4.916369438171387,
+    "response": "{  \n  \"rating\": 7.4,  \n  \"genres\": [\"Comedy\", \"Drama\"],  \n  \"review\": \"I'm surprised this movie got such a good rating.br br I enjoyed the film and watched it twice. It was funny and touching.br br But I'm not a fan of movies that portray disabilities in a way that portrays them negatively or as a source of comedy. This movie does both.br br There is no doubt that the lead character has severe physical limitations. There is also no doubt that this movie is sympathetic towards him.br br However, in the scenes where the character uses his disability to gain an advantage, or attempts to manipulate the situation for his benefit, the movie presents his actions in a negative light. For example, in the scene where he kisses his girlfriend and tells her she's disabled, it suggests that his affection is insincere, because he knows she will reject him. Or the scenes where he pretends to be disabled for laughs. As a viewer, you may laugh at his jokes, but it sends a message that it's acceptable to mock someone who has a disability.br br In addition, there are several scenes where the character is shown crying, which implies weakness. Weakness is presented as a sign of being disabled.br br If you watch this movie, I highly recommend watching it critically and identifying the instances where the movie is portraying the character's disability negatively.br br To me, this is a major flaw.\"  \n}"
+  },
+  {
+    "num": 9049013,
+    "perplexity": 6.536529541015625,
+    "response": "{  \n  \"rating\": 7.4,  \n  \"genres\": [\"Biography\", \"Drama\"],  \n  \"review\": \"This film is a fascinating view of the rise and fall of the oil tycoon Henry Cox. The movie shows the intense effort of Cox and others to develop and exploit the oil reserves of the American Southwest. There is also a brief examination of the effects of oil companies on Native Americans. While some may find the movie overly simplistic, it offers a compelling glimpse into the history of the oil industry and its impact on society.\"  \n}"
+  },
+  {
+    "num": 816,
+    "perplexity": 4.250218868255615,
+    "response": "{  \n  \"rating\": 6.9,  \n  \"genres\": [\"Drama\"],  \n  \"review\": \"I love this movie!!! I have seen it many times!! The whole cast is amazing!!!\"  \n}"
+  },
+  {
+    "num": 9050020,
+    "perplexity": 2.8476994037628174,
+    "response": "{  \n  \"rating\": 8.2,  \n  \"genres\": [\"Drama\", \"Romance\"],  \n  \"review\": \"Great movie!\"  \n}"
+  },
+  {
+    "num": 8591068,
+    "perplexity": 7.459085464477539,
+    "response": "{  \n  \"rating\": 6.9,  \n  \"genres\": [\"Crime\", \"Documentary\"],  \n  \"review\": \"A beautiful, moving story.br br I really enjoyed watching this film. So beautifully produced. Well researched, great interviews with all parties. It tells the story of the unsolved abduction of a ten year old boy, Andy Puglisi. A lot of material on the internet claims that he was never found, and therefore not really a true missing persons case, but this movie shows proof that he indeed was abducted and disappeared.br br Very interesting interviews with the family members, including his mother and his sister, and his friend who was with him the day he disappeared.br br This movie really follows the case closely and lets you get inside the minds of investigators who worked on the case and the families who still suffer.br br I highly recommend this movie!\"  \n}"
+  },
+  {
+    "num": 129927,
+    "perplexity": 4.674820899963379,
+    "response": "{  \n  \"rating\": 6.7,  \n  \"genres\": [\"Drama\"],  \n  \"review\": \"This film is a wonderful treat to watch. The music is so sweet, the plot is unique, the acting is exceptional. If you are a fan of Korean movies, you will definitely enjoy this one.\"  \n}"
+  },
+  {
+    "num": 6796936,
+    "perplexity": 6.5710015296936035,
+    "response": "{  \n  \"rating\": 7.8,  \n  \"genres\": [\"Horror\", \"Mystery\"],  \n  \"review\": \"It's like a horror movie. Only different. This is the story of how people change when put under extreme pressure. You'll probably wonder if anyone's even alive here. But once you accept the premise of the movie, it becomes an engrossing study of how a group of brilliant minds deal with each other under duress. Great performances by the entire cast, particularly the women, especially the mother of the family, who gets kidnapped.br br Unfortunately, the DVD's presentation isn't perfect. There is a substantial amount of distortion, most noticeable during the opening credits. The audio track is surprisingly loud, which tends to drown out the dialogue. In addition, the video quality is poor compared to other DVDs of films shot in the same period. However, for a low cost rental, this was a pleasant diversion.\"  \n}"
+  },
+  {
+    "num": 7601895,
+    "perplexity": 6.4114227294921875,
+    "response": "{  \n  \"rating\": 4.5,  \n  \"genres\": [\"Comedy\"],  \n  \"review\": \"The writing is superb. The film is excellent and the actors are fantastic.br br But what I want to say is that, unlike a lot of films nowadays, which try to shock, this one doesn't go overboard and makes you feel better than you actually are. And the ending was beautifully crafted. Absolutely brilliant.\"  \n}"
+  },
+  {
+    "num": 7003952,
+    "perplexity": 3.47003436088562,
+    "response": "{  \n  \"rating\": 6.7,  \n  \"genres\": [\"Horror\", \"Mystery\"],  \n  \"review\": \"Great movie. Really enjoyed watching this film.\"  \n}"
+  },
+  {
+    "num": 7252721,
+    "perplexity": 3.2198519706726074,
+    "response": "{  \n  \"rating\": 5.4,  \n  \"genres\": [\"Drama\", \"Romance\"],  \n  \"review\": \"Wonderful film!\"  \n}"
+  },
+  {
+    "num": 102566,
+    "perplexity": 2.8963944911956787,
+    "response": "{  \n  \"rating\": 7.8,  \n  \"genres\": [\"Comedy\", \"Romance\"],  \n  \"review\": \"Great movie!\"  \n}"
+  },
+  {
+    "num": 41179,
+    "perplexity": 3.38863205909729,
+    "response": "{  \n  \"rating\": 6.4,  \n  \"genres\": [\"Action\", \"Adventure\", \"Drama\"],  \n  \"review\": \"James Bond is awesome!\"  \n}"
+  },
+  {
+    "num": 3140897,
+    "perplexity": 3.2617549896240234,
+    "response": "{  \n  \"rating\": 7.9,  \n  \"genres\": [\"Drama\", \"Short\"],  \n  \"review\": \"Great movie, loved it!\"  \n}"
+  },
+  {
+    "num": 3364671,
+    "perplexity": 5.142241477966309,
+    "response": "{  \n  \"rating\": 8.9,  \n  \"genres\": [\"Comedy\", \"Short\"],  \n  \"review\": \"Great film that unfortunately cannot be found anywhere.br br I am a huge fan of Eddie Murphy and this is a great movie from him.br br The plot line is about a fatherless young boy who becomes obsessed with finding his father.br br However, the journey is not easy and filled with obstacles.br br I recommend this movie highly to anyone who loves Eddie Murphy.\"  \n}"
+  },
+  {
+    "num": 3152282,
+    "perplexity": 3.2125730514526367,
+    "response": "{  \n  \"rating\": 4.4,  \n  \"genres\": [\"Horror\", \"Short\"],  \n  \"review\": \"Great movie. Great story. Good acting.\"  \n}"
+  },
+  {
+    "num": 6952637,
+    "perplexity": 4.556092739105225,
+    "response": "{  \n  \"rating\": 5.7,  \n  \"genres\": [\"Drama\", \"Thriller\"],  \n  \"review\": \"I enjoyed watching this movie. It is well done and acted.br br The plot line is interesting and the ending is unexpected. Great Movie!\"  \n}"
+  },
+  {
+    "num": 5448251,
+    "perplexity": 3.577366352081299,
+    "response": "{  \n  \"rating\": 7.3,  \n  \"genres\": [\"Action\", \"Adventure\"],  \n  \"review\": \"First rate movie!\"  \n}"
+  },
+  {
+    "num": 7176064,
+    "perplexity": 4.7895894050598145,
+    "response": "{  \n  \"rating\": 6.4,  \n  \"genres\": [\"Drama\", \"Horror\", \"Short\"],  \n  \"review\": \"The film quality is excellent, and it's not too slow. It's not a fast paced thriller, which may turn some folks off, but if you're looking for a thriller that keeps you engaged, this isn't it.br br I enjoyed it. A couple of scenes were disturbing, but not graphic. I think the filmmaker has a unique vision that I admire.\"  \n}"
+  },
+  {
+    "num": 8260133,
+    "perplexity": 6.713911056518555,
+    "response": "{  \n  \"rating\": 8.2,  \n  \"genres\": [\"Biography\", \"Documentary\"],  \n  \"review\": \"Best documentary I've ever watched!br br I'm watching this movie and feeling sorry for poor Doc Holliday. His life sucks! How horrible to live with that constant guilt and regret! You'll learn how he rose to fame and glory, and then ended up penniless and destitute.br br He's a fascinating character. If you liked HBO's Dead Man Walking, you'll love this film.br br Highly recommend!!!\"  \n}"
+  },
+  {
+    "num": 9883879,
+    "perplexity": 4.598816394805908,
+    "response": "{  \n  \"rating\": 4.5,  \n  \"genres\": [\"Action\", \"Comedy\", \"Crime\"],  \n  \"review\": \"I really enjoyed this movie, it's not a normal film, it's different from the norm, although, it's a violent film, it's not typical violence, it's a different type of violence, and it deals with themes like reincarnation, karma, etc.,br br Also, I personally loved the music in this movie, it adds to the drama of the film, and helps you suspend your disbelief, that you're watching a movie about someone who's dead, but still alive, but not able to communicate with others, because he's trapped in limbo, etc.,br br I would highly recommend this movie to anyone, who wants to see something different, not run of the mill, boring, blah, blah, blah movie, this is a movie that actually has meaning and substance to it, it's a beautiful film, and the fact that you don't see it all that often, is a blessing, since it gets overlooked by most mainstream audiences.\"  \n}"
+  },
+  {
+    "num": 7583727,
+    "perplexity": 2.877746105194092,
+    "response": "{  \n  \"rating\": 5.4,  \n  \"genres\": [\"Action\", \"Comedy\", \"Drama\"],  \n  \"review\": \"Love this movie!\"  \n}"
+  },
+  {
+    "num": 4246153,
+    "perplexity": 6.340500354766846,
+    "response": "{  \n  \"rating\": 5.4,  \n  \"genres\": [\"Adventure\", \"Comedy\", \"Family\"],  \n  \"review\": \"Brilliant movie about two elves who live their lives according to their training manuals. The film has wonderful special effects and action sequences.br br Also, the music is terrific. It's played throughout the film as if it were a soundtrack. It gives the film a real feeling of excitement.\"  \n}"
+  },
+  {
+    "num": 6948929,
+    "perplexity": 5.537517547607422,
+    "response": "{  \n  \"rating\": 5.6,  \n  \"genres\": [\"Horror\", \"Mystery\"],  \n  \"review\": \"Great flick! One of the better ones Ive ever seen. Not many people made a film around this story.\"  \n}"
+  },
+  {
+    "num": 3284266,
+    "perplexity": 5.7396769523620605,
+    "response": "{  \n  \"rating\": 4.0,  \n  \"genres\": [\"Adventure\", \"Comedy\", \"Family\"],  \n  \"review\": \"I just finished watching the movie 'Harry Was a Whiz.' The film tells the story of Harry Henderson, played by Christopher Lloyd, who is taken in by a giant monster known as Sasquatch. In reality, Harry is simply abducted by an escaped mental patient dressed in a fake Bigfoot costume. As the plot unfolds, Harry becomes convinced that he is a descendant of Bigfoot, which makes him unique among humans.br br The film starts slowly, and keeps pace throughout. Although many elements of the plot line are predictable, especially if you are familiar with the subject of Bigfoot, it is nevertheless entertaining. There are numerous scenes of comedy that I enjoyed, such as when Harry learns the meaning of the word 'monstrous,' and the scenes of the family trying to capture the monster.br br Unfortunately, several aspects of the film fell below par. For example, the character of Harry is rather boring. I felt that his personality was lacking in depth. Also, although the film was originally intended to be released in black and white, the producers opted to re-release the film in color. While this was done to appeal to a wider audience, I personally believe the film would have been much stronger in black and white format. Additionally, the actors' acting skills varied greatly. Some, such as Lloyd, were convincing, while others, such as Tom Hanks, failed to impress. Overall, I recommend this film, and would rate it a solid four stars.\"  \n}"
+  },
+  {
+    "num": 3878107,
+    "perplexity": 6.169349670410156,
+    "response": "{  \n  \"rating\": 7.1,  \n  \"genres\": [\"Drama\", \"Romance\"],  \n  \"review\": \"Very cool movie. Love this director, but can't figure out why it is rated PG13.br br Some scenes have nudity, violence, cursing, etc.br br Also, the scene near the end with the girl in the kitchen screaming and crying is graphic.br br Highly recommended for adults.\"  \n}"
+  },
+  {
+    "num": 9533521,
+    "perplexity": 3.6574547290802,
+    "response": "{  \n  \"rating\": 5.9,  \n  \"genres\": [\"Action\", \"Drama\", \"Western\"],  \n  \"review\": \"A long overdue remake. Great movie.\"  \n}"
+  },
+  {
+    "num": 3588268,
+    "perplexity": 5.5018086433410645,
+    "response": "{  \n  \"rating\": 5.3,  \n  \"genres\": [\"Action\"],  \n  \"review\": \"Great story,great acting,great special effects and it brings tears to my eyes.br br The only negative thing is,i wish there was more of it.br br Highly recommend to all zombie fans.\"  \n}"
+  },
+  {
+    "num": 9105423,
+    "perplexity": 3.0706915855407715,
+    "response": "{  \n  \"rating\": 5.6,  \n  \"genres\": [\"Action\", \"Drama\", \"Mystery\"],  \n  \"review\": \"Very entertaining movie.\"  \n}"
+  },
+  {
+    "num": 4558026,
+    "perplexity": 5.681956768035889,
+    "response": "{  \n  \"rating\": 7.4,  \n  \"genres\": [\"Biography\", \"Documentary\"],  \n  \"review\": \"This documentary is chockfull of interviews with women who played a part in the feminist art movement, and it features some of the art work from the movement as well. I think it provides a good overview of the movement and its contributions to art. I liked the film quite a bit, but some of the interviews are rather long and slow paced. I also wish that the filmmakers had spent more time discussing the actual art work instead of focusing on the artists. Overall, it is a solid documentary that helps illuminate a forgotten aspect of twentieth century art.\"  \n}"
+  },
+  {
+    "num": 3709489,
+    "perplexity": 4.575099945068359,
+    "response": "{  \n  \"rating\": 7.3,  \n  \"genres\": [\"Biography\", \"Drama\", \"Short\"],  \n  \"review\": \"The acting is terrible. The story line is thin, and the writing is amateurish.br br As I watched this film, I wondered how it got released, especially given its budget.br br I should add that I'm a huge fan of actor Matt Dillon, so I chose to watch this film in spite of its flaws. I just wish I'd saved my money for a good movie.\"  \n}"
+  },
+  {
+    "num": 7499663,
+    "perplexity": 2.8589229583740234,
+    "response": "{  \n  \"rating\": 7.3,  \n  \"genres\": [\"Action\", \"Drama\", \"Romance\"],  \n  \"review\": \"Excellent film. I highly recommend it.\"  \n}"
+  },
+  {
+    "num": 3097410,
+    "perplexity": 5.130886077880859,
+    "response": "{  \n  \"rating\": 4.8,  \n  \"genres\": [\"Action\", \"Adventure\"],  \n  \"review\": \"An excellent documentary that reveals the struggles of the independent filmmaker.\"  \n}"
+  },
+  {
+    "num": 7308044,
+    "perplexity": 3.9877355098724365,
+    "response": "{  \n  \"rating\": 6.8,  \n  \"genres\": [\"Action\", \"Adventure\", \"Drama\"],  \n  \"review\": \"Very good movie. Love all the movies starring Lara Croft.\"  \n}"
+  },
+  {
+    "num": 3258132,
+    "perplexity": 2.7665557861328125,
+    "response": "{  \n  \"rating\": 5.6,  \n  \"genres\": [\"Animation\", \"Comedy\", \"Family\"],  \n  \"review\": \"Loved it\"  \n}"
+  },
+  {
+    "num": 8402358,
+    "perplexity": 3.4009811878204346,
+    "response": "{  \n  \"rating\": 7.0,  \n  \"genres\": [\"Action\", \"Crime\", \"Western\"],  \n  \"review\": \"Great movie but very confusing\"  \n}"
+  },
+  {
+    "num": 8437322,
+    "perplexity": 4.0941314697265625,
+    "response": "{  \n  \"rating\": 8.6,  \n  \"genres\": [\"Drama\", \"Romance\"],  \n  \"review\": \"Great movie!br br Great acting, great storyline,great characters, great scenery, great weather,great music soundtrack,br br Great movie!br br Best movie I've seen in a long time!\"  \n}"
+  },
+  {
+    "num": 9025372,
+    "perplexity": 4.024328231811523,
+    "response": "{  \n  \"rating\": 6.4,  \n  \"genres\": [\"Crime\", \"Drama\"],  \n  \"review\": \"This movie sucks!! Not funny at all!\"  \n}"
+  },
+  {
+    "num": 118787,
+    "perplexity": 3.768493175506592,
+    "response": "{  \n  \"rating\": 8.2,  \n  \"genres\": [\"Action\", \"Drama\"],  \n  \"review\": \"This movie is about a man who kills people who kill others.\"  \n}"
+  },
+  {
+    "num": 3823746,
+    "perplexity": 3.7741458415985107,
+    "response": "{  \n  \"rating\": 6.5,  \n  \"genres\": [\"Action\", \"Crime\"],  \n  \"review\": \"I am watching this movie now. Excellent.\"  \n}"
+  },
+  {
+    "num": 4516258,
+    "perplexity": 3.1830368041992188,
+    "response": "{  \n  \"rating\": 6.9,  \n  \"genres\": [\"Documentary\", \"Music\"],  \n  \"review\": \"Great movie! One of my favorites!\"  \n}"
+  },
+  {
+    "num": 9473690,
+    "perplexity": 2.8317859172821045,
+    "response": "{  \n  \"rating\": 7.6,  \n  \"genres\": [\"Drama\", \"Horror\"],  \n  \"review\": \"Great movie.\"  \n}"
+  },
+  {
+    "num": 10297824,
+    "perplexity": 2.9311583042144775,
+    "response": "{  \n  \"rating\": 3.4,  \n  \"genres\": [\"Crime\", \"Drama\", \"Romance\"],  \n  \"review\": \"Great movie!\"  \n}"
+  },
+  {
+    "num": 6688527,
+    "perplexity": 4.285167217254639,
+    "response": "{  \n  \"rating\": 8.2,  \n  \"genres\": [\"Drama\", \"Family\"],  \n  \"review\": \"Good movie but what happened to the last episode?\"  \n}"
+  },
+  {
+    "num": 3572439,
+    "perplexity": 3.4168639183044434,
+    "response": "{  \n  \"rating\": 6.8,  \n  \"genres\": [\"Drama\", \"Romance\"],  \n  \"review\": \"It's hard to say what I expected from this film, but it's safe to say that I was surprised.\"  \n}"
+  },
+  {
+    "num": 6358494,
+    "perplexity": 3.8185055255889893,
+    "response": "{  \n  \"rating\": 8.4,  \n  \"genres\": [\"Drama\", \"Horror\"],  \n  \"review\": \"great movie, but i wish it was better\"  \n}"
+  },
+  {
+    "num": 133877,
+    "perplexity": 3.282024621963501,
+    "response": "{  \n  \"rating\": 6.4,  \n  \"genres\": [\"Action\", \"Drama\"],  \n  \"review\": \"Great movie, great acting!\"  \n}"
+  },
+  {
+    "num": 9038010,
+    "perplexity": 2.9531238079071045,
+    "response": "{  \n  \"rating\": 6.7,  \n  \"genres\": [\"Action\", \"Adventure\", \"Drama\"],  \n  \"review\": \"Good story.\"  \n}"
+  },
+  {
+    "num": 134025,
+    "perplexity": 3.648142099380493,
+    "response": "{  \n  \"rating\": 6.8,  \n  \"genres\": [\"Action\", \"Horror\"],  \n  \"review\": \"Very nice movie, excellent acting.\"  \n}"
+  },
+  {
+    "num": 9575828,
+    "perplexity": 3.1998953819274902,
+    "response": "{  \n  \"rating\": 6.6,  \n  \"genres\": [\"Comedy\", \"Drama\"],  \n  \"review\": \"This movie is one of the funniest movies I have ever seen. It's absolutely hilarious.\"  \n}"
+  },
+  {
+    "num": 9105437,
+    "perplexity": 3.5827741622924805,
+    "response": "{  \n  \"rating\": 6.7,  \n  \"genres\": [\"Action\", \"Sci-Fi\"],  \n  \"review\": \"I loved the movie. The acting was great. I would like to see more movies starring Elijah Wood.\"  \n}"
+  },
+  {
+    "num": 210543,
+    "perplexity": 4.68547248840332,
+    "response": "{  \n  \"rating\": 6.4,  \n  \"genres\": [\"Adventure\", \"Drama\"],  \n  \"review\": \"I have loved the series since the first episode. This movie does not disappoint. It is intense, dramatic, full of action. Excellent acting, and the story line is compelling.br br I hope there are more episodes to come.\"  \n}"
+  },
+  {
+    "num": 6030482,
+    "perplexity": 3.250424385070801,
+    "response": "{  \n  \"rating\": 7.9,  \n  \"genres\": [\"Drama\", \"Romance\"],  \n  \"review\": \"Very moving story. One of the best films I have ever seen.\"  \n}"
+  },
+  {
+    "num": 8674068,
+    "perplexity": 5.449494361877441,
+    "response": "{  \n  \"rating\": 5.0,  \n  \"genres\": [\"Drama\", \"History\"],  \n  \"review\": \"Excellent acting, beautiful scenery, great story line. Highly recommended for Irish fans!\"  \n}"
+  },
+  {
+    "num": 7158035,
+    "perplexity": 5.092843055725098,
+    "response": "{  \n  \"rating\": 6.8,  \n  \"genres\": [\"Action\", \"Adventure\"],  \n  \"review\": \"I really enjoyed this movie. It is about 4 mythical monkeys. They live in a forest. There are lots of beautiful shots of the scenery. The acting is very good.\"  \n}"
+  },
+  {
+    "num": 8966055,
+    "perplexity": 5.754806995391846,
+    "response": "{  \n  \"rating\": 7.3,  \n  \"genres\": [\"Action\", \"Adventure\"],  \n  \"review\": \"I enjoyed the movie because it shows how the Greek gods act. How they try to make decisions and then mess it up.\"  \n}"
+  },
+  {
+    "num": 8198208,
+    "perplexity": 3.053223133087158,
+    "response": "{  \n  \"rating\": 6.9,  \n  \"genres\": [\"Drama\", \"Romance\"],  \n  \"review\": \"Very interesting movie with a lot of twists and turns. I didn't expect it to be as good as it was.\"  \n}"
+  }
+]

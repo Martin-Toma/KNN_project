@@ -7,8 +7,8 @@ import numpy as np
 import json
 import os
 
-file1 = 'test_dataset/test_subset_v2_trimmed_with_idx.json'
-file2 = 'new_datasets/head_combined.json'
+file1 = 'test_dataset/test_subset_v2_trimmed.json'
+file2 = 'new_datasets/head_v2_combined.json'
 
 #test_cases = load_test_dataset(file1, file2)
 test_cases = load_test_dataset2(file1, file2) # use with heads or mistral
