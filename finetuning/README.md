@@ -1,25 +1,20 @@
 # Finetuning
 
-We finetune an MPT 7B model using LoRA.
+This directory contains all of the scripts used for fine-tuning the models. 
 
-**Before you start job set chmod +x run_finetuning.sh**
+## Note
+ All experiments work with CUDA version 12.8 and singularity NGC/PyTorch\:25.02-py3.SIF which further requires the installation of the following libraries:
 
-Usefull metacentrum commands:
-```
-Run finetuning job:
-qsub jobFineTune.sh
+pip install transformers
+pip install datasets
+pip install accelerate
+pip install einops
+pip install flash-attn --no-build-isolation
+pip install sentencepiece
 
-Get state of your jobs:
-qstat -u userName
+pip install loralib
+pip install trl
+pip install peft
 
-Delete job after submission:
-qdel 10622914.pbs-m1.metacentrum.cz
-```
+pip install bitsandbytes
 
-MPT 7B requires to install triton-pre-mlir@git+https://github.com/vchiley/triton.git@triton_pre_mlir_sm90#subdirectory=python even after trying to install it by any means or to avoid the installation and using different attention implementation, the triton pre mlir is still required and makes it impossible to run this model. On metacentrum we have limited permissions, which further complicates the fixing, so we are forced to use different model.
-
-
-Here are maximum sizes of response part: 
-- eval 2375 words, 
-- test 1317 words, 
-- train 5007 words
